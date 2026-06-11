@@ -1,6 +1,6 @@
 const ANALYSIS_CONFIG = {
     trendLines: {
-        pivotPeriod: 5,
+        pivotPeriod: 3,
         minTouchPoints: 3,
         minCandleDistance: 3,
         maxDeviation: 0.001
@@ -16,25 +16,17 @@ const ANALYSIS_CONFIG = {
     }
 };
 
-function customStrategy(data, index, breakPointsParam, ichimokuParam, sharpTrendsParam) {
-    // 🔧 رفع خطا: اگر sharpTrendsParam ارسال نشد، از آرایه خالی استفاده کن
-    sharpTrendsParam = sharpTrendsParam || [];
-    
-    // 🔧 رفع خطای window: استفاده از globalThis (کار در Node.js و مرورگر)
-    const globalAny = typeof globalThis !== 'undefined' ? globalThis : 
-                     (typeof window !== 'undefined' ? window : 
-                     (typeof global !== 'undefined' ? global : {}));
-    const divergenceSignals = globalAny.divergenceSignals || [];
-    
-    const trendLines = getTrendLines();  // فرض می‌کنیم getTrendLines در جای دیگر تعریف شده
+function customStrategy(data, index, breakPointsParam, ichimokuParam) {
+    const trendLines = getTrendLines();
     const downTrendLines = trendLines.primaryDown || [];
     if (downTrendLines.length === 0) return null;
 
     const hasIchimoku = ichimokuParam && typeof ichimokuParam === 'object';
-    const minDistance = 0.09;
-    const maxDistance = 0.15;
+
     let bestSignal = null;
     let closestToTarget = Infinity;
+    const minDistance = 0.09;
+    const maxDistance = 0.15;
 
     for (let i = 0; i < downTrendLines.length; i++) {
         const line = downTrendLines[i];
@@ -47,11 +39,14 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, sharpTrend
         const intercept = line.startPrice - slope * line.startIndex;
         const lineValue = slope * index + intercept;
 
-        const candle = data[index];
-        const { high, low, close, timestamp } = candle;
+        const currentCandle = data[index];
+        const { high, low, close, timestamp } = currentCandle;
 
+        // فاصله low و high نسبت به خط
         const distanceLow = ((low - lineValue) / lineValue) * 100;
         const distanceHigh = ((high - lineValue) / lineValue) * 100;
+
+        // شرط شکست: اگر بازه‌ی کندل تلورانس را قطع کند
         const overlapsTolerance = distanceLow <= maxDistance && distanceHigh >= minDistance;
         if (!overlapsTolerance) continue;
 
@@ -59,25 +54,15 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, sharpTrend
         if (hasIchimoku) {
             const { kumoTop, tenkan, kijun } = ichimokuParam;
             if (!(close > kumoTop && tenkan > kijun)) continue;
-        } else {
-            continue;
         }
 
-        // واگرایی صعودی در ۱۰۰ کندل اخیر
-        const recentDiv = divergenceSignals.filter(d =>
-            (d.type === 'RegularBullish' || d.type === 'HiddenBullish') &&
-            d.endIndex >= index - 100 &&
-            d.startIndex <= index
-        );
-        if (recentDiv.length === 0) continue;
-
-        // بررسی عدم شکست قبلی
+        // بررسی شکست قبلی
         let hasPreviousBreak = false;
         for (let j = line.endIndex + 1; j < index; j++) {
             const pastCandle = data[j];
-            const pastLineValue = slope * j + intercept;
-            const dLow = ((pastCandle.low - pastLineValue) / pastLineValue) * 100;
-            const dHigh = ((pastCandle.high - pastLineValue) / pastLineValue) * 100;
+            const checkLineValue = slope * j + intercept;
+            const dLow = ((pastCandle.low - checkLineValue) / checkLineValue) * 100;
+            const dHigh = ((pastCandle.high - checkLineValue) / checkLineValue) * 100;
             if (dLow <= maxDistance && dHigh >= minDistance) {
                 hasPreviousBreak = true;
                 break;
@@ -85,6 +70,7 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, sharpTrend
         }
         if (hasPreviousBreak) continue;
 
+        // انتخاب بهترین سیگنال
         const targetMiddle = (minDistance + maxDistance) / 2;
         const diffFromMiddle = Math.abs(((high - lineValue) / lineValue) * 100 - targetMiddle);
 
@@ -93,6 +79,7 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, sharpTrend
             bestSignal = {
                 signal: 'BUY',
                 price: close,
+            
                 stopLoss: close * 0.995,
                 useStagedStopLoss: true,
                 stopLossStages: [
@@ -112,16 +99,26 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, sharpTrend
                     { movePercent: 7, stopLossPercent: 6.5 },
                     { movePercent: 8, stopLossPercent: 7.5 }
                 ],
-                reason: `واگرایی=${recentDiv.length}, ایچیموکو✅, خط نزولی شکسته`,
-                lineId: `trend_${line.startIndex}_${line.endIndex}`,
-                breakoutDetails: { lineValue, distanceLow, distanceHigh, candleIndex: index, timestamp }
+          
+                reason: `شکست خط نزولی با بازه‌ی کندل (low=${distanceLow.toFixed(2)}%, high=${distanceHigh.toFixed(2)}%)`,
+                lineId: `trendline_${line.startIndex}_${line.endIndex}_${i}`,
+                breakoutDetails: {
+                    lineValue,
+                    distanceLow,
+                    distanceHigh,
+                    candleIndex: index,
+                    timestamp,
+                    candleLow: low,
+                    candleHigh: high,
+                    candleClose: close
+                }
             };
         }
     }
 
     if (bestSignal) {
         const date = new Date(bestSignal.breakoutDetails.timestamp).toLocaleString('fa-IR');
-        console.log(`🎯 سیگنال | ${date} | کندل ${index} | Low=${bestSignal.breakoutDetails.distanceLow.toFixed(3)}% | High=${bestSignal.breakoutDetails.distanceHigh.toFixed(3)}%`);
+        console.log(`🎯 سیگنال خرید | تاریخ: ${date} | کندل: ${index} | فاصله Low=${bestSignal.breakoutDetails.distanceLow.toFixed(3)}% | High=${bestSignal.breakoutDetails.distanceHigh.toFixed(3)}% | قیمت ورود (close): ${bestSignal.price.toFixed(4)}`);
     }
 
     return bestSignal;
