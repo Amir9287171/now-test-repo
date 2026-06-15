@@ -2,11 +2,16 @@ name: Generate Metadata (1.json)
 
 on:
   schedule:
-    - cron: "0 */5 * * *"   # هر 5 ساعت یکبار
+    - cron: "0 */5 * * *"   # هر 5 ساعت یکبار (fallback)
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
+
+concurrency:
+  group: generate-metadata
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -96,7 +101,7 @@ jobs:
       - name: Commit and push changes if any
         run: |
           git config user.name "github-actions[bot]"
-          git config.user.email "actions@github.com"
+          git config user.email "actions@github.com"
           git add strategies/
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -106,4 +111,8 @@ jobs:
             git push
           fi
 
-      # دیگر مرحله فراخوانی loop_metadata وجود ندارد (چرخه حذف شد)
+      - name: Re-run this workflow (continue cycle)
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
+        run: |
+          gh workflow run generate_metadata.yml --ref main --repo ${{ github.repository }}
