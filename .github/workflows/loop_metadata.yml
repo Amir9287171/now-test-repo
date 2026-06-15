@@ -1,0 +1,21 @@
+name: Loop Metadata (re-trigger generator)
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Generate Metadata (1.json)"]
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+jobs:
+  re-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call generate_metadata again (using CROSS_REPO_TOKEN)
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
+        run: |
+          gh workflow run generate_metadata.yml --ref main --repo ${{ github.repository }}
