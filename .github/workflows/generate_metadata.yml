@@ -19,7 +19,7 @@ jobs:
       - name: Scan strategies and create missing 1.json
         run: |
           mkdir -p strategies
-          # برای زیرپوشه‌های موجود (مثل strategies/kkkk3/)
+          # برای زیرپوشه‌های موجود
           for strat_dir in strategies/*/; do
             if [ -d "$strat_dir" ]; then
               strat_name=$(basename "$strat_dir")
@@ -61,7 +61,7 @@ jobs:
             fi
           done
 
-          # برای فایل‌های .js بدون پوشه (مثل strategies/Yywu.js)
+          # برای فایل‌های .js بدون پوشه
           for js_file in strategies/*.js; do
             [ -f "$js_file" ] || continue
             strat_name=$(basename "$js_file" .js)
@@ -96,7 +96,7 @@ jobs:
       - name: Commit and push changes if any
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "actions@github.com"
+          git config.user.email "actions@github.com"
           git add strategies/
           if git diff --cached --quiet; then
             echo "No changes to commit"
@@ -106,9 +106,4 @@ jobs:
             git push
           fi
 
-      - name: Trigger loop_metadata workflow (using CROSS_REPO_TOKEN)
-        env:
-          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
-        run: |
-          sleep 10
-          gh workflow run loop_metadata.yml --ref main --repo ${{ github.repository }}
+      # دیگر مرحله فراخوانی loop_metadata وجود ندارد (چرخه حذف شد)
