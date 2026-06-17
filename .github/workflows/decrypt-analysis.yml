@@ -1,0 +1,156 @@
+name: Decrypt 10 Random Analysis Files
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  decrypt-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout now-test-repo (third repo)
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.CROSS_REPO_TOKEN }}
+          repository: ${{ secrets.THIRD_REPO }}
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Find and select 10 random .enc files
+        id: select_files
+        run: |
+          BASE_DIR="analysis_results/combo_10day/Test/BTCUSDT"
+          if [ ! -d "$BASE_DIR" ]; then
+            echo "❌ مسیر $BASE_DIR وجود ندارد!"
+            exit 1
+          fi
+          # لیست تمام فایل‌های .enc
+          ALL_FILES=$(find "$BASE_DIR" -maxdepth 1 -name "*.enc" -type f | sort)
+          if [ -z "$ALL_FILES" ]; then
+            echo "❌ هیچ فایل .enc در $BASE_DIR یافت نشد."
+            exit 1
+          fi
+          TOTAL=$(echo "$ALL_FILES" | wc -l)
+          echo "📊 تعداد کل فایل‌های .enc: $TOTAL"
+          # انتخاب ۱۰ فایل تصادفی (یا همه اگر کمتر از ۱۰ باشد)
+          if [ "$TOTAL" -le 10 ]; then
+            SELECTED="$ALL_FILES"
+          else
+            SELECTED=$(echo "$ALL_FILES" | shuf -n 10)
+          fi
+          echo "$SELECTED" > /tmp/selected_files.txt
+          echo "selected_count=$(cat /tmp/selected_files.txt | wc -l)" >> $GITHUB_OUTPUT
+          echo "🔍 فایل‌های انتخاب شده:"
+          cat /tmp/selected_files.txt
+
+      - name: Decrypt and check each file
+        env:
+          RESULTS_PASSWORD: ${{ secrets.RESULTS_PASSWORD || secrets.DATA_PASSWORD }}
+        run: |
+          mkdir -p /tmp/decrypted
+          TOTAL=$(cat /tmp/selected_files.txt | wc -l)
+          echo "=============================================="
+          echo "   🔓 شروع رمزگشایی $TOTAL فایل"
+          echo "=============================================="
+          EMPTY_COUNT=0
+          NON_EMPTY_COUNT=0
+          EMPTY_FILES=""
+          NON_EMPTY_FILES=""
+          while IFS= read -r ENC_FILE; do
+            if [ -z "$ENC_FILE" ]; then continue; fi
+            BASE_NAME=$(basename "$ENC_FILE" .enc)
+            DIR_NAME=$(dirname "$ENC_FILE")
+            CSV_NAME="${BASE_NAME}.csv"
+            TMP_CSV="/tmp/decrypted/${CSV_NAME}"
+            echo "----------------------------------------"
+            echo "📄 پردازش: $ENC_FILE"
+            node -e "
+              const crypto=require('crypto'),fs=require('fs');
+              const pass=process.env.RESULTS_PASSWORD;
+              const data=fs.readFileSync('$ENC_FILE');
+              const key=crypto.scryptSync(pass,'salt',32);
+              const iv=data.slice(0,16),enc=data.slice(16);
+              const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+              const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+              fs.writeFileSync('$TMP_CSV',dec);
+            " 2>/tmp/decrypt_error.log
+            if [ $? -ne 0 ]; then
+              echo "   ❌ خطا در رمزگشایی $BASE_NAME"
+              cat /tmp/decrypt_error.log
+              continue
+            fi
+            if [ ! -s "$TMP_CSV" ]; then
+              echo "   ❌ فایل CSV تولید نشد یا خالی است"
+              EMPTY_COUNT=$((EMPTY_COUNT+1))
+              EMPTY_FILES="$EMPTY_FILES\n- $BASE_NAME (فایل خالی)"
+              continue
+            fi
+            # بررسی اینکه آیا فقط header دارد یا داده
+            LINE_COUNT=$(wc -l < "$TMP_CSV")
+            if [ "$LINE_COUNT" -le 1 ]; then
+              echo "   ⚠️ فایل فقط header دارد (بدون داده) – خالی محسوب می‌شود"
+              EMPTY_COUNT=$((EMPTY_COUNT+1))
+              EMPTY_FILES="$EMPTY_FILES\n- $BASE_NAME (فقط header)"
+            else
+              FIRST_DATA_LINE=$(sed -n '2p' "$TMP_CSV" | tr -d ' \r\n')
+              if [ -z "$FIRST_DATA_LINE" ]; then
+                echo "   ⚠️ خط دوم خالی است – فایل خالی محسوب می‌شود"
+                EMPTY_COUNT=$((EMPTY_COUNT+1))
+                EMPTY_FILES="$EMPTY_FILES\n- $BASE_NAME (خط دوم خالی)"
+              else
+                echo "   ✅ فایل معتبر است – $((LINE_COUNT-1)) ردیف داده دارد"
+                NON_EMPTY_COUNT=$((NON_EMPTY_COUNT+1))
+                NON_EMPTY_FILES="$NON_EMPTY_FILES\n- $BASE_NAME ($((LINE_COUNT-1)) ردیف)"
+                # چاپ ۲ خط اول نمونه برای دیباگ
+                echo "   نمونه داده (۲ خط اول):"
+                head -n 3 "$TMP_CSV" | sed 's/^/     /'
+              fi
+            fi
+            rm -f "$TMP_CSV"
+          done < /tmp/selected_files.txt
+
+          echo "=============================================="
+          echo "   📊 گزارش نهایی"
+          echo "=============================================="
+          echo "📂 تعداد کل فایل‌های بررسی شده: $TOTAL"
+          echo "✅ فایل‌های دارای داده: $NON_EMPTY_COUNT"
+          echo "❌ فایل‌های خالی (بدون داده): $EMPTY_COUNT"
+          if [ "$EMPTY_COUNT" -gt 0 ]; then
+            echo ""
+            echo "📋 لیست فایل‌های خالی:"
+            echo -e "$EMPTY_FILES"
+          fi
+          if [ "$NON_EMPTY_COUNT" -gt 0 ]; then
+            echo ""
+            echo "📋 لیست فایل‌های معتبر:"
+            echo -e "$NON_EMPTY_FILES"
+          fi
+
+          # ذخیره گزارش در یک فایل برای مرحله بعد (اختیاری)
+          echo "TOTAL=$TOTAL" > /tmp/report.txt
+          echo "NON_EMPTY=$NON_EMPTY_COUNT" >> /tmp/report.txt
+          echo "EMPTY=$EMPTY_COUNT" >> /tmp/report.txt
+          echo "EMPTY_FILES=$EMPTY_FILES" >> /tmp/report.txt
+          echo "NON_EMPTY_FILES=$NON_EMPTY_FILES" >> /tmp/report.txt
+
+      - name: Wait 5 minutes (optional cleanup)
+        run: |
+          echo "⏳ منتظر ۵ دقیقه می‌مانیم تا فایل‌های موقت پاک شوند..."
+          sleep 300
+          rm -rf /tmp/decrypted
+          echo "🧹 پاکسازی کامل شد."
+
+      - name: Save report as artifact (optional)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: decrypt-report
+          path: /tmp/report.txt
