@@ -1,4 +1,4 @@
-name.      : Loop Metadata (re-trigger generator)
+name: Loop Metadata (re-trigger generator)
 
 on:
   workflow_dispatch:
