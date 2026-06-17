@@ -1,4 +1,4 @@
-name: Show Metadata (Manual Password)
+name: Show Full File Content
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
         required: true
         default: 'Test'
       password:
-        description: 'پسورد رمزگشایی (RESULTS_PASSWORD)'
+        description: 'پسورد رمزگشایی'
         required: true
         type: string
 
@@ -24,10 +24,9 @@ jobs:
           GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
         run: |
           THIRD_REPO="Amir9287171/now-test-repo"
-          echo "📦 مخزن سوم: $THIRD_REPO"
           git clone https://x-access-token:${GH_TOKEN}@github.com/${THIRD_REPO}.git /tmp/third_repo
 
-      - name: Decrypt and show metadata
+      - name: Decrypt and show full file
         env:
           PASSWORD: ${{ github.event.inputs.password }}
           STRAT: ${{ github.event.inputs.strategy }}
@@ -36,13 +35,9 @@ jobs:
           ENC_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
 
           if [ ! -f "$ENC_FILE" ]; then
-            echo "❌ فایل $ENC_FILE وجود ندارد!"
-            echo "📂 فایل‌های موجود در aggregated:"
-            ls -la aggregated/ 2>/dev/null || echo "   (پوشه aggregated خالی است)"
+            echo "❌ فایل پیدا نشد!"
             exit 1
           fi
-
-          echo "✅ فایل پیدا شد: $ENC_FILE"
 
           node -e "
             const crypto = require('crypto');
@@ -58,20 +53,7 @@ jobs:
             fs.writeFileSync('/tmp/all_trades.json', dec);
           "
 
-          echo ""
           echo "=============================================="
-          echo "📊 ساختار metadata برای استراتژی: $STRAT"
+          echo "📄 محتوای کامل فایل all_trades.json"
           echo "=============================================="
-          jq '.metadata' /tmp/all_trades.json
-
-          echo ""
-          echo "🔍 بررسی move_percents:"
-          jq -r '.metadata.move_percents // "❌ وجود ندارد"' /tmp/all_trades.json
-
-          echo ""
-          echo "🔍 بررسی stop_loss_initial:"
-          jq -r '.metadata.stop_loss_initial // "❌ وجود ندارد"' /tmp/all_trades.json
-
-          echo ""
-          echo "🔍 بررسی max_move_percent:"
-          jq -r '.metadata.max_move_percent // "❌ وجود ندارد"' /tmp/all_trades.json
+          cat /tmp/all_trades.json
