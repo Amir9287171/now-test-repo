@@ -1,4 +1,4 @@
-name: Show Metadata from Third Repo (Hardcoded)
+name: Show Metadata (Manual Password)
 
 on:
   workflow_dispatch:
@@ -7,6 +7,10 @@ on:
         description: 'نام استراتژی'
         required: true
         default: 'Test'
+      password:
+        description: 'پسورد رمزگشایی (RESULTS_PASSWORD)'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -15,18 +19,17 @@ jobs:
   show:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone third repository (hardcoded)
+      - name: Clone third repository
         env:
           GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
         run: |
-          # ===== اینجا خودت اسم مخزن سوم رو بنویس =====
           THIRD_REPO="Amir9287171/now-test-repo"
           echo "📦 مخزن سوم: $THIRD_REPO"
           git clone https://x-access-token:${GH_TOKEN}@github.com/${THIRD_REPO}.git /tmp/third_repo
 
       - name: Decrypt and show metadata
         env:
-          RESULTS_PASSWORD: ${{ secrets.RESULTS_PASSWORD || secrets.DATA_PASSWORD }}
+          PASSWORD: ${{ github.event.inputs.password }}
           STRAT: ${{ github.event.inputs.strategy }}
         run: |
           cd /tmp/third_repo
@@ -40,14 +43,13 @@ jobs:
           fi
 
           echo "✅ فایل پیدا شد: $ENC_FILE"
-          cat "$ENC_FILE" | base64 -d > /tmp/trades.enc
 
           node -e "
             const crypto = require('crypto');
             const fs = require('fs');
-            const pass = process.env.RESULTS_PASSWORD;
-            if (!pass) { console.error('❌ RESULTS_PASSWORD تنظیم نشده!'); process.exit(1); }
-            const data = fs.readFileSync('/tmp/trades.enc');
+            const pass = process.env.PASSWORD;
+            if (!pass) { console.error('❌ پسورد وارد نشده!'); process.exit(1); }
+            const data = fs.readFileSync('$ENC_FILE');
             const key = crypto.scryptSync(pass, 'salt', 32);
             const iv = data.slice(0, 16);
             const enc = data.slice(16);
