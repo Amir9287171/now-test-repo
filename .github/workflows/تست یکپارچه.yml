@@ -1,16 +1,12 @@
-name: Debug All Trades Structure (Fixed)
+name: List & Debug All Trades
 
 on:
   workflow_dispatch:
     inputs:
       strategy_name:
-        description: 'نام استراتژی (مثلاً Ttt3)'
-        required: true
-        default: 'Ttt3'
-      group:
-        description: 'گروه استراتژی (1 یا 2)'
-        required: true
-        default: '1'
+        description: 'نام استراتژی (برای دیباگ)'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -27,7 +23,21 @@ jobs:
       - name: Install jq
         run: sudo apt-get update -qq && sudo apt-get install -y -qq jq
 
-      - name: Download and decrypt all_trades.json (for large files)
+      - name: List all aggregated strategies
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
+          THIRD_REPO: ${{ secrets.THIRD_REPO }}
+        run: |
+          echo "=============================================="
+          echo "📋 لیست استراتژی‌های یکپارچه‌شده"
+          echo "=============================================="
+          echo ""
+          # دریافت لیست پوشه‌های داخل aggregated
+          gh api "repos/$THIRD_REPO/contents/aggregated" --jq '.[].name' 2>/dev/null || echo "❌ پوشه aggregated وجود ندارد یا خالی است"
+          echo ""
+
+      - name: Debug specific strategy (if provided)
+        if: github.event.inputs.strategy_name != ''
         env:
           GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
           THIRD_REPO: ${{ secrets.THIRD_REPO }}
@@ -40,20 +50,21 @@ jobs:
           echo "=============================================="
 
           AGG_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
-          echo "📥 دریافت فایل: $AGG_FILE"
+          echo "📥 مسیر فایل: $AGG_FILE"
 
-          # روش صحیح: دریافت محتوای base64 از API (حتی برای فایل‌های بزرگ)
+          # روش صحیح: دریافت با curl و هدر raw
           HTTP_CODE=$(curl -s -o /tmp/trades.b64 -w "%{http_code}" \
             -H "Authorization: token $GH_TOKEN" \
             -H "Accept: application/vnd.github.v3.raw" \
             "https://api.github.com/repos/$THIRD_REPO/contents/$AGG_FILE")
 
-          if [ "$HTTP_CODE" != "200" ]; then
-            echo "❌ دریافت فایل با کد $HTTP_CODE ناموفق بود."
+          if [ "$HTTP_CODE" -ne 200 ]; then
+            echo "❌ فایل با کد $HTTP_CODE یافت نشد!"
+            echo "   لطفاً از لیست بالا یک نام معتبر انتخاب کنید."
             exit 1
           fi
 
-          # base64 را به فایل باینری تبدیل کن
+          # تبدیل base64 به باینری
           base64 -d /tmp/trades.b64 > /tmp/trades.enc 2>/dev/null
           if [ ! -s /tmp/trades.enc ]; then
             echo "❌ تبدیل base64 ناموفق یا فایل خالی است."
@@ -111,7 +122,8 @@ jobs:
           echo "🔹 خلاصه کامل:"
           jq '{total_trades: (.trades | length), metadata: .metadata}' /tmp/all_trades.json
 
-      - name: Upload decrypted file as artifact
+      - name: Upload decrypted file (if exists)
+        if: github.event.inputs.strategy_name != ''
         uses: actions/upload-artifact@v4
         with:
           name: all_trades_${{ github.event.inputs.strategy_name }}
