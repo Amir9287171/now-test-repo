@@ -1,4 +1,4 @@
-name: Show Metadata from Third Repo
+name: Show Metadata from Third Repo (Hardcoded)
 
 on:
   workflow_dispatch:
@@ -15,11 +15,13 @@ jobs:
   show:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone third repository
+      - name: Clone third repository (hardcoded)
         env:
           GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
-          THIRD_REPO: ${{ secrets.THIRD_REPO }}
         run: |
+          # ===== اینجا خودت اسم مخزن سوم رو بنویس =====
+          THIRD_REPO="Amir9287171/now-test-repo"
+          echo "📦 مخزن سوم: $THIRD_REPO"
           git clone https://x-access-token:${GH_TOKEN}@github.com/${THIRD_REPO}.git /tmp/third_repo
 
       - name: Decrypt and show metadata
@@ -29,7 +31,7 @@ jobs:
         run: |
           cd /tmp/third_repo
           ENC_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
-          
+
           if [ ! -f "$ENC_FILE" ]; then
             echo "❌ فایل $ENC_FILE وجود ندارد!"
             echo "📂 فایل‌های موجود در aggregated:"
@@ -38,10 +40,8 @@ jobs:
           fi
 
           echo "✅ فایل پیدا شد: $ENC_FILE"
-          echo "📄 رمزگشایی و نمایش metadata..."
-
           cat "$ENC_FILE" | base64 -d > /tmp/trades.enc
-          
+
           node -e "
             const crypto = require('crypto');
             const fs = require('fs');
@@ -65,3 +65,11 @@ jobs:
           echo ""
           echo "🔍 بررسی move_percents:"
           jq -r '.metadata.move_percents // "❌ وجود ندارد"' /tmp/all_trades.json
+
+          echo ""
+          echo "🔍 بررسی stop_loss_initial:"
+          jq -r '.metadata.stop_loss_initial // "❌ وجود ندارد"' /tmp/all_trades.json
+
+          echo ""
+          echo "🔍 بررسی max_move_percent:"
+          jq -r '.metadata.max_move_percent // "❌ وجود ندارد"' /tmp/all_trades.json
