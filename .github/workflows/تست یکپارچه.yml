@@ -1,0 +1,135 @@
+name: Debug All Trades Structure
+
+on:
+  workflow_dispatch:
+    inputs:
+      strategy_name:
+        description: 'نام استراتژی (مثلاً Ttt3 یا Strategy_A)'
+        required: true
+        default: 'Ttt3'
+      group:
+        description: 'گروه استراتژی (1 یا 2)'
+        required: true
+        default: '1'
+        type: choice
+        options:
+          - '1'
+          - '2'
+
+permissions:
+  contents: write
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js (for decryption)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install jq for pretty JSON
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq jq
+
+      - name: Download and decrypt all_trades.json
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
+          THIRD_REPO: ${{ secrets.THIRD_REPO }}
+          RESULTS_PASSWORD: ${{ secrets.RESULTS_PASSWORD || secrets.DATA_PASSWORD }}
+          STRAT: ${{ github.event.inputs.strategy_name }}
+          GROUP: ${{ github.event.inputs.group }}
+        run: |
+          set -e
+          echo "=============================================="
+          echo "📊 دیباگ فایل یکپارچه برای استراتژی: $STRAT (گروه $GROUP)"
+          echo "=============================================="
+          echo ""
+
+          # 1. دریافت فایل یکپارچه
+          AGG_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
+          echo "📥 دانلود فایل: $AGG_FILE"
+
+          DOWNLOAD_URL=$(gh api "repos/$THIRD_REPO/contents/$AGG_FILE" -q '.download_url' 2>/dev/null)
+          if [ -z "$DOWNLOAD_URL" ]; then
+            echo "❌ فایل $AGG_FILE در مخزن سوم یافت نشد!"
+            exit 1
+          fi
+
+          curl -L -o /tmp/trades.enc "$DOWNLOAD_URL"
+          if [ ! -s /tmp/trades.enc ]; then
+            echo "❌ دانلود فایل ناموفق یا فایل خالی است."
+            exit 1
+          fi
+          echo "✅ فایل دانلود شد (حجم: $(stat -c%s /tmp/trades.enc) bytes)"
+
+          # 2. رمزگشایی
+          echo "🔓 رمزگشایی فایل..."
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.RESULTS_PASSWORD;
+            if (!pass) { console.error('❌ RESULTS_PASSWORD تنظیم نشده!'); process.exit(1); }
+            const data=fs.readFileSync('/tmp/trades.enc');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('/tmp/all_trades.json',dec);
+          "
+          if [ ! -s /tmp/all_trades.json ]; then
+            echo "❌ رمزگشایی ناموفق بود."
+            exit 1
+          fi
+          echo "✅ رمزگشایی موفق (حجم: $(stat -c%s /tmp/all_trades.json) bytes)"
+
+          # 3. نمایش ساختار کامل
+          echo ""
+          echo "=============================================="
+          echo "📄 ساختار کامل فایل all_trades.json"
+          echo "=============================================="
+          echo ""
+
+          echo "🔹 تعداد کل معاملات:"
+          jq '.trades | length' /tmp/all_trades.json
+
+          echo ""
+          echo "🔹 نمونه اولین معامله:"
+          jq '.trades[0]' /tmp/all_trades.json
+
+          echo ""
+          echo "🔹 کلیدهای موجود در metadata:"
+          jq '.metadata | keys' /tmp/all_trades.json
+
+          echo ""
+          echo "🔹 محتوای کامل metadata:"
+          jq '.metadata' /tmp/all_trades.json
+
+          echo ""
+          echo "🔹 وضعیت move_percents:"
+          MOVE_PERCENTS=$(jq -r '.metadata.move_percents // "null"' /tmp/all_trades.json)
+          if [ "$MOVE_PERCENTS" = "null" ]; then
+            echo "   ❌ move_percents وجود ندارد!"
+          elif [ "$MOVE_PERCENTS" = "[]" ]; then
+            echo "   ⚠️ move_percents وجود دارد اما خالی است ([])"
+          else
+            echo "   ✅ move_percents وجود دارد و مقدار آن: $MOVE_PERCENTS"
+          fi
+
+          echo ""
+          echo "🔹 بررسی کامل فایل (خلاصه):"
+          jq '{total_trades: (.trades | length), metadata_keys: (.metadata | keys), move_percents: .metadata.move_percents, stop_loss: .metadata.stop_loss_initial}' /tmp/all_trades.json
+
+          # 4. (اختیاری) ذخیره فایل به عنوان Artifact برای بررسی بیشتر
+          echo ""
+          echo "📤 ذخیره فایل رمزگشایی شده به عنوان Artifact..."
+          cp /tmp/all_trades.json /tmp/all_trades_debug.json
+
+      - name: Upload decrypted file as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: all_trades_${{ github.event.inputs.strategy_name }}_${{ github.run_id }}
+          path: /tmp/all_trades_debug.json
+          retention-days: 7
