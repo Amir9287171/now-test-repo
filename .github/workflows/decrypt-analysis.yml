@@ -2,6 +2,11 @@ name: Decrypt 10 Random Analysis Files
 
 on:
   workflow_dispatch:
+    inputs:
+      user_password:
+        description: 'رمز رمزگشایی فایل‌های .enc (RESULTS_PASSWORD)'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -11,7 +16,7 @@ jobs:
   decrypt-and-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout now-test-repo (third repo)
+      - name: Checkout now-test-repo
         uses: actions/checkout@v5
         with:
           token: ${{ secrets.CROSS_REPO_TOKEN }}
@@ -32,7 +37,6 @@ jobs:
             echo "❌ مسیر $BASE_DIR وجود ندارد!"
             exit 1
           fi
-          # لیست تمام فایل‌های .enc
           ALL_FILES=$(find "$BASE_DIR" -maxdepth 1 -name "*.enc" -type f | sort)
           if [ -z "$ALL_FILES" ]; then
             echo "❌ هیچ فایل .enc در $BASE_DIR یافت نشد."
@@ -40,7 +44,6 @@ jobs:
           fi
           TOTAL=$(echo "$ALL_FILES" | wc -l)
           echo "📊 تعداد کل فایل‌های .enc: $TOTAL"
-          # انتخاب ۱۰ فایل تصادفی (یا همه اگر کمتر از ۱۰ باشد)
           if [ "$TOTAL" -le 10 ]; then
             SELECTED="$ALL_FILES"
           else
@@ -51,10 +54,12 @@ jobs:
           echo "🔍 فایل‌های انتخاب شده:"
           cat /tmp/selected_files.txt
 
-      - name: Decrypt and check each file
+      - name: Decrypt and check each file (with manual password)
         env:
-          RESULTS_PASSWORD: ${{ secrets.RESULTS_PASSWORD || secrets.DATA_PASSWORD }}
+          USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
+          # مخفی کردن رمز در لاگ
+          echo "::add-mask::$USER_PASS"
           mkdir -p /tmp/decrypted
           TOTAL=$(cat /tmp/selected_files.txt | wc -l)
           echo "=============================================="
@@ -67,14 +72,14 @@ jobs:
           while IFS= read -r ENC_FILE; do
             if [ -z "$ENC_FILE" ]; then continue; fi
             BASE_NAME=$(basename "$ENC_FILE" .enc)
-            DIR_NAME=$(dirname "$ENC_FILE")
             CSV_NAME="${BASE_NAME}.csv"
             TMP_CSV="/tmp/decrypted/${CSV_NAME}"
             echo "----------------------------------------"
             echo "📄 پردازش: $ENC_FILE"
             node -e "
               const crypto=require('crypto'),fs=require('fs');
-              const pass=process.env.RESULTS_PASSWORD;
+              const pass=process.env.USER_PASS;
+              if (!pass) { console.error('❌ رمز وارد نشده است'); process.exit(1); }
               const data=fs.readFileSync('$ENC_FILE');
               const key=crypto.scryptSync(pass,'salt',32);
               const iv=data.slice(0,16),enc=data.slice(16);
@@ -93,7 +98,6 @@ jobs:
               EMPTY_FILES="$EMPTY_FILES\n- $BASE_NAME (فایل خالی)"
               continue
             fi
-            # بررسی اینکه آیا فقط header دارد یا داده
             LINE_COUNT=$(wc -l < "$TMP_CSV")
             if [ "$LINE_COUNT" -le 1 ]; then
               echo "   ⚠️ فایل فقط header دارد (بدون داده) – خالی محسوب می‌شود"
@@ -109,7 +113,6 @@ jobs:
                 echo "   ✅ فایل معتبر است – $((LINE_COUNT-1)) ردیف داده دارد"
                 NON_EMPTY_COUNT=$((NON_EMPTY_COUNT+1))
                 NON_EMPTY_FILES="$NON_EMPTY_FILES\n- $BASE_NAME ($((LINE_COUNT-1)) ردیف)"
-                # چاپ ۲ خط اول نمونه برای دیباگ
                 echo "   نمونه داده (۲ خط اول):"
                 head -n 3 "$TMP_CSV" | sed 's/^/     /'
               fi
@@ -134,21 +137,14 @@ jobs:
             echo -e "$NON_EMPTY_FILES"
           fi
 
-          # ذخیره گزارش در یک فایل برای مرحله بعد (اختیاری)
-          echo "TOTAL=$TOTAL" > /tmp/report.txt
-          echo "NON_EMPTY=$NON_EMPTY_COUNT" >> /tmp/report.txt
-          echo "EMPTY=$EMPTY_COUNT" >> /tmp/report.txt
-          echo "EMPTY_FILES=$EMPTY_FILES" >> /tmp/report.txt
-          echo "NON_EMPTY_FILES=$NON_EMPTY_FILES" >> /tmp/report.txt
-
-      - name: Wait 5 minutes (optional cleanup)
+      - name: Wait 5 minutes and cleanup
         run: |
           echo "⏳ منتظر ۵ دقیقه می‌مانیم تا فایل‌های موقت پاک شوند..."
           sleep 300
           rm -rf /tmp/decrypted
           echo "🧹 پاکسازی کامل شد."
 
-      - name: Save report as artifact (optional)
+      - name: Save report as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
