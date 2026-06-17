@@ -1,131 +1,67 @@
-name: List & Debug All Trades
+name: Show Metadata from Third Repo
 
 on:
   workflow_dispatch:
     inputs:
-      strategy_name:
-        description: 'نام استراتژی (برای دیباگ)'
-        required: false
-        default: ''
+      strategy:
+        description: 'نام استراتژی'
+        required: true
+        default: 'Test'
 
 permissions:
   contents: write
 
 jobs:
-  debug:
+  show:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-
-      - name: Install jq
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq jq
-
-      - name: List all aggregated strategies
+      - name: Clone third repository
         env:
           GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
           THIRD_REPO: ${{ secrets.THIRD_REPO }}
         run: |
-          echo "=============================================="
-          echo "📋 لیست استراتژی‌های یکپارچه‌شده"
-          echo "=============================================="
-          echo ""
-          # دریافت لیست پوشه‌های داخل aggregated
-          gh api "repos/$THIRD_REPO/contents/aggregated" --jq '.[].name' 2>/dev/null || echo "❌ پوشه aggregated وجود ندارد یا خالی است"
-          echo ""
+          git clone https://x-access-token:${GH_TOKEN}@github.com/${THIRD_REPO}.git /tmp/third_repo
 
-      - name: Debug specific strategy (if provided)
-        if: github.event.inputs.strategy_name != ''
+      - name: Decrypt and show metadata
         env:
-          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
-          THIRD_REPO: ${{ secrets.THIRD_REPO }}
           RESULTS_PASSWORD: ${{ secrets.RESULTS_PASSWORD || secrets.DATA_PASSWORD }}
-          STRAT: ${{ github.event.inputs.strategy_name }}
+          STRAT: ${{ github.event.inputs.strategy }}
         run: |
-          set -e
-          echo "=============================================="
-          echo "📊 دیباگ فایل یکپارچه برای استراتژی: $STRAT"
-          echo "=============================================="
-
-          AGG_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
-          echo "📥 مسیر فایل: $AGG_FILE"
-
-          # روش صحیح: دریافت با curl و هدر raw
-          HTTP_CODE=$(curl -s -o /tmp/trades.b64 -w "%{http_code}" \
-            -H "Authorization: token $GH_TOKEN" \
-            -H "Accept: application/vnd.github.v3.raw" \
-            "https://api.github.com/repos/$THIRD_REPO/contents/$AGG_FILE")
-
-          if [ "$HTTP_CODE" -ne 200 ]; then
-            echo "❌ فایل با کد $HTTP_CODE یافت نشد!"
-            echo "   لطفاً از لیست بالا یک نام معتبر انتخاب کنید."
+          cd /tmp/third_repo
+          ENC_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
+          
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "❌ فایل $ENC_FILE وجود ندارد!"
+            echo "📂 فایل‌های موجود در aggregated:"
+            ls -la aggregated/ 2>/dev/null || echo "   (پوشه aggregated خالی است)"
             exit 1
           fi
 
-          # تبدیل base64 به باینری
-          base64 -d /tmp/trades.b64 > /tmp/trades.enc 2>/dev/null
-          if [ ! -s /tmp/trades.enc ]; then
-            echo "❌ تبدیل base64 ناموفق یا فایل خالی است."
-            exit 1
-          fi
-          echo "✅ فایل دریافت شد (حجم: $(stat -c%s /tmp/trades.enc) bytes)"
+          echo "✅ فایل پیدا شد: $ENC_FILE"
+          echo "📄 رمزگشایی و نمایش metadata..."
 
-          # رمزگشایی
-          echo "🔓 رمزگشایی..."
+          cat "$ENC_FILE" | base64 -d > /tmp/trades.enc
+          
           node -e "
-            const crypto=require('crypto'),fs=require('fs');
-            const pass=process.env.RESULTS_PASSWORD;
+            const crypto = require('crypto');
+            const fs = require('fs');
+            const pass = process.env.RESULTS_PASSWORD;
             if (!pass) { console.error('❌ RESULTS_PASSWORD تنظیم نشده!'); process.exit(1); }
-            const data=fs.readFileSync('/tmp/trades.enc');
-            const key=crypto.scryptSync(pass,'salt',32);
-            const iv=data.slice(0,16),enc=data.slice(16);
-            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
-            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('/tmp/all_trades.json',dec);
+            const data = fs.readFileSync('/tmp/trades.enc');
+            const key = crypto.scryptSync(pass, 'salt', 32);
+            const iv = data.slice(0, 16);
+            const enc = data.slice(16);
+            const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
+            const dec = Buffer.concat([decipher.update(enc), decipher.final()]);
+            fs.writeFileSync('/tmp/all_trades.json', dec);
           "
-          if [ ! -s /tmp/all_trades.json ]; then
-            echo "❌ رمزگشایی ناموفق."
-            exit 1
-          fi
-          echo "✅ رمزگشایی موفق (حجم: $(stat -c%s /tmp/all_trades.json) bytes)"
 
           echo ""
           echo "=============================================="
-          echo "📄 ساختار فایل all_trades.json"
+          echo "📊 ساختار metadata برای استراتژی: $STRAT"
           echo "=============================================="
-
-          echo "🔹 تعداد کل معاملات:"
-          jq '.trades | length' /tmp/all_trades.json
-
-          echo ""
-          echo "🔹 کلیدهای metadata:"
-          jq '.metadata | keys' /tmp/all_trades.json
-
-          echo ""
-          echo "🔹 محتوای metadata:"
           jq '.metadata' /tmp/all_trades.json
 
           echo ""
-          echo "🔹 وضعیت move_percents:"
-          MOVE_PERCENTS=$(jq -r '.metadata.move_percents // "null"' /tmp/all_trades.json)
-          if [ "$MOVE_PERCENTS" = "null" ]; then
-            echo "   ❌ move_percents وجود ندارد!"
-          elif [ "$MOVE_PERCENTS" = "[]" ]; then
-            echo "   ⚠️ move_percents وجود دارد اما خالی است ([])"
-          else
-            echo "   ✅ move_percents وجود دارد: $MOVE_PERCENTS"
-          fi
-
-          echo ""
-          echo "🔹 خلاصه کامل:"
-          jq '{total_trades: (.trades | length), metadata: .metadata}' /tmp/all_trades.json
-
-      - name: Upload decrypted file (if exists)
-        if: github.event.inputs.strategy_name != ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: all_trades_${{ github.event.inputs.strategy_name }}
-          path: /tmp/all_trades.json
-          retention-days: 7
+          echo "🔍 بررسی move_percents:"
+          jq -r '.metadata.move_percents // "❌ وجود ندارد"' /tmp/all_trades.json
