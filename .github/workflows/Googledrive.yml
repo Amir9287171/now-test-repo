@@ -1,222 +1,48 @@
-name: Ultimate Google Drive Test
+name: Upload to Telegram
 
 on:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  test-drive:
+  upload:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Install required packages
+      - name: Create test file
         run: |
-          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+          echo "Hello from GitHub Actions" > test.txt
 
-      - name: Decode service account key
+      - name: Upload file to Telegram
         env:
-          GCP_KEY: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          if [ -z "$GCP_KEY" ]; then
-            echo "❌ Secret GCP_SERVICE_ACCOUNT_KEY تنظیم نشده است!"
-            exit 1
-          fi
-          echo "$GCP_KEY" > /tmp/gcp-key.json
-          echo "✅ کلید سرویس‌اکانت ذخیره شد."
+          # آپلود فایل به تلگرام
+          RESPONSE=$(curl -s -X POST \
+            -F "chat_id=$TELEGRAM_CHAT_ID" \
+            -F "document=@test.txt" \
+            -F "caption=Uploaded from GitHub Actions" \
+            "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument")
+          
+          echo "📤 پاسخ تلگرام:"
+          echo "$RESPONSE" | jq '.'
+          
+          # استخراج file_id برای استفاده بعدی
+          FILE_ID=$(echo "$RESPONSE" | jq -r '.result.document.file_id')
+          echo "✅ file_id: $FILE_ID"
+          echo "FILE_ID=$FILE_ID" >> $GITHUB_ENV
 
-      - name: Test Google Drive with Shared Drive
+      - name: Download file from Telegram (تست بازگردانی)
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
-          SHARED_DRIVE_ID: "1AWZdKa-CiRVmOyHWBDjrE7j7IwNJKgp_"
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: |
-          python - <<'EOF'
-          import os
-          import json
-          import time
-          import sys
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
-          import io
-
-          # ========== تنظیمات ==========
-          SCOPES = ['https://www.googleapis.com/auth/drive']
-          SHARED_DRIVE_ID = os.environ.get('SHARED_DRIVE_ID')
-          SERVICE_ACCOUNT_FILE = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
-
-          print("="*60)
-          print("🚀 شروع تست کامل Google Drive با Shared Drive")
-          print("="*60)
-
-          # ========== 1. احراز هویت ==========
-          try:
-              credentials = service_account.Credentials.from_service_account_file(
-                  SERVICE_ACCOUNT_FILE, scopes=SCOPES
-              )
-              drive_service = build('drive', 'v3', credentials=credentials)
-              print("✅ احراز هویت موفق بود.")
-          except Exception as e:
-              print(f"❌ خطا در احراز هویت: {e}")
-              sys.exit(1)
-
-          # ========== 2. تست لیست کردن فایل‌های Shared Drive ==========
-          print("\n📋 تست 1: لیست کردن فایل‌های Shared Drive")
-          try:
-              results = drive_service.files().list(
-                  q=f"'{SHARED_DRIVE_ID}' in parents and trashed=false",
-                  pageSize=10,
-                  supportsAllDrives=True,
-                  includeItemsFromAllDrives=True,
-                  fields="files(id, name, mimeType, createdTime)"
-              ).execute()
-              files = results.get('files', [])
-              print(f"   ✅ تعداد فایل‌های موجود: {len(files)}")
-              if files:
-                  print("   نمونه فایل‌ها:")
-                  for f in files[:3]:
-                      print(f"      - {f.get('name')} (ID: {f.get('id')})")
-          except Exception as e:
-              print(f"   ❌ خطا: {e}")
-
-          # ========== 3. تست آپلود فایل در Shared Drive ==========
-          print("\n📤 تست 2: آپلود فایل در Shared Drive")
-          test_content = f"Test file from GitHub Actions at {time.strftime('%Y-%m-%d %H:%M:%S')}"
-          with open('/tmp/test.txt', 'w') as f:
-              f.write(test_content)
-
-          file_metadata = {
-              'name': f'test_upload_{int(time.time())}.txt',
-              'parents': [SHARED_DRIVE_ID]
-          }
-          media = MediaFileUpload('/tmp/test.txt', mimetype='text/plain')
-
-          try:
-              file = drive_service.files().create(
-                  body=file_metadata,
-                  media_body=media,
-                  supportsAllDrives=True,
-                  fields='id, name, webViewLink'
-              ).execute()
-              file_id = file.get('id')
-              file_name = file.get('name')
-              print(f"   ✅ آپلود موفق!")
-              print(f"      نام: {file_name}")
-              print(f"      شناسه: {file_id}")
-              print(f"      لینک: {file.get('webViewLink')}")
-          except Exception as e:
-              print(f"   ❌ خطا در آپلود: {e}")
-              sys.exit(1)
-
-          # ========== 4. تست دانلود فایل ==========
-          print("\n📥 تست 3: دانلود فایل از Shared Drive")
-          try:
-              request = drive_service.files().get_media(fileId=file_id)
-              fh = io.BytesIO()
-              downloader = MediaIoBaseDownload(fh, request)
-              done = False
-              while not done:
-                  status, done = downloader.next_chunk()
-              fh.seek(0)
-              downloaded_content = fh.read().decode('utf-8')
-              print(f"   ✅ دانلود موفق!")
-              print(f"      محتوا: '{downloaded_content}'")
-              if downloaded_content == test_content:
-                  print("      ✅ محتوا با فایل اصلی مطابقت دارد!")
-              else:
-                  print("      ⚠️ محتوای دانلود شده با فایل اصلی متفاوت است!")
-          except Exception as e:
-              print(f"   ❌ خطا در دانلود: {e}")
-
-          # ========== 5. تست ساخت پوشه در Shared Drive ==========
-          print("\n📁 تست 4: ساخت پوشه در Shared Drive")
-          folder_metadata = {
-              'name': f'test_folder_{int(time.time())}',
-              'mimeType': 'application/vnd.google-apps.folder',
-              'parents': [SHARED_DRIVE_ID]
-          }
-          try:
-              folder = drive_service.files().create(
-                  body=folder_metadata,
-                  supportsAllDrives=True,
-                  fields='id, name'
-              ).execute()
-              folder_id = folder.get('id')
-              print(f"   ✅ ساخت پوشه موفق!")
-              print(f"      نام: {folder.get('name')}")
-              print(f"      شناسه: {folder_id}")
-          except Exception as e:
-              print(f"   ❌ خطا در ساخت پوشه: {e}")
-              folder_id = None
-
-          # ========== 6. تست آپلود در پوشه جدید ==========
-          if folder_id:
-              print("\n📤 تست 5: آپلود فایل در پوشه جدید")
-              file_metadata_folder = {
-                  'name': 'test_inside_folder.txt',
-                  'parents': [folder_id]
-              }
-              media2 = MediaFileUpload('/tmp/test.txt', mimetype='text/plain')
-              try:
-                  file2 = drive_service.files().create(
-                      body=file_metadata_folder,
-                      media_body=media2,
-                      supportsAllDrives=True,
-                      fields='id, name'
-                  ).execute()
-                  print(f"   ✅ آپلود در پوشه موفق!")
-                  print(f"      نام: {file2.get('name')}")
-                  print(f"      شناسه: {file2.get('id')}")
-              except Exception as e:
-                  print(f"   ❌ خطا در آپلود در پوشه: {e}")
-
-          # ========== 7. تست حذف فایل‌ها ==========
-          print("\n🗑️ تست 6: حذف فایل‌های تستی")
-          for f_id in [file_id, folder_id]:
-              if f_id:
-                  try:
-                      drive_service.files().delete(fileId=f_id).execute()
-                      print(f"   ✅ فایل/پوشه {f_id} حذف شد.")
-                  except Exception as e:
-                      print(f"   ⚠️ خطا در حذف {f_id}: {e}")
-
-          # ========== 8. تست فضای ذخیره‌سازی Shared Drive ==========
-          print("\n💾 تست 7: اطلاعات فضای Shared Drive")
-          try:
-              about = drive_service.about().get(
-                  fields='storageQuota',
-                  supportsAllDrives=True
-              ).execute()
-              quota = about.get('storageQuota', {})
-              print(f"   ✅ اطلاعات فضای ذخیره‌سازی:")
-              print(f"      فضای کل: {quota.get('limit', 'نامشخص')}")
-              print(f"      فضای استفاده شده: {quota.get('usage', 'نامشخص')}")
-              print(f"      فضای باقی‌مانده: {quota.get('usageInDrive', 'نامشخص')}")
-          except Exception as e:
-              print(f"   ⚠️ اطلاعات فضای ذخیره‌سازی در دسترس نیست: {e}")
-
-          # ========== جمع‌بندی نهایی ==========
-          print("\n" + "="*60)
-          print("✅ همه تست‌ها با موفقیت انجام شد!")
-          print("="*60)
-          print("🎯 نتیجه: سرویس‌اکانت شما به Shared Drive دسترسی کامل دارد و می‌توانید:")
-          print("   - آپلود فایل در Shared Drive")
-          print("   - دانلود فایل از Shared Drive")
-          print("   - ساخت پوشه در Shared Drive")
-          print("   - حذف فایل از Shared Drive")
-          print("   - لیست کردن فایل‌های Shared Drive")
-          EOF
-
-      - name: Cleanup
-        if: always()
-        run: |
-          rm -f /tmp/gcp-key.json /tmp/test.txt
-          echo "🧹 پاکسازی انجام شد."
+          # دریافت لینک دانلود فایل
+          FILE_PATH=$(curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getFile?file_id=$FILE_ID" | jq -r '.result.file_path')
+          
+          # دانلود فایل
+          curl -o downloaded.txt "https://api.telegram.org/file/bot$TELEGRAM_BOT_TOKEN/$FILE_PATH"
+          
+          echo "📥 فایل دانلود شد:"
+          cat downloaded.txt
