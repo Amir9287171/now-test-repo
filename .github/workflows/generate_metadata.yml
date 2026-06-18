@@ -1,4 +1,4 @@
-name.       : Generate Metadata (1.json)
+name: Generate Metadata (1.json)
 
 on:
   schedule:
