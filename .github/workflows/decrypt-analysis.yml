@@ -32,7 +32,7 @@ jobs:
       - name: Find and select 10 random .enc files
         id: select_files
         run: |
-          BASE_DIR="analysis_results/combo_10day/Test/BTCUSDT"
+          BASE_DIR="analysis_results/combo_10day/Ttt3/BTCUSDT"
           if [ ! -d "$BASE_DIR" ]; then
             echo "❌ مسیر $BASE_DIR وجود ندارد!"
             exit 1
