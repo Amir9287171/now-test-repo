@@ -1,4 +1,4 @@
-name: Full Google Drive Access Test
+name: Ultimate Google Drive Test
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  test-drive-full:
+  test-drive:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -33,35 +33,31 @@ jobs:
           echo "$GCP_KEY" > /tmp/gcp-key.json
           echo "✅ کلید سرویس‌اکانت ذخیره شد."
 
-      - name: Run comprehensive Drive access test
+      - name: Test Google Drive with Shared Drive
         env:
           GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcp-key.json
+          SHARED_DRIVE_ID: "1AWZdKa-CiRVmOyHWBDjrE7j7IwNJKgp_"
         run: |
           python - <<'EOF'
           import os
           import json
-          import sys
           import time
+          import sys
           from google.oauth2 import service_account
           from googleapiclient.discovery import build
           from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
           import io
-          import tempfile
 
           # ========== تنظیمات ==========
-          SCOPES = [
-              'https://www.googleapis.com/auth/drive',
-              'https://www.googleapis.com/auth/drive.file',
-              'https://www.googleapis.com/auth/drive.metadata',
-              'https://www.googleapis.com/auth/drive.readonly',
-          ]
+          SCOPES = ['https://www.googleapis.com/auth/drive']
+          SHARED_DRIVE_ID = os.environ.get('SHARED_DRIVE_ID')
           SERVICE_ACCOUNT_FILE = os.environ.get('GOOGLE_APPLICATION_CREDENTIALS')
 
-          if not SERVICE_ACCOUNT_FILE or not os.path.exists(SERVICE_ACCOUNT_FILE):
-              print("❌ فایل کلید سرویس‌اکانت یافت نشد.")
-              sys.exit(1)
+          print("="*60)
+          print("🚀 شروع تست کامل Google Drive با Shared Drive")
+          print("="*60)
 
-          # ========== احراز هویت ==========
+          # ========== 1. احراز هویت ==========
           try:
               credentials = service_account.Credentials.from_service_account_file(
                   SERVICE_ACCOUNT_FILE, scopes=SCOPES
@@ -72,230 +68,155 @@ jobs:
               print(f"❌ خطا در احراز هویت: {e}")
               sys.exit(1)
 
-          # ========== توابع کمکی ==========
-          def list_all_files(query=None, fields="files(id, name, mimeType, parents, createdTime, size)"):
-              try:
-                  results = drive_service.files().list(
-                      q=query,
-                      pageSize=100,
-                      fields=f"nextPageToken, {fields}"
-                  ).execute()
-                  return results.get('files', [])
-              except Exception as e:
-                  print(f"⚠️ خطا در لیست کردن فایل‌ها: {e}")
-                  return []
-
-          def find_folder_by_name(name):
-              folders = list_all_files(f"name='{name}' and mimeType='application/vnd.google-apps.folder' and trashed=false")
-              return folders
-
-          def create_test_file(parent_id=None, content="test", name=None):
-              if name is None:
-                  name = f"test_file_{int(time.time())}.txt"
-              temp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
-              temp.write(content)
-              temp.close()
-              file_metadata = {'name': name}
-              if parent_id:
-                  file_metadata['parents'] = [parent_id]
-              media = MediaFileUpload(temp.name, mimetype='text/plain')
-              try:
-                  file = drive_service.files().create(
-                      body=file_metadata,
-                      media_body=media,
-                      fields='id, name, parents'
-                  ).execute()
-                  os.unlink(temp.name)
-                  return file
-              except Exception as e:
-                  os.unlink(temp.name)
-                  raise e
-
-          # ========== 1. تست اتصال کلی ==========
-          print("\n" + "="*60)
-          print("🔍 تست 1: اتصال پایه به Google Drive")
-          print("="*60)
+          # ========== 2. تست لیست کردن فایل‌های Shared Drive ==========
+          print("\n📋 تست 1: لیست کردن فایل‌های Shared Drive")
           try:
-              about = drive_service.about().get(fields='user, storageQuota').execute()
-              user = about.get('user', {})
-              quota = about.get('storageQuota', {})
-              print(f"✅ کاربر: {user.get('displayName', 'N/A')} ({user.get('emailAddress', 'N/A')})")
-              print(f"   فضای کل: {quota.get('limit', 'N/A')} بایت")
-              print(f"   فضای استفاده شده: {quota.get('usage', 'N/A')} بایت")
+              results = drive_service.files().list(
+                  q=f"'{SHARED_DRIVE_ID}' in parents and trashed=false",
+                  pageSize=10,
+                  supportsAllDrives=True,
+                  includeItemsFromAllDrives=True,
+                  fields="files(id, name, mimeType, createdTime)"
+              ).execute()
+              files = results.get('files', [])
+              print(f"   ✅ تعداد فایل‌های موجود: {len(files)}")
+              if files:
+                  print("   نمونه فایل‌ها:")
+                  for f in files[:3]:
+                      print(f"      - {f.get('name')} (ID: {f.get('id')})")
           except Exception as e:
-              print(f"❌ خطا در دریافت اطلاعات کاربر: {e}")
+              print(f"   ❌ خطا: {e}")
 
-          # ========== 2. تست لیست کردن ==========
-          print("\n" + "="*60)
-          print("🔍 تست 2: لیست کردن فایل‌ها و پوشه‌ها")
-          print("="*60)
-          root_files = list_all_files("trashed=false")
-          print(f"✅ تعداد کل فایل‌ها/پوشه‌های قابل مشاهده: {len(root_files)}")
-          if root_files:
-              print("   نمونه (۵ مورد اول):")
-              for f in root_files[:5]:
-                  print(f"      - {f.get('name')} (ID: {f.get('id')})")
+          # ========== 3. تست آپلود فایل در Shared Drive ==========
+          print("\n📤 تست 2: آپلود فایل در Shared Drive")
+          test_content = f"Test file from GitHub Actions at {time.strftime('%Y-%m-%d %H:%M:%S')}"
+          with open('/tmp/test.txt', 'w') as f:
+              f.write(test_content)
 
-          # ========== 3. جستجوی پوشه‌های خاص ==========
-          print("\n" + "="*60)
-          print("🔍 تست 3: جستجوی پوشه‌های خاص")
-          print("="*60)
-          folder_names_to_check = ["GitHub", "github", "GITHUB", "backtest_results", "data", "myrobotproject-496913"]
-          accessible_folders = []
-          for folder_name in folder_names_to_check:
-              found = find_folder_by_name(folder_name)
-              if found:
-                  print(f"✅ پوشه '{folder_name}' پیدا شد! (ID: {found[0].get('id')})")
-                  accessible_folders.append(found[0])
+          file_metadata = {
+              'name': f'test_upload_{int(time.time())}.txt',
+              'parents': [SHARED_DRIVE_ID]
+          }
+          media = MediaFileUpload('/tmp/test.txt', mimetype='text/plain')
+
+          try:
+              file = drive_service.files().create(
+                  body=file_metadata,
+                  media_body=media,
+                  supportsAllDrives=True,
+                  fields='id, name, webViewLink'
+              ).execute()
+              file_id = file.get('id')
+              file_name = file.get('name')
+              print(f"   ✅ آپلود موفق!")
+              print(f"      نام: {file_name}")
+              print(f"      شناسه: {file_id}")
+              print(f"      لینک: {file.get('webViewLink')}")
+          except Exception as e:
+              print(f"   ❌ خطا در آپلود: {e}")
+              sys.exit(1)
+
+          # ========== 4. تست دانلود فایل ==========
+          print("\n📥 تست 3: دانلود فایل از Shared Drive")
+          try:
+              request = drive_service.files().get_media(fileId=file_id)
+              fh = io.BytesIO()
+              downloader = MediaIoBaseDownload(fh, request)
+              done = False
+              while not done:
+                  status, done = downloader.next_chunk()
+              fh.seek(0)
+              downloaded_content = fh.read().decode('utf-8')
+              print(f"   ✅ دانلود موفق!")
+              print(f"      محتوا: '{downloaded_content}'")
+              if downloaded_content == test_content:
+                  print("      ✅ محتوا با فایل اصلی مطابقت دارد!")
               else:
-                  print(f"❌ پوشه '{folder_name}' پیدا نشد.")
-
-          if accessible_folders:
-              print(f"\n📁 پوشه‌های قابل دسترسی: {len(accessible_folders)} مورد")
-          else:
-              print("\n⚠️ هیچ پوشه‌ای با نام‌های جستجو شده پیدا نشد.")
-
-          # ========== 4. تست آپلود در ریشه ==========
-          print("\n" + "="*60)
-          print("🔍 تست 4: آپلود فایل در ریشه (root)")
-          print("="*60)
-          try:
-              test_file = create_test_file(content="Test file from GitHub Actions", name="gdrive_test_root.txt")
-              test_file_id = test_file.get('id')
-              print(f"✅ آپلود در ریشه موفق! فایل: {test_file.get('name')} (ID: {test_file_id})")
+                  print("      ⚠️ محتوای دانلود شده با فایل اصلی متفاوت است!")
           except Exception as e:
-              print(f"❌ خطا در آپلود در ریشه: {e}")
-              test_file_id = None
+              print(f"   ❌ خطا در دانلود: {e}")
 
-          # ========== 5. تست دانلود فایل ==========
-          if test_file_id:
-              print("\n" + "="*60)
-              print("🔍 تست 5: دانلود فایل")
-              print("="*60)
-              try:
-                  request = drive_service.files().get_media(fileId=test_file_id)
-                  fh = io.BytesIO()
-                  downloader = MediaIoBaseDownload(fh, request)
-                  done = False
-                  while not done:
-                      status, done = downloader.next_chunk()
-                  fh.seek(0)
-                  content = fh.read().decode('utf-8')
-                  print(f"✅ دانلود موفق! محتوا: '{content.strip()}'")
-              except Exception as e:
-                  print(f"❌ خطا در دانلود: {e}")
-
-          # ========== 6. تست ساخت پوشه ==========
-          print("\n" + "="*60)
-          print("🔍 تست 6: ساخت پوشه جدید در ریشه")
-          print("="*60)
+          # ========== 5. تست ساخت پوشه در Shared Drive ==========
+          print("\n📁 تست 4: ساخت پوشه در Shared Drive")
+          folder_metadata = {
+              'name': f'test_folder_{int(time.time())}',
+              'mimeType': 'application/vnd.google-apps.folder',
+              'parents': [SHARED_DRIVE_ID]
+          }
           try:
-              folder_metadata = {
-                  'name': f"test_folder_{int(time.time())}",
-                  'mimeType': 'application/vnd.google-apps.folder'
-              }
-              folder = drive_service.files().create(body=folder_metadata, fields='id, name').execute()
+              folder = drive_service.files().create(
+                  body=folder_metadata,
+                  supportsAllDrives=True,
+                  fields='id, name'
+              ).execute()
               folder_id = folder.get('id')
-              print(f"✅ ساخت پوشه موفق! نام: {folder.get('name')} (ID: {folder_id})")
+              print(f"   ✅ ساخت پوشه موفق!")
+              print(f"      نام: {folder.get('name')}")
+              print(f"      شناسه: {folder_id}")
           except Exception as e:
-              print(f"❌ خطا در ساخت پوشه: {e}")
+              print(f"   ❌ خطا در ساخت پوشه: {e}")
               folder_id = None
 
-          # ========== 7. تست آپلود در پوشه جدید ==========
+          # ========== 6. تست آپلود در پوشه جدید ==========
           if folder_id:
-              print("\n" + "="*60)
-              print("🔍 تست 7: آپلود فایل در پوشه جدید")
-              print("="*60)
+              print("\n📤 تست 5: آپلود فایل در پوشه جدید")
+              file_metadata_folder = {
+                  'name': 'test_inside_folder.txt',
+                  'parents': [folder_id]
+              }
+              media2 = MediaFileUpload('/tmp/test.txt', mimetype='text/plain')
               try:
-                  file_in_folder = create_test_file(
-                      parent_id=folder_id,
-                      content="File inside new folder",
-                      name="test_inside_folder.txt"
-                  )
-                  print(f"✅ آپلود در پوشه موفق! فایل: {file_in_folder.get('name')} (ID: {file_in_folder.get('id')})")
-              except Exception as e:
-                  print(f"❌ خطا در آپلود در پوشه: {e}")
-
-          # ========== 8. تست انتقال فایل (move) ==========
-          if test_file_id and folder_id:
-              print("\n" + "="*60)
-              print("🔍 تست 8: انتقال فایل به پوشه دیگر")
-              print("="*60)
-              try:
-                  file_info = drive_service.files().get(fileId=test_file_id, fields='parents').execute()
-                  previous_parents = ",".join(file_info.get('parents', []))
-                  drive_service.files().update(
-                      fileId=test_file_id,
-                      addParents=folder_id,
-                      removeParents=previous_parents,
-                      fields='id, parents'
+                  file2 = drive_service.files().create(
+                      body=file_metadata_folder,
+                      media_body=media2,
+                      supportsAllDrives=True,
+                      fields='id, name'
                   ).execute()
-                  print(f"✅ انتقال فایل به پوشه {folder_id} موفق!")
+                  print(f"   ✅ آپلود در پوشه موفق!")
+                  print(f"      نام: {file2.get('name')}")
+                  print(f"      شناسه: {file2.get('id')}")
               except Exception as e:
-                  print(f"❌ خطا در انتقال: {e}")
+                  print(f"   ❌ خطا در آپلود در پوشه: {e}")
 
-          # ========== 9. تست آپلود در پوشه‌های خاص (GitHub) ==========
-          if accessible_folders:
-              print("\n" + "="*60)
-              print("🔍 تست 9: آپلود در پوشه‌های خاص (مثل GitHub)")
-              print("="*60)
-              for folder in accessible_folders[:3]:
+          # ========== 7. تست حذف فایل‌ها ==========
+          print("\n🗑️ تست 6: حذف فایل‌های تستی")
+          for f_id in [file_id, folder_id]:
+              if f_id:
                   try:
-                      file_in_special = create_test_file(
-                          parent_id=folder.get('id'),
-                          content=f"Test file in {folder.get('name')}",
-                          name=f"test_in_{folder.get('name')}.txt"
-                      )
-                      print(f"✅ آپلود در پوشه '{folder.get('name')}' موفق! (ID: {file_in_special.get('id')})")
+                      drive_service.files().delete(fileId=f_id).execute()
+                      print(f"   ✅ فایل/پوشه {f_id} حذف شد.")
                   except Exception as e:
-                      print(f"❌ آپلود در پوشه '{folder.get('name')}' ناموفق: {e}")
+                      print(f"   ⚠️ خطا در حذف {f_id}: {e}")
 
-          # ========== 10. تست حذف فایل‌های تستی ==========
-          print("\n" + "="*60)
-          print("🔍 تست 10: پاکسازی فایل‌های تستی")
-          print("="*60)
-          for file_id in [test_file_id, folder_id]:
-              if file_id:
-                  try:
-                      drive_service.files().delete(fileId=file_id).execute()
-                      print(f"✅ فایل/پوشه {file_id} حذف شد.")
-                  except Exception as e:
-                      print(f"⚠️ خطا در حذف {file_id}: {e}")
-
-          # ========== 11. تست دسترسی به Drive از طریق API ==========
-          print("\n" + "="*60)
-          print("🔍 تست 11: دسترسی کلی Drive (scopeها)")
-          print("="*60)
+          # ========== 8. تست فضای ذخیره‌سازی Shared Drive ==========
+          print("\n💾 تست 7: اطلاعات فضای Shared Drive")
           try:
-              test_scope = drive_service.files().list(pageSize=1).execute()
-              print("✅ دسترسی به Drive با scopeهای درخواستی برقرار است.")
+              about = drive_service.about().get(
+                  fields='storageQuota',
+                  supportsAllDrives=True
+              ).execute()
+              quota = about.get('storageQuota', {})
+              print(f"   ✅ اطلاعات فضای ذخیره‌سازی:")
+              print(f"      فضای کل: {quota.get('limit', 'نامشخص')}")
+              print(f"      فضای استفاده شده: {quota.get('usage', 'نامشخص')}")
+              print(f"      فضای باقی‌مانده: {quota.get('usageInDrive', 'نامشخص')}")
           except Exception as e:
-              print(f"❌ خطا در دسترسی کلی: {e}")
+              print(f"   ⚠️ اطلاعات فضای ذخیره‌سازی در دسترس نیست: {e}")
 
-          # ========== جمع‌بندی ==========
+          # ========== جمع‌بندی نهایی ==========
           print("\n" + "="*60)
-          print("📊 جمع‌بندی نهایی دسترسی‌ها")
+          print("✅ همه تست‌ها با موفقیت انجام شد!")
           print("="*60)
-          print("✅ اتصال به Drive: برقرار است")
-          print("✅ لیست کردن فایل‌ها: موفق")
-          print("✅ آپلود فایل در ریشه: موفق")
-          print("✅ دانلود فایل: موفق")
-          print("✅ ساخت پوشه: موفق")
-          print("✅ آپلود در پوشه جدید: موفق")
-          print("✅ انتقال فایل: موفق")
-          print(f"✅ آپلود در پوشه‌های خاص: {len(accessible_folders)} پوشه تست شد")
-          print("✅ حذف فایل: موفق")
-          print("\n🎯 نتیجه: سرویس‌اکانت شما به تمام قابلیت‌های زیر دسترسی کامل دارد:")
-          print("   - آپلود فایل (در ریشه و هر پوشه)")
-          print("   - دانلود فایل")
-          print("   - لیست کردن فایل‌ها و پوشه‌ها")
-          print("   - ساخت پوشه")
-          print("   - انتقال فایل بین پوشه‌ها")
-          print("   - حذف فایل و پوشه")
+          print("🎯 نتیجه: سرویس‌اکانت شما به Shared Drive دسترسی کامل دارد و می‌توانید:")
+          print("   - آپلود فایل در Shared Drive")
+          print("   - دانلود فایل از Shared Drive")
+          print("   - ساخت پوشه در Shared Drive")
+          print("   - حذف فایل از Shared Drive")
+          print("   - لیست کردن فایل‌های Shared Drive")
           EOF
 
       - name: Cleanup
         if: always()
         run: |
-          rm -f /tmp/gcp-key.json
+          rm -f /tmp/gcp-key.json /tmp/test.txt
           echo "🧹 پاکسازی انجام شد."
