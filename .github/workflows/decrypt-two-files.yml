@@ -63,28 +63,45 @@ jobs:
         run: |
           echo "::add-mask::$USER_PASS"
           mkdir -p /tmp/decrypted
+
+          # [رفع خطای سینتکس] نوشتن کد پایتون در یک فایل مجزا
+          cat > /tmp/process_file.py << 'EOF'
+          import pandas as pd
+          import sys
+
+          file_path = sys.argv[1]
+          try:
+              df = pd.read_parquet(file_path)
+              print(f'   ✅ تعداد رکوردها: {len(df)}')
+              print(f'   📋 ستون‌ها: {list(df.columns)}')
+              print('   📝 ۵ ردیف اول:')
+              print(df.head(5).to_string())
+          except Exception as e:
+              print(f'   ❌ خطا در خواندن Parquet: {e}')
+              sys.exit(1)
+          EOF
+
           TOTAL=$(cat /tmp/all_enc_files.txt | wc -l)
           echo "=============================================="
           echo "   🔓 شروع رمزگشایی $TOTAL فایل"
           echo "=============================================="
-          
+
           SUCCESS=0
           FAIL=0
           EMPTY=0
           FAILED_FILES=""
           EMPTY_FILES=""
-          
+
           while IFS= read -r ENC_FILE; do
             if [ -z "$ENC_FILE" ]; then continue; fi
-            
+
             BASE_NAME=$(basename "$ENC_FILE" .enc)
-            EXT=""
             TMP_OUT="/tmp/decrypted/${BASE_NAME}.dec"
-            
+
             echo "----------------------------------------"
             echo "📄 پردازش: $ENC_FILE"
-            
-            # رمزگشایی
+
+            # رمزگشایی با Node.js
             node -e "
               const crypto=require('crypto'),fs=require('fs');
               const pass=process.env.USER_PASS;
@@ -97,7 +114,7 @@ jobs:
               fs.writeFileSync('$TMP_OUT',dec);
               console.log('   ✅ رمزگشایی موفق');
             " 2>/tmp/decrypt_error.log
-            
+
             if [ $? -ne 0 ]; then
               echo "   ❌ خطا در رمزگشایی $BASE_NAME"
               cat /tmp/decrypt_error.log
@@ -105,7 +122,7 @@ jobs:
               FAILED_FILES="$FAILED_FILES\n- $BASE_NAME (خطا)"
               continue
             fi
-            
+
             if [ ! -s "$TMP_OUT" ]; then
               echo "   ❌ فایل خالی است"
               EMPTY=$((EMPTY+1))
@@ -113,24 +130,12 @@ jobs:
               rm -f "$TMP_OUT"
               continue
             fi
-            
+
             # تشخیص نوع فایل بر اساس محتوا
             if head -c 4 "$TMP_OUT" | grep -q "PAR1"; then
-              # فایل Parquet
               echo "   📊 نوع: Parquet"
-              python3 -c "
-import pandas as pd
-import sys
-try:
-    df = pd.read_parquet('$TMP_OUT')
-    print('   ✅ تعداد رکوردها:', len(df))
-    print('   📋 ستون‌ها:', list(df.columns))
-    print('   📝 ۵ ردیف اول:')
-    print(df.head(5).to_string())
-except Exception as e:
-    print('   ❌ خطا در خواندن Parquet:', e)
-    sys.exit(1)
-"
+              # اجرای کد پایتون بدون نقل‌قول‌های پیچیده
+              python3 /tmp/process_file.py "$TMP_OUT"
               if [ $? -eq 0 ]; then
                 SUCCESS=$((SUCCESS+1))
               else
@@ -138,7 +143,6 @@ except Exception as e:
                 FAILED_FILES="$FAILED_FILES\n- $BASE_NAME (Parquet خراب)"
               fi
             else
-              # فرض CSV
               echo "   📊 نوع: CSV"
               LINE_COUNT=$(wc -l < "$TMP_OUT")
               echo "   📝 تعداد خطوط: $LINE_COUNT"
@@ -164,7 +168,7 @@ except Exception as e:
           echo "✅ رمزگشایی موفق: $SUCCESS"
           echo "❌ خطا: $FAIL"
           echo "⚠️ خالی: $EMPTY"
-          
+
           if [ -n "$FAILED_FILES" ]; then
             echo ""
             echo "📋 لیست فایل‌های ناموفق:"
@@ -175,7 +179,7 @@ except Exception as e:
             echo "📋 لیست فایل‌های خالی:"
             echo -e "$EMPTY_FILES"
           fi
-          
+
           echo "TOTAL=$TOTAL" > /tmp/report.txt
           echo "SUCCESS=$SUCCESS" >> /tmp/report.txt
           echo "FAIL=$FAIL" >> /tmp/report.txt
