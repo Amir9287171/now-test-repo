@@ -100,7 +100,7 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam) {
             closestToTarget = diffFromTarget;
 
             // محاسبه حد ضرر اولیه
-            const stopLoss = entryPrice * (1 - STOP_LOSS_PERCENT / 100);
+            const stopLossInitial = -0.5;   // یا هر مقدار دیگری
 
             // محاسبه حد سود
             const takeProfit = entryPrice * (1 + TAKE_PROFIT_PERCENT / 100);
