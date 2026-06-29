@@ -79,5 +79,95 @@
   },
   {
     "signature_path": "combo_monthly/Best_15m/Best_15m_chunk_13_20260628T224210Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_1h/Best_1h_chunk_0_20260629T022910Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_1h/Best_1h_chunk_1_20260629T022938Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_10_20260629T023002Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_11_20260629T023115Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_12_20260629T023659Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_13_20260629T023510Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_14_20260629T022303Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_1_20260629T022938Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_2_20260629T022906Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_3_20260629T022059Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_4_20260629T023330Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_5_20260629T022856Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_6_20260629T023120Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_7_20260629T023251Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_8_20260629T023106Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_30m/Best_30m_chunk_9_20260629T022926Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_14_20260629T022303Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_15_20260629T023722Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_16_20260629T024050Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_17_20260629T024326Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_18_20260629T024108Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_19_20260629T024449Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_20_20260629T042105Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_21_20260629T042603Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_22_20260629T042849Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_23_20260629T042828Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_24_20260629T042523Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_25_20260629T043414Z"
+  },
+  {
+    "signature_path": "combo_monthly/Best_1h/Best_1h_chunk_1_20260629T022938Z"
+  },
+  {
+    "signature_path": "combo_monthly/Best_30m/Best_30m_chunk_14_20260629T022303Z"
   }
 ]
