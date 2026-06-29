@@ -259,5 +259,20 @@
   },
   {
     "signature_path": "combo_monthly/Dtsv/Dtsv_chunk_15_20260629T062639Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_5_20260629T102519Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_6_20260629T104139Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_7_20260629T104526Z"
+  },
+  {
+    "signature_path": "combo_monthly/Ttt3/Ttt3_chunk_7_20260629T104526Z"
+  },
+  {
+    "signature_path": "combo_monthly/Ttt3/Ttt3_chunk_8_20260629T085344Z"
   }
 ]
