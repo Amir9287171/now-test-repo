@@ -226,5 +226,125 @@
   {
     "coin_composition": "Best",
     "signature": "combo_monthly/Best_30m/Best_30m_chunk_14_20260629T022303Z"
+  },
+  {
+    "coin_composition": "Best",
+    "signature": "combo_10day/Best_5m/Best_5m_chunk_0_20260629T064742Z"
+  },
+  {
+    "coin_composition": "Best",
+    "signature": "combo_10day/Best_5m/Best_5m_chunk_1_20260629T064341Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_10_20260629T062451Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_11_20260629T062600Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_12_20260629T062538Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_13_20260629T062651Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_14_20260629T061824Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_1_20260629T064341Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_2_20260629T063013Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_3_20260629T062411Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_4_20260629T062701Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_5_20260629T062600Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_6_20260629T063200Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_7_20260629T062602Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_8_20260629T062536Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_10day/Dtsv/Dtsv_chunk_9_20260629T062624Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_15_20260629T062639Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_16_20260629T062826Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_17_20260629T064219Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_18_20260629T064240Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_19_20260629T064400Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_20_20260629T082159Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_21_20260629T082419Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_22_20260629T082752Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_23_20260629T082747Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_24_20260629T082614Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_25_20260629T081938Z"
+  },
+  {
+    "coin_composition": "Best",
+    "signature": "combo_monthly/Best_5m/Best_5m_chunk_1_20260629T064341Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_monthly/Dtsv/Dtsv_chunk_14_20260629T061824Z"
+  },
+  {
+    "coin_composition": "Dtsv",
+    "signature": "combo_monthly/Dtsv/Dtsv_chunk_15_20260629T062639Z"
   }
 ]
