@@ -172,5 +172,95 @@
   },
   {
     "signature_path": "combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z"
+  },
+  {
+    "signature_path": "combo_10day/Best_5m/Best_5m_chunk_0_20260630T064506Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_0_20260630T064506Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_10_20260630T062539Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_11_20260630T062621Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_12_20260630T062826Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_13_20260630T062911Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_1_20260630T062953Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_2_20260630T062520Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_3_20260630T062558Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_4_20260630T063339Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_5_20260630T062330Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_6_20260630T062656Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_7_20260630T063032Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_8_20260630T062838Z"
+  },
+  {
+    "signature_path": "combo_10day/Dtsv/Dtsv_chunk_9_20260630T063402Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_14_20260630T062608Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_15_20260630T063317Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_16_20260630T064605Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_17_20260630T064531Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_18_20260630T064351Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_19_20260630T064015Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_20_20260630T083020Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_21_20260630T082920Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_22_20260630T082344Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_23_20260630T073659Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_24_20260630T083104Z"
+  },
+  {
+    "signature_path": "combo_10day/Ttt3/Ttt3_chunk_25_20260630T083500Z"
+  },
+  {
+    "signature_path": "combo_monthly/Best_5m/Best_5m_chunk_0_20260630T064506Z"
+  },
+  {
+    "signature_path": "combo_monthly/Dtsv/Dtsv_chunk_13_20260630T062911Z"
+  },
+  {
+    "signature_path": "combo_monthly/Dtsv/Dtsv_chunk_14_20260630T062608Z"
   }
 ]
