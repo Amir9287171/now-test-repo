@@ -1086,5 +1086,17 @@
   {
     "coin_composition": "Dtsv",
     "signature": "combo_monthly/Dtsv/Dtsv_chunk_14_20260630T062608Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_0_20260630T091509Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_10day/Ttt3/Ttt3_chunk_1_20260630T091308Z"
+  },
+  {
+    "coin_composition": "Ttt3",
+    "signature": "combo_monthly/Ttt3/Ttt3_chunk_1_20260630T091308Z"
   }
 ]
