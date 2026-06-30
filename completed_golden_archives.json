@@ -71,6 +71,7 @@
   "combo_10day/Dtsv/Dtsv_chunk_9_20260630T063402Z",
   "combo_10day/Ttt3/Ttt3_chunk_0_20260630T091509Z",
   "combo_10day/Ttt3/Ttt3_chunk_0_20260630T093224Z",
+  "combo_10day/Ttt3/Ttt3_chunk_0_20260630T113418Z",
   "combo_10day/Ttt3/Ttt3_chunk_14_20260630T062608Z",
   "combo_10day/Ttt3/Ttt3_chunk_15_20260630T063317Z",
   "combo_10day/Ttt3/Ttt3_chunk_16_20260630T064605Z",
@@ -90,6 +91,5 @@
   "combo_monthly/Best_5m/Best_5m_chunk_0_20260630T064506Z",
   "combo_monthly/Dtsv/Dtsv_chunk_13_20260630T062911Z",
   "combo_monthly/Dtsv/Dtsv_chunk_14_20260630T062608Z",
-  "combo_monthly/Ttt3/Ttt3_chunk_1_20260630T091308Z",
-  "combo_10day/Ttt3/Ttt3_chunk_0_20260630T113418Z"
+  "combo_monthly/Ttt3/Ttt3_chunk_1_20260630T091308Z"
 ]
