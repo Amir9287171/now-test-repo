@@ -145998,5 +145998,593 @@
   {
     "coin_composition": "XRPUSDT_SOLUSDT",
     "signature": "signatures/combo_monthly/Dtsv/XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Dtsv/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/XRPUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_SOLUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "ETHUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/ETHUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_ETHUSDT_XRPUSDT_SOLUSDT/monthly_fibonacci_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl"
+  },
+  {
+    "coin_composition": "BTCUSDT_PAXGUSDT",
+    "signature": "signatures/combo_monthly/Ttt3/BTCUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl"
   }
 ]
