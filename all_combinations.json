@@ -3,41 +3,6 @@
     "module": "combo_10day",
     "strat": "Ttt3",
     "coin": "ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "fixed_30d",
-    "model": "fibonacci_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "Ttt3",
-    "coin": "ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_pre_1d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "Ttt3",
-    "coin": "ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_pre_1d",
-    "model": "fibonacci_full"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "Ttt3",
-    "coin": "ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_pre_1d",
-    "model": "fibonacci_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "Ttt3",
-    "coin": "ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_pre_2d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "Ttt3",
-    "coin": "ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
     "interval": "CPI_pre_2d",
     "model": "fibonacci_full"
   },
