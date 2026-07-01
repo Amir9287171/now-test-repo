@@ -1,0 +1,196 @@
+name: Decrypt Three Analysis Files (Golden + Portfolios + Reports)
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_password:
+        description: 'رمز رمزگشایی (RESULTS_PASSWORD)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  decrypt-three-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout third repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.CROSS_REPO_TOKEN }}
+          repository: ${{ secrets.THIRD_REPO }}
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup Python and install dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install pandas pyarrow
+
+      - name: Decrypt golden_scores.parquet.enc
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          echo "::add-mask::$USER_PASS"
+          mkdir -p /tmp/decrypted
+          ENC_FILE="golden_scores.parquet.enc"
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "❌ فایل $ENC_FILE در مخزن سوم یافت نشد!"
+            exit 1
+          fi
+          echo "📄 پردازش: $ENC_FILE"
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.USER_PASS;
+            const data=fs.readFileSync('$ENC_FILE');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('/tmp/decrypted/golden_scores.parquet',dec);
+          "
+          if [ ! -f /tmp/decrypted/golden_scores.parquet ]; then
+            echo "❌ رمزگشایی golden_scores.parquet.enc ناموفق بود."
+            exit 1
+          fi
+          echo "✅ golden_scores.parquet.enc رمزگشایی شد."
+
+      - name: Decrypt portfolios_scores.parquet.enc
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          ENC_FILE="analysis_results/portfolios_scores.parquet.enc"
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "❌ فایل $ENC_FILE در مخزن سوم یافت نشد!"
+            exit 1
+          fi
+          echo "📄 پردازش: $ENC_FILE"
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.USER_PASS;
+            const data=fs.readFileSync('$ENC_FILE');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('/tmp/decrypted/portfolios_scores.parquet',dec);
+          "
+          if [ ! -f /tmp/decrypted/portfolios_scores.parquet ]; then
+            echo "❌ رمزگشایی portfolios_scores.parquet.enc ناموفق بود."
+            exit 1
+          fi
+          echo "✅ portfolios_scores.parquet.enc رمزگشایی شد."
+
+      - name: Decrypt reports.tar.gz.enc
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          ENC_FILE="reports.tar.gz.enc"
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "❌ فایل $ENC_FILE در مخزن سوم یافت نشد!"
+            exit 1
+          fi
+          echo "📄 پردازش: $ENC_FILE"
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.USER_PASS;
+            const data=fs.readFileSync('$ENC_FILE');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('/tmp/decrypted/reports.tar.gz',dec);
+          "
+          if [ ! -f /tmp/decrypted/reports.tar.gz ]; then
+            echo "❌ رمزگشایی reports.tar.gz.enc ناموفق بود."
+            exit 1
+          fi
+          echo "✅ reports.tar.gz.enc رمزگشایی شد."
+
+      - name: Convert golden_scores.parquet to CSV and display
+        run: |
+          echo "=============================================="
+          echo "   📊 golden_scores.parquet → CSV"
+          echo "=============================================="
+          python3 -c "
+          import pandas as pd
+          df = pd.read_parquet('/tmp/decrypted/golden_scores.parquet')
+          csv_path = '/tmp/decrypted/golden_scores.csv'
+          df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+          print(f'✅ CSV ذخیره شد: {csv_path}')
+          print(f'📊 تعداد ردیف‌ها: {len(df)}')
+          print(f'📊 تعداد ستون‌ها: {len(df.columns)}')
+          print(f'📋 ستون‌ها: {list(df.columns)}')
+          print('\\n📝 ۵ ردیف اول:')
+          print(df.head(5).to_string())
+          "
+
+      - name: Convert portfolios_scores.parquet to CSV and display
+        run: |
+          echo "=============================================="
+          echo "   📊 portfolios_scores.parquet → CSV"
+          echo "=============================================="
+          python3 -c "
+          import pandas as pd
+          df = pd.read_parquet('/tmp/decrypted/portfolios_scores.parquet')
+          csv_path = '/tmp/decrypted/portfolios_scores.csv'
+          df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+          print(f'✅ CSV ذخیره شد: {csv_path}')
+          print(f'📊 تعداد ردیف‌ها: {len(df)}')
+          print(f'📊 تعداد ستون‌ها: {len(df.columns)}')
+          print(f'📋 ستون‌ها: {list(df.columns)}')
+          print('\\n📝 ۵ ردیف اول:')
+          print(df.head(5).to_string())
+          "
+
+      - name: Extract and display reports.tar.gz content
+        run: |
+          echo "=============================================="
+          echo "   📦 reports.tar.gz (خروجی generate-reports)"
+          echo "=============================================="
+          mkdir -p /tmp/decrypted/reports
+          tar -xzf /tmp/decrypted/reports.tar.gz -C /tmp/decrypted/reports
+          echo "✅ reports.tar.gz استخراج شد."
+          echo ""
+          echo "📂 محتوای پوشه reports:"
+          find /tmp/decrypted/reports -type f -exec ls -la {} \;
+          echo ""
+          echo "📄 نمایش محتوای فایل‌های JSON (تا ۱۰۰ خط اول):"
+          find /tmp/decrypted/reports -name "*.json" -type f | while read -r f; do
+            echo "=============================================="
+            echo "📄 فایل: $f"
+            echo "=============================================="
+            cat "$f" | head -100
+            echo ""
+          done
+
+      - name: Generate final report
+        run: |
+          echo "=============================================="
+          echo "   📋 گزارش نهایی"
+          echo "=============================================="
+          echo "✅ golden_scores.parquet → CSV (رمزگشایی و تبدیل شد)"
+          echo "✅ portfolios_scores.parquet → CSV (رمزگشایی و تبدیل شد)"
+          echo "✅ reports.tar.gz.enc → استخراج و نمایش محتوا"
+
+      - name: Wait 5 minutes and cleanup
+        run: |
+          echo "⏳ منتظر ۵ دقیقه می‌مانیم تا فایل‌های موقت پاک شوند..."
+          sleep 300
+          rm -rf /tmp/decrypted
+          echo "🧹 پاکسازی کامل شد."
+
+      - name: Save all CSV files as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: decrypted-three-files-csv
+          path: /tmp/decrypted/*.csv
