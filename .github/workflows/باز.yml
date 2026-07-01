@@ -1,4 +1,4 @@
-name: Decrypt and Print First 40 Rows (No Format Change)
+name: Decrypt and Extract Three Analysis Files (Golden + Portfolios + Reports)
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ permissions:
   actions: write
 
 jobs:
-  decrypt-and-print:
+  decrypt-and-store:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout third repository
@@ -29,19 +29,12 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Setup Python and install pandas
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-      - run: pip install pandas pyarrow
-
-      - name: Decrypt golden_scores.parquet.enc (if exists)
+      - name: Decrypt and extract golden_scores.parquet.enc
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           echo "::add-mask::$USER_PASS"
           ENC_FILE="golden_scores.parquet.enc"
-          DEC_FILE="golden_scores.parquet"
           if [ ! -f "$ENC_FILE" ]; then
             echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
             exit 0
@@ -55,25 +48,32 @@ jobs:
             const iv=data.slice(0,16),enc=data.slice(16);
             const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
             const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('$DEC_FILE',dec);
+            fs.writeFileSync('golden_scores.tar.gz',dec);
           " 2>/tmp/decrypt_error.log
           if [ $? -ne 0 ]; then
             echo "❌ رمزگشایی $ENC_FILE ناموفق بود."
             cat /tmp/decrypt_error.log
             exit 0
           fi
-          if [ ! -s "$DEC_FILE" ]; then
+          if [ ! -s golden_scores.tar.gz ]; then
             echo "⚠️ فایل رمزگشایی‌شده خالی است."
             exit 0
           fi
-          echo "✅ $DEC_FILE رمزگشایی شد."
+          echo "✅ رمزگشایی موفق شد. استخراج golden_scores.parquet از tar.gz..."
+          tar -xzf golden_scores.tar.gz
+          if [ -f golden_scores.parquet ]; then
+            echo "✅ golden_scores.parquet استخراج شد."
+            rm -f golden_scores.tar.gz golden_scores.parquet.enc
+            echo "🗑️ فایل‌های موقت حذف شدند."
+          else
+            echo "⚠️ استخراج golden_scores.parquet ناموفق بود. فایل tar.gz باقی می‌ماند."
+          fi
 
-      - name: Decrypt portfolios_scores.parquet.enc (if exists)
+      - name: Decrypt and extract portfolios_scores.parquet.enc
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           ENC_FILE="analysis_results/portfolios_scores.parquet.enc"
-          DEC_FILE="analysis_results/portfolios_scores.parquet"
           if [ ! -f "$ENC_FILE" ]; then
             echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
             exit 0
@@ -87,25 +87,32 @@ jobs:
             const iv=data.slice(0,16),enc=data.slice(16);
             const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
             const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('$DEC_FILE',dec);
+            fs.writeFileSync('portfolios_scores.tar.gz',dec);
           " 2>/tmp/decrypt_error.log
           if [ $? -ne 0 ]; then
             echo "❌ رمزگشایی $ENC_FILE ناموفق بود."
             cat /tmp/decrypt_error.log
             exit 0
           fi
-          if [ ! -s "$DEC_FILE" ]; then
+          if [ ! -s portfolios_scores.tar.gz ]; then
             echo "⚠️ فایل رمزگشایی‌شده خالی است."
             exit 0
           fi
-          echo "✅ $DEC_FILE رمزگشایی شد."
+          echo "✅ رمزگشایی موفق شد. استخراج portfolios_scores.parquet از tar.gz..."
+          tar -xzf portfolios_scores.tar.gz
+          if [ -f portfolios_scores.parquet ]; then
+            echo "✅ portfolios_scores.parquet استخراج شد."
+            rm -f portfolios_scores.tar.gz analysis_results/portfolios_scores.parquet.enc
+            echo "🗑️ فایل‌های موقت حذف شدند."
+          else
+            echo "⚠️ استخراج portfolios_scores.parquet ناموفق بود. فایل tar.gz باقی می‌ماند."
+          fi
 
-      - name: Decrypt reports.tar.gz.enc (if exists)
+      - name: Decrypt and extract reports.tar.gz.enc
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           ENC_FILE="reports.tar.gz.enc"
-          DEC_FILE="reports.tar.gz"
           if [ ! -f "$ENC_FILE" ]; then
             echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
             exit 0
@@ -119,78 +126,54 @@ jobs:
             const iv=data.slice(0,16),enc=data.slice(16);
             const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
             const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('$DEC_FILE',dec);
+            fs.writeFileSync('reports.tar.gz',dec);
           " 2>/tmp/decrypt_error.log
           if [ $? -ne 0 ]; then
             echo "❌ رمزگشایی $ENC_FILE ناموفق بود."
             cat /tmp/decrypt_error.log
             exit 0
           fi
-          if [ ! -s "$DEC_FILE" ]; then
+          if [ ! -s reports.tar.gz ]; then
             echo "⚠️ فایل رمزگشایی‌شده خالی است."
             exit 0
           fi
-          echo "✅ $DEC_FILE رمزگشایی شد."
-
-          # Extract reports.tar.gz and remove archive
-          if [ -f "$DEC_FILE" ]; then
-            echo "📦 استخراج reports.tar.gz ..."
-            tar -xzf "$DEC_FILE"
-            if [ $? -eq 0 ]; then
-              echo "✅ reports.tar.gz استخراج شد."
-              rm -f "$DEC_FILE"
-              echo "🗑️ فایل فشرده حذف شد."
-            else
-              echo "⚠️ استخراج reports.tar.gz ناموفق بود."
-            fi
+          echo "✅ رمزگشایی موفق شد. استخراج reports از tar.gz..."
+          tar -xzf reports.tar.gz
+          if [ -d reports ]; then
+            echo "✅ پوشه reports استخراج شد."
+            rm -f reports.tar.gz reports.tar.gz.enc
+            echo "🗑️ فایل‌های موقت حذف شدند."
+          else
+            echo "⚠️ استخراج reports ناموفق بود. فایل tar.gz باقی می‌ماند."
           fi
 
-      - name: Print first 40 rows of golden_scores.parquet
-        if: hashFiles('golden_scores.parquet') != ''
+      - name: Commit and push extracted files to third repo
         run: |
-          echo "=============================================="
-          echo "   📊 golden_scores.parquet — ۴۰ خط اول"
-          echo "=============================================="
-          python3 -c "
-          import pandas as pd
-          df = pd.read_parquet('golden_scores.parquet')
-          print(df.head(40).to_string())
-          "
+          cd $GITHUB_WORKSPACE
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
 
-      - name: Print first 40 rows of portfolios_scores.parquet
-        if: hashFiles('analysis_results/portfolios_scores.parquet') != ''
-        run: |
-          echo "=============================================="
-          echo "   📊 portfolios_scores.parquet — ۴۰ خط اول"
-          echo "=============================================="
-          python3 -c "
-          import pandas as pd
-          df = pd.read_parquet('analysis_results/portfolios_scores.parquet')
-          print(df.head(40).to_string())
-          "
+          # حذف فایل‌های رمزنگاری‌شده قدیمی (اختیاری)
+          # rm -f golden_scores.parquet.enc analysis_results/portfolios_scores.parquet.enc reports.tar.gz.enc
 
-      - name: Print reports content (if extracted)
-        if: hashFiles('reports/*.json') != ''
-        run: |
-          echo "=============================================="
-          echo "   📄 reports — محتوای فایل‌های JSON"
-          echo "=============================================="
-          find reports -name "*.json" -type f | while read -r f; do
-            echo "=============================================="
-            echo "📄 فایل: $f"
-            echo "=============================================="
-            cat "$f" | head -100
-            echo ""
-          done
+          git add -A
+          if git diff --cached --quiet; then
+            echo "ℹ️ هیچ تغییری برای commit وجود ندارد."
+          else
+            git commit -m "Decrypt and extract files (run ${{ github.run_id }})"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "✅ تغییرات به مخزن سوم push شد."
+          fi
 
-      - name: Print final summary
+      - name: Print final report
         run: |
           echo "=============================================="
           echo "   📋 گزارش نهایی"
           echo "=============================================="
-          [ -f golden_scores.parquet ] && echo "✅ golden_scores.parquet رمزگشایی شد (۴۰ خط اول چاپ شد)"
-          [ ! -f golden_scores.parquet ] && echo "⚠️ golden_scores.parquet وجود نداشت"
-          [ -f analysis_results/portfolios_scores.parquet ] && echo "✅ portfolios_scores.parquet رمزگشایی شد (۴۰ خط اول چاپ شد)"
-          [ ! -f analysis_results/portfolios_scores.parquet ] && echo "⚠️ portfolios_scores.parquet وجود نداشت"
-          [ -d reports ] && echo "✅ reports استخراج شد (محتوای JSON چاپ شد)"
-          [ ! -d reports ] && echo "⚠️ reports وجود نداشت"
+          [ -f golden_scores.parquet ] && echo "✅ golden_scores.parquet (استخراج و ذخیره شد)"
+          [ ! -f golden_scores.parquet ] && echo "⚠️ golden_scores.parquet وجود ندارد"
+          [ -f analysis_results/portfolios_scores.parquet ] && echo "✅ portfolios_scores.parquet (استخراج و ذخیره شد)"
+          [ ! -f analysis_results/portfolios_scores.parquet ] && echo "⚠️ portfolios_scores.parquet وجود ندارد"
+          [ -d reports ] && echo "✅ reports (استخراج و ذخیره شد)"
+          [ ! -d reports ] && echo "⚠️ reports وجود ندارد"
