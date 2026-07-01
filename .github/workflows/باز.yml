@@ -1,4 +1,4 @@
-name: Decrypt Three Analysis Files (Golden + Portfolios + Reports)
+name: Decrypt and Store Files in Third Repo (No CSV)
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ permissions:
   actions: write
 
 jobs:
-  decrypt-three-files:
+  decrypt-and-store:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout third repository
@@ -29,19 +29,13 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Setup Python and install dependencies
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-      - run: pip install pandas pyarrow
-
-      - name: Decrypt golden_scores.parquet.enc (Optional)
+      - name: Decrypt golden_scores.parquet.enc (if exists)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           echo "::add-mask::$USER_PASS"
-          mkdir -p /tmp/decrypted
           ENC_FILE="golden_scores.parquet.enc"
+          DEC_FILE="golden_scores.parquet"
           if [ ! -f "$ENC_FILE" ]; then
             echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
             exit 0
@@ -55,24 +49,25 @@ jobs:
             const iv=data.slice(0,16),enc=data.slice(16);
             const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
             const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('/tmp/decrypted/golden_scores.parquet',dec);
+            fs.writeFileSync('$DEC_FILE',dec);
           " 2>/tmp/decrypt_error.log
           if [ $? -ne 0 ]; then
-            echo "❌ رمزگشایی golden_scores.parquet.enc ناموفق بود."
+            echo "❌ رمزگشایی $ENC_FILE ناموفق بود."
             cat /tmp/decrypt_error.log
             exit 0
           fi
-          if [ ! -s /tmp/decrypted/golden_scores.parquet ]; then
+          if [ ! -s "$DEC_FILE" ]; then
             echo "⚠️ فایل رمزگشایی‌شده خالی است."
             exit 0
           fi
-          echo "✅ golden_scores.parquet.enc رمزگشایی شد."
+          echo "✅ $DEC_FILE رمزگشایی شد."
 
-      - name: Decrypt portfolios_scores.parquet.enc (Optional)
+      - name: Decrypt portfolios_scores.parquet.enc (if exists)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           ENC_FILE="analysis_results/portfolios_scores.parquet.enc"
+          DEC_FILE="analysis_results/portfolios_scores.parquet"
           if [ ! -f "$ENC_FILE" ]; then
             echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
             exit 0
@@ -86,24 +81,25 @@ jobs:
             const iv=data.slice(0,16),enc=data.slice(16);
             const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
             const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('/tmp/decrypted/portfolios_scores.parquet',dec);
+            fs.writeFileSync('$DEC_FILE',dec);
           " 2>/tmp/decrypt_error.log
           if [ $? -ne 0 ]; then
-            echo "❌ رمزگشایی portfolios_scores.parquet.enc ناموفق بود."
+            echo "❌ رمزگشایی $ENC_FILE ناموفق بود."
             cat /tmp/decrypt_error.log
             exit 0
           fi
-          if [ ! -s /tmp/decrypted/portfolios_scores.parquet ]; then
+          if [ ! -s "$DEC_FILE" ]; then
             echo "⚠️ فایل رمزگشایی‌شده خالی است."
             exit 0
           fi
-          echo "✅ portfolios_scores.parquet.enc رمزگشایی شد."
+          echo "✅ $DEC_FILE رمزگشایی شد."
 
-      - name: Decrypt reports.tar.gz.enc (Optional)
+      - name: Decrypt and extract reports.tar.gz.enc (if exists)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           ENC_FILE="reports.tar.gz.enc"
+          DEC_FILE="reports.tar.gz"
           if [ ! -f "$ENC_FILE" ]; then
             echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
             exit 0
@@ -117,127 +113,47 @@ jobs:
             const iv=data.slice(0,16),enc=data.slice(16);
             const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
             const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
-            fs.writeFileSync('/tmp/decrypted/reports.tar.gz',dec);
+            fs.writeFileSync('$DEC_FILE',dec);
           " 2>/tmp/decrypt_error.log
           if [ $? -ne 0 ]; then
-            echo "❌ رمزگشایی reports.tar.gz.enc ناموفق بود."
+            echo "❌ رمزگشایی $ENC_FILE ناموفق بود."
             cat /tmp/decrypt_error.log
             exit 0
           fi
-          if [ ! -s /tmp/decrypted/reports.tar.gz ]; then
+          if [ ! -s "$DEC_FILE" ]; then
             echo "⚠️ فایل رمزگشایی‌شده خالی است."
             exit 0
           fi
-          echo "✅ reports.tar.gz.enc رمزگشایی شد."
+          echo "✅ $DEC_FILE رمزگشایی شد."
 
-      - name: Convert golden_scores to CSV (with fallback)
-        run: |
-          if [ ! -f /tmp/decrypted/golden_scores.parquet ]; then
-            echo "⚠️ golden_scores.parquet وجود ندارد، از این مرحله عبور می‌کنیم."
-            exit 0
+          # استخراج reports.tar.gz
+          if [ -f "$DEC_FILE" ]; then
+            echo "📦 استخراج reports.tar.gz ..."
+            tar -xzf "$DEC_FILE"
+            if [ $? -eq 0 ]; then
+              echo "✅ reports.tar.gz استخراج شد."
+              rm -f "$DEC_FILE"
+              echo "🗑️ فایل فشرده حذف شد (فقط محتوای استخراج‌شده باقی ماند)."
+            else
+              echo "⚠️ استخراج reports.tar.gz ناموفق بود. فایل فشرده حفظ می‌شود."
+            fi
           fi
-          echo "=============================================="
-          echo "   📊 golden_scores.parquet → CSV"
-          echo "=============================================="
-          python3 << 'EOF'
-          import pandas as pd
-          import sys
-          try:
-              df = pd.read_parquet('/tmp/decrypted/golden_scores.parquet')
-              csv_path = '/tmp/decrypted/golden_scores.csv'
-              df.to_csv(csv_path, index=False, encoding='utf-8-sig')
-              print(f'✅ CSV ذخیره شد: {csv_path}')
-              print(f'📊 تعداد ردیف‌ها: {len(df)}')
-              print(f'📊 تعداد ستون‌ها: {len(df.columns)}')
-              print(f'📋 ستون‌ها: {list(df.columns)}')
-              print('\n📝 ۵ ردیف اول:')
-              print(df.head(5).to_string())
-          except Exception as e:
-              print(f'⚠️ خطا در خواندن Parquet: {e}')
-              print('ℹ️ فایل ممکن است با رمز اشتباه رمزگشایی شده باشد یا فرمت دیگری داشته باشد.')
-              print('ℹ️ از این فایل عبور می‌کنیم.')
-              sys.exit(0)
-          EOF
 
-      - name: Convert portfolios_scores to CSV (with fallback)
+      - name: Commit and push decrypted files to third repo
         run: |
-          if [ ! -f /tmp/decrypted/portfolios_scores.parquet ]; then
-            echo "⚠️ portfolios_scores.parquet وجود ندارد، از این مرحله عبور می‌کنیم."
-            exit 0
+          cd $GITHUB_WORKSPACE
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+
+          # حذف فایل‌های رمزنگاری‌شده قدیمی (اختیاری)
+          # rm -f golden_scores.parquet.enc analysis_results/portfolios_scores.parquet.enc reports.tar.gz.enc
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "ℹ️ هیچ تغییری برای commit وجود ندارد."
+          else
+            git commit -m "Decrypt and store files (run ${{ github.run_id }})"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "✅ تغییرات به مخزن سوم push شد."
           fi
-          echo "=============================================="
-          echo "   📊 portfolios_scores.parquet → CSV"
-          echo "=============================================="
-          python3 << 'EOF'
-          import pandas as pd
-          import sys
-          try:
-              df = pd.read_parquet('/tmp/decrypted/portfolios_scores.parquet')
-              csv_path = '/tmp/decrypted/portfolios_scores.csv'
-              df.to_csv(csv_path, index=False, encoding='utf-8-sig')
-              print(f'✅ CSV ذخیره شد: {csv_path}')
-              print(f'📊 تعداد ردیف‌ها: {len(df)}')
-              print(f'📊 تعداد ستون‌ها: {len(df.columns)}')
-              print(f'📋 ستون‌ها: {list(df.columns)}')
-              print('\n📝 ۵ ردیف اول:')
-              print(df.head(5).to_string())
-          except Exception as e:
-              print(f'⚠️ خطا در خواندن Parquet: {e}')
-              print('ℹ️ فایل ممکن است با رمز اشتباه رمزگشایی شده باشد یا فرمت دیگری داشته باشد.')
-              print('ℹ️ از این فایل عبور می‌کنیم.')
-              sys.exit(0)
-          EOF
-
-      - name: Extract and display reports.tar.gz (if exists)
-        run: |
-          if [ ! -f /tmp/decrypted/reports.tar.gz ]; then
-            echo "⚠️ reports.tar.gz وجود ندارد، از این مرحله عبور می‌کنیم."
-            exit 0
-          fi
-          echo "=============================================="
-          echo "   📦 reports.tar.gz (خروجی generate-reports)"
-          echo "=============================================="
-          mkdir -p /tmp/decrypted/reports
-          if ! tar -xzf /tmp/decrypted/reports.tar.gz -C /tmp/decrypted/reports 2>/dev/null; then
-            echo "⚠️ گزارش قابل استخراج نیست (ممکن است رمز اشتباه باشد یا فایل خراب)."
-            exit 0
-          fi
-          echo "✅ reports.tar.gz استخراج شد."
-          echo ""
-          echo "📂 محتوای پوشه reports:"
-          find /tmp/decrypted/reports -type f -exec ls -la {} \;
-          echo ""
-          echo "📄 نمایش محتوای فایل‌های JSON (تا ۱۰۰ خط اول):"
-          find /tmp/decrypted/reports -name "*.json" -type f | while read -r f; do
-            echo "=============================================="
-            echo "📄 فایل: $f"
-            echo "=============================================="
-            cat "$f" | head -100
-            echo ""
-          done
-
-      - name: Generate final report
-        run: |
-          echo "=============================================="
-          echo "   📋 گزارش نهایی"
-          echo "=============================================="
-          [ -f /tmp/decrypted/golden_scores.csv ] && echo "✅ golden_scores.csv (رمزگشایی و تبدیل شد)"
-          [ ! -f /tmp/decrypted/golden_scores.csv ] && echo "⚠️ golden_scores.parquet وجود نداشت یا قابل خواندن نبود"
-          [ -f /tmp/decrypted/portfolios_scores.csv ] && echo "✅ portfolios_scores.csv (رمزگشایی و تبدیل شد)"
-          [ ! -f /tmp/decrypted/portfolios_scores.csv ] && echo "⚠️ portfolios_scores.parquet وجود نداشت یا قابل خواندن نبود"
-          [ -d /tmp/decrypted/reports ] && echo "✅ reports.tar.gz (استخراج شد)"
-          [ ! -d /tmp/decrypted/reports ] && echo "⚠️ reports.tar.gz وجود نداشت یا قابل استخراج نبود"
-
-      - name: Wait 5 minutes and cleanup
-        run: |
-          echo "⏳ منتظر ۵ دقیقه می‌مانیم تا فایل‌های موقت پاک شوند..."
-          sleep 300
-          rm -rf /tmp/decrypted
-          echo "🧹 پاکسازی کامل شد."
-
-      - name: Save all CSV files as artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: decrypted-three-files-csv
-          path: /tmp/decrypted/*.csv
