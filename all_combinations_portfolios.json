@@ -1,0 +1,4727 @@
+[
+  {
+    "signature_path": "CPI m/m_10_0_fibonacci_full_trending_down",
+    "score": 58.4746,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_10_0_fibonacci_full_trending_up",
+    "score": 62.933,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_fibonacci_full_unknown",
+    "score": 68.3304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_fibonacci_full_volatile",
+    "score": 50.4763,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_fibonacci_hybrid_trending_down",
+    "score": 58.4746,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_10_0_fibonacci_hybrid_trending_up",
+    "score": 62.933,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_fibonacci_hybrid_unknown",
+    "score": 68.3304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_fibonacci_hybrid_volatile",
+    "score": 50.4763,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_simple_hybrid_trending_down",
+    "score": 58.4746,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_10_0_simple_hybrid_trending_up",
+    "score": 62.933,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_simple_hybrid_unknown",
+    "score": 68.3304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_10_0_simple_hybrid_volatile",
+    "score": 50.4763,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_15_0_fibonacci_full_trending_up",
+    "score": 47.8105,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_15_0_fibonacci_full_unknown",
+    "score": 66.7694,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_15_0_fibonacci_full_volatile",
+    "score": 53.7348,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_15_0_fibonacci_hybrid_trending_up",
+    "score": 47.8105,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_15_0_fibonacci_hybrid_unknown",
+    "score": 66.7694,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_15_0_fibonacci_hybrid_volatile",
+    "score": 53.7348,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_15_0_simple_hybrid_trending_up",
+    "score": 47.8105,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_15_0_simple_hybrid_unknown",
+    "score": 66.7694,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_15_0_simple_hybrid_volatile",
+    "score": 53.7348,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_30_0_fibonacci_full_trending_up",
+    "score": 51.5114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_30_0_fibonacci_full_volatile",
+    "score": 57.9368,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_30_0_fibonacci_hybrid_trending_up",
+    "score": 51.5114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_30_0_fibonacci_hybrid_volatile",
+    "score": 57.9368,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_30_0_simple_hybrid_trending_up",
+    "score": 51.5114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_30_0_simple_hybrid_volatile",
+    "score": 57.9368,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_fibonacci_full_trending_down",
+    "score": 49.8644,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_5_0_fibonacci_full_trending_up",
+    "score": 64.6609,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_fibonacci_full_unknown",
+    "score": 71.4322,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_fibonacci_full_volatile",
+    "score": 48.2446,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_fibonacci_hybrid_trending_down",
+    "score": 49.8644,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_5_0_fibonacci_hybrid_trending_up",
+    "score": 64.6609,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_fibonacci_hybrid_unknown",
+    "score": 71.4322,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_fibonacci_hybrid_volatile",
+    "score": 48.2446,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_simple_hybrid_trending_down",
+    "score": 49.8644,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_5_0_simple_hybrid_trending_up",
+    "score": 64.6609,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_simple_hybrid_unknown",
+    "score": 71.4322,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_5_0_simple_hybrid_volatile",
+    "score": 48.2446,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_fibonacci_full_trending_down",
+    "score": 63.1626,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_1.0_fibonacci_full_trending_up",
+    "score": 61.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_fibonacci_full_volatile",
+    "score": 54.32,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_fibonacci_hybrid_trending_down",
+    "score": 51.2782,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_1.0_fibonacci_hybrid_trending_up",
+    "score": 57.2712,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_fibonacci_hybrid_unknown",
+    "score": 53.5955,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_fibonacci_hybrid_volatile",
+    "score": 57.1837,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_1.0_simple_hybrid_trending_up",
+    "score": 62.6757,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_simple_hybrid_unknown",
+    "score": 60.105,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_1.0_simple_hybrid_volatile",
+    "score": 59.8892,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_fibonacci_full_trending_down",
+    "score": 63.0612,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_10.0_fibonacci_full_trending_up",
+    "score": 60.7067,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_fibonacci_full_volatile",
+    "score": 54.436,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 60.4735,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_10.0_fibonacci_hybrid_trending_up",
+    "score": 61.3317,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_fibonacci_hybrid_unknown",
+    "score": 66.8244,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_fibonacci_hybrid_volatile",
+    "score": 54.0508,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_simple_hybrid_trending_down",
+    "score": 74.0524,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_10.0_simple_hybrid_trending_up",
+    "score": 63.5335,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_simple_hybrid_unknown",
+    "score": 54.3173,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_10.0_simple_hybrid_volatile",
+    "score": 54.0885,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_fibonacci_full_trending_down",
+    "score": 63.1626,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_15.0_fibonacci_full_trending_up",
+    "score": 61.2173,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_fibonacci_full_volatile",
+    "score": 51.6285,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_fibonacci_hybrid_trending_down",
+    "score": 70.3441,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_15.0_fibonacci_hybrid_trending_up",
+    "score": 67.3856,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_fibonacci_hybrid_unknown",
+    "score": 62.1037,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_fibonacci_hybrid_volatile",
+    "score": 50.7229,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_simple_hybrid_trending_down",
+    "score": 72.9415,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_15.0_simple_hybrid_trending_up",
+    "score": 64.2279,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_simple_hybrid_unknown",
+    "score": 52.797,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_15.0_simple_hybrid_volatile",
+    "score": 49.8808,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_fibonacci_full_trending_down",
+    "score": 63.0732,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_2.0_fibonacci_full_trending_up",
+    "score": 61.7688,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_fibonacci_full_volatile",
+    "score": 54.7054,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_fibonacci_hybrid_trending_down",
+    "score": 61.9312,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_2.0_fibonacci_hybrid_trending_up",
+    "score": 54.8529,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_fibonacci_hybrid_unknown",
+    "score": 54.6351,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_fibonacci_hybrid_volatile",
+    "score": 52.5727,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_2.0_simple_hybrid_trending_up",
+    "score": 67.9208,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_simple_hybrid_unknown",
+    "score": 58.477,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_2.0_simple_hybrid_volatile",
+    "score": 59.1068,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_fibonacci_full_trending_down",
+    "score": 63.0612,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_3.0_fibonacci_full_trending_up",
+    "score": 60.7067,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_fibonacci_full_volatile",
+    "score": 54.436,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_fibonacci_hybrid_trending_down",
+    "score": 63.1283,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_3.0_fibonacci_hybrid_trending_up",
+    "score": 57.3284,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_fibonacci_hybrid_unknown",
+    "score": 59.2811,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_fibonacci_hybrid_volatile",
+    "score": 51.2551,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_3.0_simple_hybrid_trending_up",
+    "score": 69.7835,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_simple_hybrid_unknown",
+    "score": 56.6175,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_3.0_simple_hybrid_volatile",
+    "score": 58.3879,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_fibonacci_full_trending_down",
+    "score": 63.1626,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_5.0_fibonacci_full_trending_up",
+    "score": 61.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_fibonacci_full_volatile",
+    "score": 54.32,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_fibonacci_hybrid_trending_down",
+    "score": 56.2722,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_5.0_fibonacci_hybrid_trending_up",
+    "score": 61.6176,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_fibonacci_hybrid_unknown",
+    "score": 64.6181,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_fibonacci_hybrid_volatile",
+    "score": 48.9574,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_simple_hybrid_trending_down",
+    "score": 75.3988,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_5.0_simple_hybrid_trending_up",
+    "score": 59.7958,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_simple_hybrid_unknown",
+    "score": 57.4064,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_5.0_simple_hybrid_volatile",
+    "score": 58.3117,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_fibonacci_full_trending_down",
+    "score": 63.1626,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_7.0_fibonacci_full_trending_up",
+    "score": 61.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_fibonacci_full_volatile",
+    "score": 54.32,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_fibonacci_hybrid_trending_down",
+    "score": 62.0134,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_7.0_fibonacci_hybrid_trending_up",
+    "score": 62.6797,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_fibonacci_hybrid_unknown",
+    "score": 62.8843,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_fibonacci_hybrid_volatile",
+    "score": 55.9548,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_simple_hybrid_trending_down",
+    "score": 74.7626,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_post_7.0_simple_hybrid_trending_up",
+    "score": 61.0376,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_simple_hybrid_unknown",
+    "score": 55.9306,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_post_7.0_simple_hybrid_volatile",
+    "score": 55.9728,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_fibonacci_full_trending_down",
+    "score": 63.1337,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_1.0_fibonacci_full_trending_up",
+    "score": 61.7688,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_fibonacci_full_unknown",
+    "score": 63.4323,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_fibonacci_full_volatile",
+    "score": 54.6409,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_fibonacci_hybrid_trending_down",
+    "score": 60.7577,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_1.0_fibonacci_hybrid_trending_up",
+    "score": 48.5989,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_fibonacci_hybrid_unknown",
+    "score": 54.6881,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_fibonacci_hybrid_volatile",
+    "score": 53.2127,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_simple_hybrid_unknown",
+    "score": 47.2941,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_1.0_simple_hybrid_volatile",
+    "score": 68.5092,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_fibonacci_full_trending_down",
+    "score": 63.222,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_2.0_fibonacci_full_trending_up",
+    "score": 61.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_fibonacci_full_unknown",
+    "score": 63.4323,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_fibonacci_full_volatile",
+    "score": 54.2601,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_fibonacci_hybrid_trending_down",
+    "score": 54.9996,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_2.0_fibonacci_hybrid_trending_up",
+    "score": 79.1258,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_fibonacci_hybrid_unknown",
+    "score": 61.4365,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_fibonacci_hybrid_volatile",
+    "score": 54.5068,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_simple_hybrid_unknown",
+    "score": 48.8251,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_2.0_simple_hybrid_volatile",
+    "score": 68.8336,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_fibonacci_full_trending_down",
+    "score": 63.222,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_3.0_fibonacci_full_trending_up",
+    "score": 61.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_fibonacci_full_unknown",
+    "score": 63.4323,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_fibonacci_full_volatile",
+    "score": 54.2817,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_fibonacci_hybrid_trending_down",
+    "score": 57.3504,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_3.0_fibonacci_hybrid_trending_up",
+    "score": 71.3807,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_fibonacci_hybrid_unknown",
+    "score": 67.3088,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_fibonacci_hybrid_volatile",
+    "score": 54.7989,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_simple_hybrid_unknown",
+    "score": 48.6931,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_3.0_simple_hybrid_volatile",
+    "score": 67.9367,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_fibonacci_full_trending_down",
+    "score": 63.0732,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_5.0_fibonacci_full_trending_up",
+    "score": 61.7688,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_fibonacci_full_unknown",
+    "score": 63.5547,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_fibonacci_full_volatile",
+    "score": 54.7054,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_fibonacci_hybrid_trending_down",
+    "score": 63.9193,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_5.0_fibonacci_hybrid_trending_up",
+    "score": 68.4191,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_fibonacci_hybrid_unknown",
+    "score": 65.1368,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_fibonacci_hybrid_volatile",
+    "score": 46.8309,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_pre_5.0_simple_hybrid_trending_down",
+    "score": 48.2149,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_simple_hybrid_unknown",
+    "score": 48.4357,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_pre_5.0_simple_hybrid_volatile",
+    "score": 67.1311,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_10_0_fibonacci_full_trending_down",
+    "score": 76.5523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_10_0_fibonacci_full_unknown",
+    "score": 54.9927,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_10_0_fibonacci_hybrid_trending_down",
+    "score": 76.5523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_10_0_fibonacci_hybrid_unknown",
+    "score": 54.9927,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_10_0_simple_hybrid_trending_down",
+    "score": 76.5523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_10_0_simple_hybrid_unknown",
+    "score": 54.9927,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_15_0_fibonacci_full_trending_down",
+    "score": 52.4592,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_15_0_fibonacci_full_unknown",
+    "score": 54.1758,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_15_0_fibonacci_full_volatile",
+    "score": 48.516,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_15_0_fibonacci_hybrid_trending_down",
+    "score": 52.4592,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_15_0_fibonacci_hybrid_unknown",
+    "score": 54.1758,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_15_0_fibonacci_hybrid_volatile",
+    "score": 48.516,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_15_0_simple_hybrid_trending_down",
+    "score": 52.4592,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_15_0_simple_hybrid_unknown",
+    "score": 54.1758,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_15_0_simple_hybrid_volatile",
+    "score": 48.516,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_30_0_fibonacci_full_trending_down",
+    "score": 62.4469,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_30_0_fibonacci_full_unknown",
+    "score": 51.015,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_30_0_fibonacci_full_volatile",
+    "score": 62.4742,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_30_0_fibonacci_hybrid_trending_down",
+    "score": 62.4469,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_30_0_fibonacci_hybrid_unknown",
+    "score": 51.015,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_30_0_fibonacci_hybrid_volatile",
+    "score": 62.4742,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_30_0_simple_hybrid_trending_down",
+    "score": 62.4469,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_30_0_simple_hybrid_unknown",
+    "score": 51.015,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_30_0_simple_hybrid_volatile",
+    "score": 62.4742,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_5_0_fibonacci_full_trending_up",
+    "score": 56.0509,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_5_0_fibonacci_full_unknown",
+    "score": 67.5779,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_5_0_fibonacci_hybrid_trending_up",
+    "score": 56.0509,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_5_0_fibonacci_hybrid_unknown",
+    "score": 67.5779,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_5_0_simple_hybrid_trending_up",
+    "score": 56.0509,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_5_0_simple_hybrid_unknown",
+    "score": 67.5779,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_1.0_fibonacci_full_trending_down",
+    "score": 76.4338,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_1.0_fibonacci_full_trending_up",
+    "score": 57.8942,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_1.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_1.0_fibonacci_hybrid_trending_down",
+    "score": 78.2435,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_1.0_fibonacci_hybrid_trending_up",
+    "score": 45.3556,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_1.0_fibonacci_hybrid_unknown",
+    "score": 62.7001,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_1.0_simple_hybrid_unknown",
+    "score": 81.8155,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_1.0_simple_hybrid_volatile",
+    "score": 71.1052,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_10.0_fibonacci_full_trending_down",
+    "score": 75.8007,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_10.0_fibonacci_full_trending_up",
+    "score": 56.7831,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_10.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 74.0931,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_10.0_fibonacci_hybrid_trending_up",
+    "score": 54.9449,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_10.0_fibonacci_hybrid_unknown",
+    "score": 72.8671,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_10.0_simple_hybrid_trending_down",
+    "score": 49.8121,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_10.0_simple_hybrid_unknown",
+    "score": 71.3072,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_10.0_simple_hybrid_volatile",
+    "score": 60.7101,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_15.0_fibonacci_full_trending_down",
+    "score": 76.4338,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_15.0_fibonacci_full_trending_up",
+    "score": 57.8942,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_15.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_15.0_fibonacci_hybrid_trending_down",
+    "score": 76.5196,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_15.0_fibonacci_hybrid_trending_up",
+    "score": 67.598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_15.0_fibonacci_hybrid_unknown",
+    "score": 75.0401,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_15.0_simple_hybrid_trending_down",
+    "score": 46.924,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_15.0_simple_hybrid_unknown",
+    "score": 69.3268,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_15.0_simple_hybrid_volatile",
+    "score": 56.5768,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_2.0_fibonacci_full_trending_down",
+    "score": 75.576,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_2.0_fibonacci_full_trending_up",
+    "score": 57.801,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_2.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_2.0_fibonacci_hybrid_trending_down",
+    "score": 74.6855,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_2.0_fibonacci_hybrid_trending_up",
+    "score": 54.68,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_2.0_fibonacci_hybrid_unknown",
+    "score": 62.7001,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_2.0_simple_hybrid_unknown",
+    "score": 80.3439,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_2.0_simple_hybrid_volatile",
+    "score": 71.4517,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_3.0_fibonacci_full_trending_down",
+    "score": 75.8007,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_3.0_fibonacci_full_trending_up",
+    "score": 56.7831,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_3.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_3.0_fibonacci_hybrid_trending_down",
+    "score": 76.0907,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_3.0_fibonacci_hybrid_trending_up",
+    "score": 50.7698,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_3.0_fibonacci_hybrid_unknown",
+    "score": 60.1879,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_3.0_simple_hybrid_unknown",
+    "score": 79.0265,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_3.0_simple_hybrid_volatile",
+    "score": 70.8849,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_5.0_fibonacci_full_trending_down",
+    "score": 76.4338,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_5.0_fibonacci_full_trending_up",
+    "score": 57.8942,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_5.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_5.0_fibonacci_hybrid_trending_down",
+    "score": 74.4199,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_5.0_fibonacci_hybrid_trending_up",
+    "score": 46.8705,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_5.0_fibonacci_hybrid_unknown",
+    "score": 65.0395,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_5.0_simple_hybrid_trending_down",
+    "score": 46.8219,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_5.0_simple_hybrid_unknown",
+    "score": 76.026,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_5.0_simple_hybrid_volatile",
+    "score": 64.8129,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_7.0_fibonacci_full_trending_down",
+    "score": 76.4338,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_7.0_fibonacci_full_trending_up",
+    "score": 57.8942,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_7.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_7.0_fibonacci_hybrid_trending_down",
+    "score": 75.6495,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_7.0_fibonacci_hybrid_trending_up",
+    "score": 61.9437,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_7.0_fibonacci_hybrid_unknown",
+    "score": 64.9386,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_post_7.0_simple_hybrid_trending_down",
+    "score": 48.4069,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_7.0_simple_hybrid_unknown",
+    "score": 73.8042,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_post_7.0_simple_hybrid_volatile",
+    "score": 62.8228,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_1.0_fibonacci_full_trending_down",
+    "score": 75.576,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_1.0_fibonacci_full_trending_up",
+    "score": 57.9563,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_1.0_fibonacci_full_unknown",
+    "score": 64.1206,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_1.0_fibonacci_hybrid_trending_down",
+    "score": 56.1111,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_1.0_fibonacci_hybrid_unknown",
+    "score": 77.4837,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_1.0_fibonacci_hybrid_volatile",
+    "score": 50.9136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_1.0_simple_hybrid_trending_down",
+    "score": 48.1087,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_1.0_simple_hybrid_unknown",
+    "score": 73.3726,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_1.0_simple_hybrid_volatile",
+    "score": 64.9187,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_2.0_fibonacci_full_trending_down",
+    "score": 76.4338,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_2.0_fibonacci_full_trending_up",
+    "score": 58.0742,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_2.0_fibonacci_full_unknown",
+    "score": 64.1206,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_2.0_fibonacci_hybrid_trending_down",
+    "score": 69.3301,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_2.0_fibonacci_hybrid_trending_up",
+    "score": 57.7677,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_2.0_fibonacci_hybrid_unknown",
+    "score": 76.9876,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_2.0_simple_hybrid_trending_down",
+    "score": 49.1708,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_2.0_simple_hybrid_unknown",
+    "score": 73.1397,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_2.0_simple_hybrid_volatile",
+    "score": 62.9234,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_3.0_fibonacci_full_trending_down",
+    "score": 76.4338,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_3.0_fibonacci_full_trending_up",
+    "score": 58.0742,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_3.0_fibonacci_full_unknown",
+    "score": 64.1206,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_3.0_fibonacci_hybrid_trending_down",
+    "score": 73.3415,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_3.0_fibonacci_hybrid_trending_up",
+    "score": 60.2326,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_3.0_fibonacci_hybrid_unknown",
+    "score": 76.7405,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_3.0_simple_hybrid_trending_down",
+    "score": 51.0008,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_3.0_simple_hybrid_unknown",
+    "score": 72.8752,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_3.0_simple_hybrid_volatile",
+    "score": 61.0744,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_5.0_fibonacci_full_trending_down",
+    "score": 75.576,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_5.0_fibonacci_full_trending_up",
+    "score": 57.6593,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_5.0_fibonacci_full_unknown",
+    "score": 64.2282,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_5.0_fibonacci_hybrid_trending_down",
+    "score": 74.7181,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_5.0_fibonacci_hybrid_trending_up",
+    "score": 55.1929,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_5.0_fibonacci_hybrid_unknown",
+    "score": 73.0874,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_pre_5.0_simple_hybrid_trending_down",
+    "score": 55.5719,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_5.0_simple_hybrid_unknown",
+    "score": 72.3768,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_pre_5.0_simple_hybrid_volatile",
+    "score": 62.2686,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_10_0_fibonacci_full_trending_up",
+    "score": 70.8415,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_10_0_fibonacci_hybrid_trending_up",
+    "score": 70.8415,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_10_0_simple_hybrid_trending_up",
+    "score": 70.8415,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_15_0_fibonacci_full_trending_up",
+    "score": 73.366,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_15_0_fibonacci_hybrid_trending_up",
+    "score": 73.366,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_15_0_simple_hybrid_trending_up",
+    "score": 73.366,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_30_0_fibonacci_full_unknown",
+    "score": 51.6498,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_30_0_fibonacci_full_volatile",
+    "score": 55.3975,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_30_0_fibonacci_hybrid_unknown",
+    "score": 51.6498,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_30_0_fibonacci_hybrid_volatile",
+    "score": 55.3975,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_30_0_simple_hybrid_unknown",
+    "score": 51.6498,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_30_0_simple_hybrid_volatile",
+    "score": 55.3975,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_5_0_fibonacci_full_trending_up",
+    "score": 75.8497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_5_0_fibonacci_full_unknown",
+    "score": 46.5177,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_5_0_fibonacci_full_volatile",
+    "score": 48.8578,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_5_0_fibonacci_hybrid_trending_up",
+    "score": 75.8497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_5_0_fibonacci_hybrid_unknown",
+    "score": 46.5177,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_5_0_fibonacci_hybrid_volatile",
+    "score": 48.8578,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_5_0_simple_hybrid_trending_up",
+    "score": 75.8497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_5_0_simple_hybrid_unknown",
+    "score": 46.5177,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_5_0_simple_hybrid_volatile",
+    "score": 48.8578,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_1.0_fibonacci_full_trending_up",
+    "score": 76.5605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_1.0_fibonacci_full_volatile",
+    "score": 55.6707,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_1.0_fibonacci_hybrid_trending_up",
+    "score": 76.5319,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_1.0_fibonacci_hybrid_volatile",
+    "score": 53.5878,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_1.0_simple_hybrid_trending_up",
+    "score": 79.6283,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_1.0_simple_hybrid_unknown",
+    "score": 66.6066,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_1.0_simple_hybrid_volatile",
+    "score": 73.1368,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_10.0_fibonacci_full_trending_up",
+    "score": 76.6503,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_10.0_fibonacci_full_volatile",
+    "score": 55.7603,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 52.1691,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_10.0_fibonacci_hybrid_trending_up",
+    "score": 70.3595,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_10.0_fibonacci_hybrid_volatile",
+    "score": 55.0566,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_10.0_simple_hybrid_trending_down",
+    "score": 75.8456,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_10.0_simple_hybrid_trending_up",
+    "score": 55.7108,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_10.0_simple_hybrid_unknown",
+    "score": 62.6954,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_10.0_simple_hybrid_volatile",
+    "score": 66.5909,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_15.0_fibonacci_full_trending_up",
+    "score": 76.5605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_15.0_fibonacci_full_volatile",
+    "score": 55.6707,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_15.0_fibonacci_hybrid_trending_down",
+    "score": 49.1544,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_15.0_fibonacci_hybrid_trending_up",
+    "score": 67.6307,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_15.0_fibonacci_hybrid_volatile",
+    "score": 52.5236,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_15.0_simple_hybrid_trending_down",
+    "score": 77.3162,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_15.0_simple_hybrid_trending_up",
+    "score": 57.1324,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_15.0_simple_hybrid_unknown",
+    "score": 60.2427,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_15.0_simple_hybrid_volatile",
+    "score": 64.9301,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_2.0_fibonacci_full_trending_up",
+    "score": 76.6503,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_2.0_fibonacci_full_volatile",
+    "score": 55.7329,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_2.0_fibonacci_hybrid_trending_up",
+    "score": 75.8987,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_2.0_fibonacci_hybrid_volatile",
+    "score": 51.8785,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_2.0_simple_hybrid_trending_up",
+    "score": 78.991,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_2.0_simple_hybrid_unknown",
+    "score": 66.1785,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_2.0_simple_hybrid_volatile",
+    "score": 72.5149,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_3.0_fibonacci_full_trending_up",
+    "score": 76.6503,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_3.0_fibonacci_full_volatile",
+    "score": 55.7603,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_3.0_fibonacci_hybrid_trending_down",
+    "score": 48.1822,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_3.0_fibonacci_hybrid_trending_up",
+    "score": 75.8824,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_3.0_fibonacci_hybrid_volatile",
+    "score": 53.1355,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_3.0_simple_hybrid_trending_up",
+    "score": 78.844,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_3.0_simple_hybrid_unknown",
+    "score": 65.7872,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_3.0_simple_hybrid_volatile",
+    "score": 71.9583,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_5.0_fibonacci_full_trending_up",
+    "score": 76.5605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_5.0_fibonacci_full_volatile",
+    "score": 55.6707,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_5.0_fibonacci_hybrid_trending_up",
+    "score": 65.1389,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_5.0_fibonacci_hybrid_volatile",
+    "score": 52.0684,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_5.0_simple_hybrid_trending_down",
+    "score": 71.3358,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_5.0_simple_hybrid_trending_up",
+    "score": 78.3538,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_5.0_simple_hybrid_unknown",
+    "score": 65.0034,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_5.0_simple_hybrid_volatile",
+    "score": 71.1356,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_7.0_fibonacci_full_trending_up",
+    "score": 76.5605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_7.0_fibonacci_full_volatile",
+    "score": 55.6707,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_7.0_fibonacci_hybrid_trending_up",
+    "score": 72.4918,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_7.0_fibonacci_hybrid_volatile",
+    "score": 58.9975,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_7.0_simple_hybrid_trending_down",
+    "score": 74.0645,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_post_7.0_simple_hybrid_trending_up",
+    "score": 53.8154,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_7.0_simple_hybrid_unknown",
+    "score": 64.1157,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_post_7.0_simple_hybrid_volatile",
+    "score": 69.5362,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_1.0_fibonacci_full_trending_up",
+    "score": 76.6503,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_1.0_fibonacci_full_volatile",
+    "score": 55.6127,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_1.0_fibonacci_hybrid_trending_up",
+    "score": 78.7704,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_1.0_fibonacci_hybrid_volatile",
+    "score": 57.1918,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_1.0_simple_hybrid_trending_up",
+    "score": 53.1699,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_1.0_simple_hybrid_unknown",
+    "score": 55.0445,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_1.0_simple_hybrid_volatile",
+    "score": 54.588,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_2.0_fibonacci_full_trending_up",
+    "score": 76.5605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_2.0_fibonacci_full_volatile",
+    "score": 55.5486,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_2.0_fibonacci_hybrid_trending_up",
+    "score": 78.7541,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_2.0_fibonacci_hybrid_volatile",
+    "score": 54.4603,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_2.0_simple_hybrid_trending_up",
+    "score": 55.6046,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_2.0_simple_hybrid_unknown",
+    "score": 52.9372,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_2.0_simple_hybrid_volatile",
+    "score": 52.5256,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_3.0_fibonacci_full_trending_up",
+    "score": 76.5605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_3.0_fibonacci_full_volatile",
+    "score": 55.6088,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_3.0_fibonacci_hybrid_trending_up",
+    "score": 73.8562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_3.0_fibonacci_hybrid_unknown",
+    "score": 46.1326,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_3.0_fibonacci_hybrid_volatile",
+    "score": 60.5738,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_3.0_simple_hybrid_trending_up",
+    "score": 58.1699,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_3.0_simple_hybrid_unknown",
+    "score": 51.9382,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_3.0_simple_hybrid_volatile",
+    "score": 50.862,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_5.0_fibonacci_full_trending_up",
+    "score": 76.6503,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_5.0_fibonacci_full_volatile",
+    "score": 55.7329,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_5.0_fibonacci_hybrid_trending_up",
+    "score": 77.1201,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_5.0_fibonacci_hybrid_volatile",
+    "score": 58.0956,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_pre_5.0_simple_hybrid_trending_up",
+    "score": 62.4837,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_5.0_simple_hybrid_unknown",
+    "score": 50.2601,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_pre_5.0_simple_hybrid_volatile",
+    "score": 48.1523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_10_0_fibonacci_full_trending_down",
+    "score": 70.2614,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_10_0_fibonacci_full_trending_up",
+    "score": 63.98,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_10_0_fibonacci_hybrid_trending_down",
+    "score": 70.2614,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_10_0_fibonacci_hybrid_trending_up",
+    "score": 63.98,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_10_0_simple_hybrid_trending_down",
+    "score": 70.2614,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_10_0_simple_hybrid_trending_up",
+    "score": 63.98,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_15_0_fibonacci_full_trending_down",
+    "score": 76.5727,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_15_0_fibonacci_full_trending_up",
+    "score": 69.9551,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_15_0_fibonacci_full_unknown",
+    "score": 64.6081,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_15_0_fibonacci_full_volatile",
+    "score": 49.5615,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_15_0_fibonacci_hybrid_trending_down",
+    "score": 76.5727,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_15_0_fibonacci_hybrid_trending_up",
+    "score": 69.9551,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_15_0_fibonacci_hybrid_unknown",
+    "score": 64.6081,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_15_0_fibonacci_hybrid_volatile",
+    "score": 49.5615,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_15_0_simple_hybrid_trending_down",
+    "score": 76.5727,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_15_0_simple_hybrid_trending_up",
+    "score": 69.9551,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_15_0_simple_hybrid_unknown",
+    "score": 64.6081,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_15_0_simple_hybrid_volatile",
+    "score": 49.5615,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_30_0_fibonacci_full_trending_down",
+    "score": 70.1103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_30_0_fibonacci_full_trending_up",
+    "score": 59.8611,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_30_0_fibonacci_full_unknown",
+    "score": 71.9666,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_30_0_fibonacci_full_volatile",
+    "score": 51.4529,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_30_0_fibonacci_hybrid_trending_down",
+    "score": 70.1103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_30_0_fibonacci_hybrid_trending_up",
+    "score": 59.8611,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_30_0_fibonacci_hybrid_unknown",
+    "score": 71.9666,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_30_0_fibonacci_hybrid_volatile",
+    "score": 51.4529,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_30_0_simple_hybrid_trending_down",
+    "score": 70.1103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_30_0_simple_hybrid_trending_up",
+    "score": 59.8611,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_30_0_simple_hybrid_unknown",
+    "score": 71.9666,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_30_0_simple_hybrid_volatile",
+    "score": 51.4529,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_5_0_fibonacci_full_trending_down",
+    "score": 60.1103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_5_0_fibonacci_full_trending_up",
+    "score": 56.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_5_0_fibonacci_hybrid_trending_down",
+    "score": 60.1103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_5_0_fibonacci_hybrid_trending_up",
+    "score": 56.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_5_0_simple_hybrid_trending_down",
+    "score": 60.1103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_5_0_simple_hybrid_trending_up",
+    "score": 56.6871,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_1.0_simple_hybrid_unknown",
+    "score": 57.1099,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_1.0_simple_hybrid_volatile",
+    "score": 58.664,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 49.4404,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_10.0_simple_hybrid_unknown",
+    "score": 54.7854,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_10.0_simple_hybrid_volatile",
+    "score": 49.4398,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_15.0_fibonacci_hybrid_unknown",
+    "score": 48.8103,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_15.0_simple_hybrid_unknown",
+    "score": 54.3386,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_15.0_simple_hybrid_volatile",
+    "score": 47.1577,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_post_2.0_fibonacci_hybrid_trending_down",
+    "score": 72.3775,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_2.0_simple_hybrid_unknown",
+    "score": 56.1466,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_2.0_simple_hybrid_volatile",
+    "score": 56.2024,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_post_3.0_fibonacci_hybrid_trending_down",
+    "score": 61.7402,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_3.0_simple_hybrid_unknown",
+    "score": 55.5773,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_3.0_simple_hybrid_volatile",
+    "score": 55.0643,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_5.0_fibonacci_hybrid_unknown",
+    "score": 45.2589,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_5.0_simple_hybrid_unknown",
+    "score": 54.886,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_5.0_simple_hybrid_volatile",
+    "score": 53.3003,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_7.0_simple_hybrid_unknown",
+    "score": 55.327,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_post_7.0_simple_hybrid_volatile",
+    "score": 51.5431,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_1.0_fibonacci_hybrid_unknown",
+    "score": 52.6197,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_pre_1.0_simple_hybrid_trending_down",
+    "score": 50.915,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_1.0_simple_hybrid_unknown",
+    "score": 79.3411,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_1.0_simple_hybrid_volatile",
+    "score": 64.9787,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_2.0_fibonacci_hybrid_unknown",
+    "score": 52.1854,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_pre_2.0_simple_hybrid_trending_down",
+    "score": 52.3039,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_2.0_simple_hybrid_unknown",
+    "score": 79.0286,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_2.0_simple_hybrid_volatile",
+    "score": 64.1142,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_3.0_fibonacci_hybrid_unknown",
+    "score": 47.2985,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_pre_3.0_simple_hybrid_trending_down",
+    "score": 54.232,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_3.0_simple_hybrid_unknown",
+    "score": 78.7043,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_3.0_simple_hybrid_volatile",
+    "score": 63.8856,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_pre_5.0_fibonacci_hybrid_trending_down",
+    "score": 49.232,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_5.0_fibonacci_hybrid_unknown",
+    "score": 46.3439,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_pre_5.0_simple_hybrid_trending_up",
+    "score": 46.1356,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_5.0_simple_hybrid_unknown",
+    "score": 78.0265,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_pre_5.0_simple_hybrid_volatile",
+    "score": 62.8852,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_15_0_fibonacci_full_trending_up",
+    "score": 60.4453,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_15_0_fibonacci_full_volatile",
+    "score": 46.6257,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_15_0_fibonacci_hybrid_trending_up",
+    "score": 60.4453,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_15_0_fibonacci_hybrid_volatile",
+    "score": 46.6257,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_15_0_simple_hybrid_trending_up",
+    "score": 60.4453,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_15_0_simple_hybrid_volatile",
+    "score": 46.6257,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_30_0_fibonacci_full_trending_up",
+    "score": 70.3472,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_30_0_fibonacci_full_volatile",
+    "score": 53.7753,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_30_0_fibonacci_hybrid_trending_up",
+    "score": 70.3472,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_30_0_fibonacci_hybrid_volatile",
+    "score": 53.7753,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_30_0_simple_hybrid_trending_up",
+    "score": 70.3472,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_30_0_simple_hybrid_volatile",
+    "score": 53.7753,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_5_0_fibonacci_full_trending_down",
+    "score": 49.3791,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_5_0_fibonacci_full_trending_up",
+    "score": 64.6936,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_5_0_fibonacci_full_volatile",
+    "score": 45.189,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_5_0_fibonacci_hybrid_trending_down",
+    "score": 49.3791,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_5_0_fibonacci_hybrid_trending_up",
+    "score": 64.6936,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_5_0_fibonacci_hybrid_volatile",
+    "score": 45.189,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_5_0_simple_hybrid_trending_down",
+    "score": 49.3791,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_5_0_simple_hybrid_trending_up",
+    "score": 64.6936,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_5_0_simple_hybrid_volatile",
+    "score": 45.189,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_1.0_fibonacci_full_trending_up",
+    "score": 59.7467,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_1.0_fibonacci_full_volatile",
+    "score": 46.2209,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_1.0_fibonacci_hybrid_trending_up",
+    "score": 78.3007,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_1.0_fibonacci_hybrid_volatile",
+    "score": 45.327,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_10.0_fibonacci_full_trending_up",
+    "score": 58.7745,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_10.0_fibonacci_full_volatile",
+    "score": 46.3837,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 78.8358,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_10.0_fibonacci_hybrid_trending_up",
+    "score": 79.3137,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_10.0_fibonacci_hybrid_volatile",
+    "score": 54.6394,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_10.0_simple_hybrid_trending_up",
+    "score": 64.0564,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_10.0_simple_hybrid_volatile",
+    "score": 63.904,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_15.0_fibonacci_full_trending_up",
+    "score": 59.7467,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_15.0_fibonacci_full_volatile",
+    "score": 46.0579,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_15.0_fibonacci_hybrid_trending_down",
+    "score": 78.8685,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_15.0_fibonacci_hybrid_trending_up",
+    "score": 56.2868,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_15.0_fibonacci_hybrid_volatile",
+    "score": 65.6524,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_15.0_simple_hybrid_trending_up",
+    "score": 66.3644,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_15.0_simple_hybrid_volatile",
+    "score": 54.1267,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_2.0_fibonacci_full_trending_up",
+    "score": 58.7745,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_2.0_fibonacci_full_volatile",
+    "score": 46.9218,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_2.0_fibonacci_hybrid_trending_down",
+    "score": 75.7108,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_2.0_fibonacci_hybrid_trending_up",
+    "score": 77.598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_2.0_fibonacci_hybrid_volatile",
+    "score": 45.9315,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_3.0_fibonacci_full_trending_up",
+    "score": 59.6119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_3.0_fibonacci_full_volatile",
+    "score": 46.1203,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_3.0_fibonacci_hybrid_trending_down",
+    "score": 78.4763,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_3.0_fibonacci_hybrid_trending_up",
+    "score": 76.924,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_5.0_fibonacci_full_trending_up",
+    "score": 59.7467,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_5.0_fibonacci_full_volatile",
+    "score": 45.8582,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_5.0_fibonacci_hybrid_trending_down",
+    "score": 78.7868,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_5.0_fibonacci_hybrid_trending_up",
+    "score": 76.7606,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_5.0_fibonacci_hybrid_volatile",
+    "score": 45.9499,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_7.0_fibonacci_full_trending_up",
+    "score": 59.6119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_7.0_fibonacci_full_volatile",
+    "score": 46.4416,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_7.0_fibonacci_hybrid_trending_down",
+    "score": 84.2565,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_7.0_fibonacci_hybrid_trending_up",
+    "score": 78.1618,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_7.0_fibonacci_hybrid_volatile",
+    "score": 49.9487,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_post_7.0_simple_hybrid_trending_up",
+    "score": 63.7786,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_post_7.0_simple_hybrid_volatile",
+    "score": 66.209,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_1.0_fibonacci_full_trending_up",
+    "score": 59.7467,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_1.0_fibonacci_full_volatile",
+    "score": 46.438,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_1.0_fibonacci_hybrid_trending_up",
+    "score": 53.7623,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_1.0_fibonacci_hybrid_volatile",
+    "score": 47.6108,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_2.0_fibonacci_full_trending_up",
+    "score": 59.6119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_2.0_fibonacci_full_volatile",
+    "score": 46.5667,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_2.0_fibonacci_hybrid_trending_down",
+    "score": 49.3791,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_2.0_fibonacci_hybrid_trending_up",
+    "score": 77.4755,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_3.0_fibonacci_full_trending_up",
+    "score": 59.6119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_3.0_fibonacci_full_volatile",
+    "score": 46.1736,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_3.0_fibonacci_hybrid_trending_down",
+    "score": 78.7214,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_3.0_fibonacci_hybrid_trending_up",
+    "score": 75.8497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_5.0_fibonacci_full_trending_up",
+    "score": 58.7745,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_5.0_fibonacci_full_volatile",
+    "score": 46.9085,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_5.0_fibonacci_hybrid_trending_down",
+    "score": 75.6944,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_pre_5.0_fibonacci_hybrid_trending_up",
+    "score": 79.6405,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_5.0_fibonacci_hybrid_volatile",
+    "score": 51.7297,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_pre_5.0_simple_hybrid_volatile",
+    "score": 78.0772,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_10_0_fibonacci_full_unknown",
+    "score": 59.7799,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_10_0_fibonacci_full_volatile",
+    "score": 46.2798,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_10_0_fibonacci_hybrid_unknown",
+    "score": 59.7799,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_10_0_fibonacci_hybrid_volatile",
+    "score": 46.2798,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_10_0_simple_hybrid_unknown",
+    "score": 59.7799,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_10_0_simple_hybrid_volatile",
+    "score": 46.2798,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_15_0_fibonacci_full_trending_down",
+    "score": 63.5212,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_15_0_fibonacci_full_unknown",
+    "score": 52.1686,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_15_0_fibonacci_full_volatile",
+    "score": 47.0564,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_15_0_fibonacci_hybrid_trending_down",
+    "score": 63.5212,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_15_0_fibonacci_hybrid_unknown",
+    "score": 52.1686,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_15_0_fibonacci_hybrid_volatile",
+    "score": 47.0564,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_15_0_simple_hybrid_trending_down",
+    "score": 63.5212,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_15_0_simple_hybrid_unknown",
+    "score": 52.1686,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_15_0_simple_hybrid_volatile",
+    "score": 47.0564,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_30_0_fibonacci_full_unknown",
+    "score": 60.6179,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_30_0_fibonacci_hybrid_unknown",
+    "score": 60.6179,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_30_0_simple_hybrid_unknown",
+    "score": 60.6179,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_5_0_fibonacci_full_trending_down",
+    "score": 55.4346,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_5_0_fibonacci_full_unknown",
+    "score": 48.2787,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_5_0_fibonacci_hybrid_trending_down",
+    "score": 55.4346,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_5_0_fibonacci_hybrid_unknown",
+    "score": 48.2787,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_5_0_simple_hybrid_trending_down",
+    "score": 55.4346,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_5_0_simple_hybrid_unknown",
+    "score": 48.2787,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_1.0_fibonacci_full_trending_down",
+    "score": 53.1453,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_1.0_fibonacci_hybrid_trending_down",
+    "score": 52.1657,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_1.0_fibonacci_hybrid_unknown",
+    "score": 45.1834,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_1.0_simple_hybrid_trending_down",
+    "score": 61.2329,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_1.0_simple_hybrid_unknown",
+    "score": 70.5221,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_1.0_simple_hybrid_volatile",
+    "score": 60.9639,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_10.0_fibonacci_full_trending_down",
+    "score": 53.1253,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 50.4123,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_10.0_simple_hybrid_unknown",
+    "score": 64.7179,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_10.0_simple_hybrid_volatile",
+    "score": 53.8902,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_15.0_fibonacci_full_trending_down",
+    "score": 53.1597,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_15.0_fibonacci_hybrid_trending_down",
+    "score": 52.974,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_post_15.0_simple_hybrid_trending_down",
+    "score": 45.482,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_15.0_simple_hybrid_unknown",
+    "score": 62.1378,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_15.0_simple_hybrid_volatile",
+    "score": 52.3905,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_2.0_fibonacci_full_trending_down",
+    "score": 53.1674,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_2.0_simple_hybrid_trending_down",
+    "score": 60.7594,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_2.0_simple_hybrid_unknown",
+    "score": 69.2917,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_2.0_simple_hybrid_volatile",
+    "score": 60.4328,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_3.0_fibonacci_full_trending_down",
+    "score": 53.1303,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_3.0_simple_hybrid_trending_down",
+    "score": 61.4175,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_3.0_simple_hybrid_unknown",
+    "score": 69.1016,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_3.0_simple_hybrid_volatile",
+    "score": 59.7644,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_5.0_fibonacci_full_trending_down",
+    "score": 53.166,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_5.0_fibonacci_hybrid_trending_down",
+    "score": 50.0532,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_5.0_simple_hybrid_trending_down",
+    "score": 50.8743,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_5.0_simple_hybrid_unknown",
+    "score": 67.5298,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_5.0_simple_hybrid_volatile",
+    "score": 57.8086,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_7.0_fibonacci_full_trending_down",
+    "score": 53.1909,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_7.0_fibonacci_hybrid_trending_down",
+    "score": 57.7575,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_7.0_simple_hybrid_unknown",
+    "score": 67.3735,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_post_7.0_simple_hybrid_volatile",
+    "score": 55.979,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_1.0_fibonacci_full_trending_down",
+    "score": 53.0403,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_1.0_fibonacci_hybrid_trending_down",
+    "score": 54.4304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_1.0_fibonacci_hybrid_trending_up",
+    "score": 48.7203,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_1.0_simple_hybrid_unknown",
+    "score": 63.6498,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_1.0_simple_hybrid_volatile",
+    "score": 62.0531,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_2.0_fibonacci_full_trending_down",
+    "score": 53.1056,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_2.0_simple_hybrid_unknown",
+    "score": 63.4875,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_2.0_simple_hybrid_volatile",
+    "score": 61.2875,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_3.0_fibonacci_full_trending_down",
+    "score": 53.0244,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_3.0_fibonacci_hybrid_trending_down",
+    "score": 45.2368,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_3.0_simple_hybrid_unknown",
+    "score": 63.5058,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_3.0_simple_hybrid_volatile",
+    "score": 60.6527,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_5.0_fibonacci_full_trending_down",
+    "score": 53.1299,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_5.0_fibonacci_hybrid_trending_down",
+    "score": 51.8684,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_5.0_simple_hybrid_trending_up",
+    "score": 54.0078,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_5.0_simple_hybrid_unknown",
+    "score": 61.8548,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_pre_5.0_simple_hybrid_volatile",
+    "score": 58.475,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_10_0_fibonacci_full_trending_down",
+    "score": 69.3567,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_10_0_fibonacci_full_trending_up",
+    "score": 71.4542,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_10_0_fibonacci_full_volatile",
+    "score": 50.1237,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_10_0_fibonacci_hybrid_trending_down",
+    "score": 69.3567,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_10_0_fibonacci_hybrid_trending_up",
+    "score": 71.4542,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_10_0_fibonacci_hybrid_volatile",
+    "score": 50.1237,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_10_0_simple_hybrid_trending_down",
+    "score": 69.3567,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_10_0_simple_hybrid_trending_up",
+    "score": 71.4542,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_10_0_simple_hybrid_volatile",
+    "score": 50.1237,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_fibonacci_full_trending_down",
+    "score": 57.3385,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_15_0_fibonacci_full_trending_up",
+    "score": 60.6658,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_fibonacci_full_unknown",
+    "score": 47.5119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_fibonacci_full_volatile",
+    "score": 52.6805,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_fibonacci_hybrid_trending_down",
+    "score": 57.3385,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_15_0_fibonacci_hybrid_trending_up",
+    "score": 60.6658,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_fibonacci_hybrid_unknown",
+    "score": 47.5119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_fibonacci_hybrid_volatile",
+    "score": 52.6805,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_simple_hybrid_trending_down",
+    "score": 57.3385,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_15_0_simple_hybrid_trending_up",
+    "score": 60.6658,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_simple_hybrid_unknown",
+    "score": 47.5119,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_15_0_simple_hybrid_volatile",
+    "score": 52.6805,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_fibonacci_full_trending_down",
+    "score": 66.71,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_30_0_fibonacci_full_trending_up",
+    "score": 47.2549,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_fibonacci_full_unknown",
+    "score": 47.8388,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_fibonacci_full_volatile",
+    "score": 47.9831,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_fibonacci_hybrid_trending_down",
+    "score": 66.71,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_30_0_fibonacci_hybrid_trending_up",
+    "score": 47.2549,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_fibonacci_hybrid_unknown",
+    "score": 47.8388,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_fibonacci_hybrid_volatile",
+    "score": 47.9831,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_simple_hybrid_trending_down",
+    "score": 66.71,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_30_0_simple_hybrid_trending_up",
+    "score": 47.2549,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_simple_hybrid_unknown",
+    "score": 47.8388,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_30_0_simple_hybrid_volatile",
+    "score": 47.9831,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_5_0_fibonacci_full_trending_up",
+    "score": 69.7345,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_5_0_fibonacci_full_volatile",
+    "score": 51.339,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_5_0_fibonacci_hybrid_trending_up",
+    "score": 69.7345,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_5_0_fibonacci_hybrid_volatile",
+    "score": 51.339,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_5_0_simple_hybrid_trending_up",
+    "score": 69.7345,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_5_0_simple_hybrid_volatile",
+    "score": 51.339,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_1.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_1.0_fibonacci_full_unknown",
+    "score": 63.2607,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_1.0_fibonacci_hybrid_trending_up",
+    "score": 62.6757,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_1.0_fibonacci_hybrid_unknown",
+    "score": 47.5509,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_1.0_simple_hybrid_unknown",
+    "score": 70.6222,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_1.0_simple_hybrid_volatile",
+    "score": 62.865,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_10.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_10.0_fibonacci_full_unknown",
+    "score": 63.2473,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_10.0_fibonacci_hybrid_trending_down",
+    "score": 48.6839,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_10.0_fibonacci_hybrid_trending_up",
+    "score": 53.031,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_10.0_fibonacci_hybrid_unknown",
+    "score": 67.472,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_10.0_simple_hybrid_trending_down",
+    "score": 50.9561,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_10.0_simple_hybrid_unknown",
+    "score": 63.8371,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_10.0_simple_hybrid_volatile",
+    "score": 56.9882,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_15.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_fibonacci_full_unknown",
+    "score": 63.187,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_fibonacci_hybrid_trending_down",
+    "score": 46.2404,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_fibonacci_hybrid_unknown",
+    "score": 61.922,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_fibonacci_hybrid_volatile",
+    "score": 46.1237,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_simple_hybrid_trending_down",
+    "score": 49.7876,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_simple_hybrid_unknown",
+    "score": 61.3451,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_15.0_simple_hybrid_volatile",
+    "score": 54.6145,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_2.0_fibonacci_full_trending_up",
+    "score": 54.0114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_2.0_fibonacci_full_unknown",
+    "score": 63.6204,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_2.0_fibonacci_hybrid_trending_up",
+    "score": 53.2271,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_2.0_fibonacci_hybrid_unknown",
+    "score": 57.2064,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_2.0_simple_hybrid_unknown",
+    "score": 67.5898,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_2.0_simple_hybrid_volatile",
+    "score": 62.5078,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_3.0_fibonacci_full_trending_up",
+    "score": 54.0114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_3.0_fibonacci_full_unknown",
+    "score": 63.6204,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_3.0_fibonacci_hybrid_trending_up",
+    "score": 46.9404,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_3.0_fibonacci_hybrid_unknown",
+    "score": 55.3524,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_3.0_simple_hybrid_unknown",
+    "score": 67.1303,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_3.0_simple_hybrid_volatile",
+    "score": 61.7805,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_5.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_5.0_fibonacci_full_unknown",
+    "score": 63.1541,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_5.0_fibonacci_hybrid_trending_up",
+    "score": 45.4575,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_5.0_fibonacci_hybrid_unknown",
+    "score": 55.3877,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_5.0_simple_hybrid_unknown",
+    "score": 66.2154,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_5.0_simple_hybrid_volatile",
+    "score": 61.3082,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_7.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_7.0_fibonacci_full_unknown",
+    "score": 63.1541,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_post_7.0_fibonacci_hybrid_trending_up",
+    "score": 57.1078,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_7.0_fibonacci_hybrid_unknown",
+    "score": 67.3797,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_7.0_simple_hybrid_trending_down",
+    "score": 51.9086,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_7.0_simple_hybrid_unknown",
+    "score": 65.3417,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_post_7.0_simple_hybrid_volatile",
+    "score": 59.1047,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_1.0_fibonacci_full_trending_up",
+    "score": 54.0114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_1.0_fibonacci_full_unknown",
+    "score": 63.5035,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_1.0_fibonacci_hybrid_trending_up",
+    "score": 51.4951,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_1.0_fibonacci_hybrid_unknown",
+    "score": 67.4803,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_1.0_simple_hybrid_unknown",
+    "score": 63.1359,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_1.0_simple_hybrid_volatile",
+    "score": 62.9136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_2.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_2.0_fibonacci_full_unknown",
+    "score": 63.2322,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_2.0_fibonacci_hybrid_trending_down",
+    "score": 61.1771,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_2.0_fibonacci_hybrid_trending_up",
+    "score": 49.0605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_2.0_fibonacci_hybrid_unknown",
+    "score": 72.0267,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_2.0_simple_hybrid_unknown",
+    "score": 59.4165,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_2.0_simple_hybrid_volatile",
+    "score": 62.0545,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_3.0_fibonacci_full_trending_up",
+    "score": 54.1462,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_3.0_fibonacci_full_unknown",
+    "score": 63.2322,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_3.0_fibonacci_hybrid_trending_down",
+    "score": 54.5521,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_3.0_fibonacci_hybrid_trending_up",
+    "score": 51.5114,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_3.0_fibonacci_hybrid_unknown",
+    "score": 72.8289,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_3.0_simple_hybrid_unknown",
+    "score": 57.2673,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_3.0_simple_hybrid_volatile",
+    "score": 61.224,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_pre_5.0_fibonacci_full_trending_up",
+    "score": 54.2361,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_5.0_fibonacci_full_unknown",
+    "score": 62.5515,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_5.0_fibonacci_hybrid_trending_down",
+    "score": 46.6077,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_5.0_fibonacci_hybrid_unknown",
+    "score": 68.1597,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_5.0_simple_hybrid_trending_down",
+    "score": 57.8796,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_5.0_simple_hybrid_unknown",
+    "score": 57.477,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_pre_5.0_simple_hybrid_volatile",
+    "score": 49.1704,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_1.0_simple_hybrid_trending_up",
+    "score": 77.8726,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_1.0_simple_hybrid_unknown",
+    "score": 47.9829,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_10.0_simple_hybrid_trending_up",
+    "score": 76.5374,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_15.0_simple_hybrid_trending_up",
+    "score": 75.9071,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_nan_post_2.0_fibonacci_hybrid_trending_up",
+    "score": 50.7516,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_2.0_simple_hybrid_trending_up",
+    "score": 77.8328,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_2.0_simple_hybrid_unknown",
+    "score": 47.8104,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_3.0_simple_hybrid_trending_up",
+    "score": 77.7232,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_3.0_simple_hybrid_unknown",
+    "score": 47.6616,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_5.0_simple_hybrid_trending_up",
+    "score": 77.3546,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_post_7.0_simple_hybrid_trending_up",
+    "score": 77.0605,
+    "archive_path": null
+  },
+  {
+    "signature_path": "nan_pre_5.0_simple_hybrid_volatile",
+    "score": 46.0315,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 58.1046,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 57.3663,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 69.8755,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 58.1046,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 57.3663,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 69.8755,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 58.1046,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 57.3663,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 69.8755,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_volatile",
+    "score": 62.886,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_volatile",
+    "score": 62.886,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_volatile",
+    "score": 62.886,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 55.7139,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 66.4076,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 55.7139,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 66.4076,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 55.7139,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 66.4076,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 71.9649,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 69.473,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 61.893,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 65.6993,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 71.9649,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 69.473,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 61.893,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 65.6993,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 71.9649,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 69.473,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 61.893,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 65.6993,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_full_volatile",
+    "score": 66.2937,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_hybrid_volatile",
+    "score": 66.2937,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_simple_hybrid_volatile",
+    "score": 66.2937,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_none_0_fibonacci_full_volatile",
+    "score": 55.038,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_none_0_fibonacci_hybrid_volatile",
+    "score": 55.038,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_none_0_simple_hybrid_volatile",
+    "score": 55.038,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 67.3775,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 54.1299,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 64.6245,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 66.3523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 67.3775,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 54.1299,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 64.6245,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 66.3523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 67.3775,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 54.1299,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 64.6245,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 66.3523,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 59.8254,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 59.8254,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 59.8254,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_trending_up",
+    "score": 73.2649,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_volatile",
+    "score": 68.0348,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_trending_up",
+    "score": 73.2649,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_volatile",
+    "score": 68.0348,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_trending_up",
+    "score": 73.2649,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_volatile",
+    "score": 68.0348,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 47.3497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 61.7952,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 47.3497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 61.7952,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 47.3497,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 61.7952,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 76.3562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 55.7658,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 76.3562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 55.7658,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 76.3562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 55.7658,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_full_volatile",
+    "score": 73.6215,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_hybrid_volatile",
+    "score": 73.6215,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_simple_hybrid_volatile",
+    "score": 73.6215,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_none_0_fibonacci_full_trending_up",
+    "score": 75.7598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_none_0_fibonacci_hybrid_trending_up",
+    "score": 75.7598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_none_0_simple_hybrid_trending_up",
+    "score": 75.7598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 75.5373,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 75.4698,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 71.8781,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 55.0407,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 75.5373,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 75.4698,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 71.8781,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 55.0407,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 75.5373,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 75.4698,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 71.8781,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 55.0407,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 66.4134,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 65.9845,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 61.0678,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 63.2853,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 66.4134,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 65.9845,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 61.0678,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 63.2853,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 66.4134,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 65.9845,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 61.0678,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 63.2853,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_trending_up",
+    "score": 53.4332,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_unknown",
+    "score": 67.7536,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_volatile",
+    "score": 53.8633,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_trending_up",
+    "score": 53.4332,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_unknown",
+    "score": 67.7536,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_volatile",
+    "score": 53.8633,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_trending_up",
+    "score": 53.4332,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_unknown",
+    "score": 67.7536,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_volatile",
+    "score": 53.8633,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 48.939,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 70.3363,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 48.939,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 70.3363,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 48.939,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 70.3363,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 76.3562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 72.0616,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 66.1762,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 76.3562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 72.0616,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 66.1762,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 76.3562,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 72.0616,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 66.1762,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_full_volatile",
+    "score": 69.8581,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_hybrid_volatile",
+    "score": 69.8581,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_simple_hybrid_volatile",
+    "score": 69.8581,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_none_0_fibonacci_full_trending_up",
+    "score": 77.2672,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_none_0_fibonacci_hybrid_trending_up",
+    "score": 77.2672,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_None_none_0_simple_hybrid_trending_up",
+    "score": 77.2672,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 70.173,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 64.7304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 62.0505,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 67.1989,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 70.173,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 64.7304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 62.0505,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 67.1989,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 70.173,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 64.7304,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 62.0505,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 67.1989,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 57.1017,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 64.6601,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 57.1017,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 64.6601,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 57.1017,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 64.6601,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_none_0_fibonacci_full_trending_down",
+    "score": 76.6136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_unknown",
+    "score": 66.6852,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_full_volatile",
+    "score": 65.5598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_none_0_fibonacci_hybrid_trending_down",
+    "score": 76.6136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_unknown",
+    "score": 66.6852,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_fibonacci_hybrid_volatile",
+    "score": 65.5598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_CPI y/y_none_0_simple_hybrid_trending_down",
+    "score": 76.6136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_unknown",
+    "score": 66.6852,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI y/y_none_0_simple_hybrid_volatile",
+    "score": 65.5598,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 65.3758,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 52.3446,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_full_volatile",
+    "score": 64.4062,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 65.3758,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 52.3446,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 64.4062,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core CPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 65.3758,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 52.3446,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core CPI m/m_none_0_simple_hybrid_volatile",
+    "score": 64.4062,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 64.8979,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 77.982,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 63.4048,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 60.1424,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 64.8979,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 77.982,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 63.4048,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 60.1424,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 64.8979,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_Core PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 77.982,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 63.4048,
+    "archive_path": null
+  },
+  {
+    "signature_path": "Core PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 60.1424,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_none_0_fibonacci_full_trending_up",
+    "score": 76.6136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_full_volatile",
+    "score": 52.2673,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_none_0_fibonacci_hybrid_trending_up",
+    "score": 76.6136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_fibonacci_hybrid_volatile",
+    "score": 52.2673,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_FOMC_none_0_simple_hybrid_trending_up",
+    "score": 76.6136,
+    "archive_path": null
+  },
+  {
+    "signature_path": "FOMC_none_0_simple_hybrid_volatile",
+    "score": 52.2673,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_none_0_fibonacci_full_volatile",
+    "score": 52.6582,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_none_0_fibonacci_hybrid_volatile",
+    "score": 52.6582,
+    "archive_path": null
+  },
+  {
+    "signature_path": "None_none_0_simple_hybrid_volatile",
+    "score": 52.6582,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_trending_down",
+    "score": 64.9485,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_full_trending_up",
+    "score": 49.9714,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_unknown",
+    "score": 63.5971,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 62.922,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_trending_down",
+    "score": 64.9485,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_fibonacci_hybrid_trending_up",
+    "score": 49.9714,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 63.5971,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 62.922,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_trending_down",
+    "score": 64.9485,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PAXGUSDT_PPI m/m_none_0_simple_hybrid_trending_up",
+    "score": 49.9714,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_unknown",
+    "score": 63.5971,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 62.922,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_full_volatile",
+    "score": 68.1042,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_fibonacci_hybrid_volatile",
+    "score": 68.1042,
+    "archive_path": null
+  },
+  {
+    "signature_path": "PPI m/m_none_0_simple_hybrid_volatile",
+    "score": 68.1042,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_full_unknown",
+    "score": 62.0803,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_fibonacci_hybrid_unknown",
+    "score": 62.0803,
+    "archive_path": null
+  },
+  {
+    "signature_path": "CPI m/m_none_0_simple_hybrid_unknown",
+    "score": 62.0803,
+    "archive_path": null
+  }
+]
