@@ -1,4 +1,4 @@
-name: Decrypt and Store Files in Third Repo (No CSV)
+name: Decrypt and Print First 40 Rows (No Format Change)
 
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ permissions:
   actions: write
 
 jobs:
-  decrypt-and-store:
+  decrypt-and-print:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout third repository
@@ -28,6 +28,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+
+      - name: Setup Python and install pandas
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install pandas pyarrow
 
       - name: Decrypt golden_scores.parquet.enc (if exists)
         env:
@@ -94,7 +100,7 @@ jobs:
           fi
           echo "✅ $DEC_FILE رمزگشایی شد."
 
-      - name: Decrypt and extract reports.tar.gz.enc (if exists)
+      - name: Decrypt reports.tar.gz.enc (if exists)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
@@ -126,34 +132,65 @@ jobs:
           fi
           echo "✅ $DEC_FILE رمزگشایی شد."
 
-          # استخراج reports.tar.gz
+          # Extract reports.tar.gz and remove archive
           if [ -f "$DEC_FILE" ]; then
             echo "📦 استخراج reports.tar.gz ..."
             tar -xzf "$DEC_FILE"
             if [ $? -eq 0 ]; then
               echo "✅ reports.tar.gz استخراج شد."
               rm -f "$DEC_FILE"
-              echo "🗑️ فایل فشرده حذف شد (فقط محتوای استخراج‌شده باقی ماند)."
+              echo "🗑️ فایل فشرده حذف شد."
             else
-              echo "⚠️ استخراج reports.tar.gz ناموفق بود. فایل فشرده حفظ می‌شود."
+              echo "⚠️ استخراج reports.tar.gz ناموفق بود."
             fi
           fi
 
-      - name: Commit and push decrypted files to third repo
+      - name: Print first 40 rows of golden_scores.parquet
+        if: hashFiles('golden_scores.parquet') != ''
         run: |
-          cd $GITHUB_WORKSPACE
-          git config user.name "github-actions[bot]"
-          git config user.email "actions@github.com"
+          echo "=============================================="
+          echo "   📊 golden_scores.parquet — ۴۰ خط اول"
+          echo "=============================================="
+          python3 -c "
+          import pandas as pd
+          df = pd.read_parquet('golden_scores.parquet')
+          print(df.head(40).to_string())
+          "
 
-          # حذف فایل‌های رمزنگاری‌شده قدیمی (اختیاری)
-          # rm -f golden_scores.parquet.enc analysis_results/portfolios_scores.parquet.enc reports.tar.gz.enc
+      - name: Print first 40 rows of portfolios_scores.parquet
+        if: hashFiles('analysis_results/portfolios_scores.parquet') != ''
+        run: |
+          echo "=============================================="
+          echo "   📊 portfolios_scores.parquet — ۴۰ خط اول"
+          echo "=============================================="
+          python3 -c "
+          import pandas as pd
+          df = pd.read_parquet('analysis_results/portfolios_scores.parquet')
+          print(df.head(40).to_string())
+          "
 
-          git add -A
-          if git diff --cached --quiet; then
-            echo "ℹ️ هیچ تغییری برای commit وجود ندارد."
-          else
-            git commit -m "Decrypt and store files (run ${{ github.run_id }})"
-            git pull --rebase origin main || true
-            git push origin main
-            echo "✅ تغییرات به مخزن سوم push شد."
-          fi
+      - name: Print reports content (if extracted)
+        if: hashFiles('reports/*.json') != ''
+        run: |
+          echo "=============================================="
+          echo "   📄 reports — محتوای فایل‌های JSON"
+          echo "=============================================="
+          find reports -name "*.json" -type f | while read -r f; do
+            echo "=============================================="
+            echo "📄 فایل: $f"
+            echo "=============================================="
+            cat "$f" | head -100
+            echo ""
+          done
+
+      - name: Print final summary
+        run: |
+          echo "=============================================="
+          echo "   📋 گزارش نهایی"
+          echo "=============================================="
+          [ -f golden_scores.parquet ] && echo "✅ golden_scores.parquet رمزگشایی شد (۴۰ خط اول چاپ شد)"
+          [ ! -f golden_scores.parquet ] && echo "⚠️ golden_scores.parquet وجود نداشت"
+          [ -f analysis_results/portfolios_scores.parquet ] && echo "✅ portfolios_scores.parquet رمزگشایی شد (۴۰ خط اول چاپ شد)"
+          [ ! -f analysis_results/portfolios_scores.parquet ] && echo "⚠️ portfolios_scores.parquet وجود نداشت"
+          [ -d reports ] && echo "✅ reports استخراج شد (محتوای JSON چاپ شد)"
+          [ ! -d reports ] && echo "⚠️ reports وجود نداشت"
