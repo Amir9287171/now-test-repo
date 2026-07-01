@@ -35,7 +35,7 @@ jobs:
           python-version: '3.10'
       - run: pip install pandas pyarrow
 
-      - name: Decrypt golden_scores.parquet.enc
+      - name: Decrypt golden_scores.parquet.enc (Optional)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
@@ -43,8 +43,8 @@ jobs:
           mkdir -p /tmp/decrypted
           ENC_FILE="golden_scores.parquet.enc"
           if [ ! -f "$ENC_FILE" ]; then
-            echo "❌ فایل $ENC_FILE در مخزن سوم یافت نشد!"
-            exit 1
+            echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
+            exit 0
           fi
           echo "📄 پردازش: $ENC_FILE"
           node -e "
@@ -59,18 +59,18 @@ jobs:
           "
           if [ ! -f /tmp/decrypted/golden_scores.parquet ]; then
             echo "❌ رمزگشایی golden_scores.parquet.enc ناموفق بود."
-            exit 1
+            exit 0
           fi
           echo "✅ golden_scores.parquet.enc رمزگشایی شد."
 
-      - name: Decrypt portfolios_scores.parquet.enc
+      - name: Decrypt portfolios_scores.parquet.enc (Optional)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           ENC_FILE="analysis_results/portfolios_scores.parquet.enc"
           if [ ! -f "$ENC_FILE" ]; then
-            echo "❌ فایل $ENC_FILE در مخزن سوم یافت نشد!"
-            exit 1
+            echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
+            exit 0
           fi
           echo "📄 پردازش: $ENC_FILE"
           node -e "
@@ -85,18 +85,18 @@ jobs:
           "
           if [ ! -f /tmp/decrypted/portfolios_scores.parquet ]; then
             echo "❌ رمزگشایی portfolios_scores.parquet.enc ناموفق بود."
-            exit 1
+            exit 0
           fi
           echo "✅ portfolios_scores.parquet.enc رمزگشایی شد."
 
-      - name: Decrypt reports.tar.gz.enc
+      - name: Decrypt reports.tar.gz.enc (Optional)
         env:
           USER_PASS: ${{ github.event.inputs.user_password }}
         run: |
           ENC_FILE="reports.tar.gz.enc"
           if [ ! -f "$ENC_FILE" ]; then
-            echo "❌ فایل $ENC_FILE در مخزن سوم یافت نشد!"
-            exit 1
+            echo "⚠️ فایل $ENC_FILE وجود ندارد. از این فایل عبور می‌کنیم."
+            exit 0
           fi
           echo "📄 پردازش: $ENC_FILE"
           node -e "
@@ -111,12 +111,16 @@ jobs:
           "
           if [ ! -f /tmp/decrypted/reports.tar.gz ]; then
             echo "❌ رمزگشایی reports.tar.gz.enc ناموفق بود."
-            exit 1
+            exit 0
           fi
           echo "✅ reports.tar.gz.enc رمزگشایی شد."
 
-      - name: Convert golden_scores.parquet to CSV and display
+      - name: Convert golden_scores.parquet to CSV and display (if exists)
         run: |
+          if [ ! -f /tmp/decrypted/golden_scores.parquet ]; then
+            echo "⚠️ golden_scores.parquet وجود ندارد، از این مرحله عبور می‌کنیم."
+            exit 0
+          fi
           echo "=============================================="
           echo "   📊 golden_scores.parquet → CSV"
           echo "=============================================="
@@ -133,8 +137,12 @@ jobs:
           print(df.head(5).to_string())
           "
 
-      - name: Convert portfolios_scores.parquet to CSV and display
+      - name: Convert portfolios_scores.parquet to CSV and display (if exists)
         run: |
+          if [ ! -f /tmp/decrypted/portfolios_scores.parquet ]; then
+            echo "⚠️ portfolios_scores.parquet وجود ندارد، از این مرحله عبور می‌کنیم."
+            exit 0
+          fi
           echo "=============================================="
           echo "   📊 portfolios_scores.parquet → CSV"
           echo "=============================================="
@@ -151,8 +159,12 @@ jobs:
           print(df.head(5).to_string())
           "
 
-      - name: Extract and display reports.tar.gz content
+      - name: Extract and display reports.tar.gz content (if exists)
         run: |
+          if [ ! -f /tmp/decrypted/reports.tar.gz ]; then
+            echo "⚠️ reports.tar.gz وجود ندارد، از این مرحله عبور می‌کنیم."
+            exit 0
+          fi
           echo "=============================================="
           echo "   📦 reports.tar.gz (خروجی generate-reports)"
           echo "=============================================="
@@ -177,9 +189,12 @@ jobs:
           echo "=============================================="
           echo "   📋 گزارش نهایی"
           echo "=============================================="
-          echo "✅ golden_scores.parquet → CSV (رمزگشایی و تبدیل شد)"
-          echo "✅ portfolios_scores.parquet → CSV (رمزگشایی و تبدیل شد)"
-          echo "✅ reports.tar.gz.enc → استخراج و نمایش محتوا"
+          [ -f /tmp/decrypted/golden_scores.csv ] && echo "✅ golden_scores.csv (رمزگشایی و تبدیل شد)"
+          [ ! -f /tmp/decrypted/golden_scores.csv ] && echo "⚠️ golden_scores.parquet وجود نداشت"
+          [ -f /tmp/decrypted/portfolios_scores.csv ] && echo "✅ portfolios_scores.csv (رمزگشایی و تبدیل شد)"
+          [ ! -f /tmp/decrypted/portfolios_scores.csv ] && echo "⚠️ portfolios_scores.parquet وجود نداشت"
+          [ -d /tmp/decrypted/reports ] && echo "✅ reports.tar.gz (استخراج شد)"
+          [ ! -d /tmp/decrypted/reports ] && echo "⚠️ reports.tar.gz وجود نداشت"
 
       - name: Wait 5 minutes and cleanup
         run: |
