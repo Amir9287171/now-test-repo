@@ -1370,29 +1370,14 @@
     "score": 46.0315
   },
   {
-    "signature_path": "combo_monthly/Best_30m/PAXGUSDT/monthly_fibonacci_full.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 64.7304
-  },
-  {
     "signature_path": "combo_monthly/Best_30m/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl",
     "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
     "score": 67.1989
   },
   {
-    "signature_path": "combo_monthly/Best_30m/PAXGUSDT/monthly_fibonacci_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 64.7304
-  },
-  {
     "signature_path": "combo_monthly/Best_30m/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl",
     "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
     "score": 67.1989
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/PAXGUSDT/monthly_simple_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 64.7304
   },
   {
     "signature_path": "combo_monthly/Best_30m/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl",
@@ -13563,21 +13548,6 @@
     "signature_path": "combo_10day/Dtsv/BTCUSDT/CoreCPI_post_10d_fibonacci_hybrid.jsonl",
     "archive_path": "signature_archives/combo_10day/Dtsv/Dtsv_chunk_0_20260630T064506Z.tar.gz.enc",
     "score": 49.8733
-  },
-  {
-    "signature_path": "combo_monthly/Best_15m/BTCUSDT/monthly_fibonacci_full.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_15m/Best_15m_chunk_13_20260629T224718Z.tar.gz.enc",
-    "score": 61.9166
-  },
-  {
-    "signature_path": "combo_monthly/Best_15m/BTCUSDT/monthly_fibonacci_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_15m/Best_15m_chunk_13_20260629T224718Z.tar.gz.enc",
-    "score": 61.9166
-  },
-  {
-    "signature_path": "combo_monthly/Best_15m/BTCUSDT/monthly_simple_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_15m/Best_15m_chunk_13_20260629T224718Z.tar.gz.enc",
-    "score": 61.9166
   },
   {
     "signature_path": "combo_monthly/Best_30m/BTCUSDT/monthly_fibonacci_full.jsonl",
