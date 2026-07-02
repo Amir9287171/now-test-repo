@@ -1370,21 +1370,6 @@
     "score": 46.0315
   },
   {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 67.1989
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 67.1989
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT_ETHUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 67.1989
-  },
-  {
     "signature_path": "combo_monthly/Best_5m/PAXGUSDT/monthly_fibonacci_full.jsonl",
     "archive_path": "signature_archives/combo_monthly/Best_5m/Best_5m_chunk_0_20260630T064506Z.tar.gz.enc",
     "score": 49.9714
@@ -13548,21 +13533,6 @@
     "signature_path": "combo_10day/Dtsv/BTCUSDT/CoreCPI_post_10d_fibonacci_hybrid.jsonl",
     "archive_path": "signature_archives/combo_10day/Dtsv/Dtsv_chunk_0_20260630T064506Z.tar.gz.enc",
     "score": 49.8733
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT/monthly_fibonacci_full.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 56.9588
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT/monthly_fibonacci_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 56.9588
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT/monthly_simple_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 56.9588
   },
   {
     "signature_path": "combo_monthly/Best_5m/BTCUSDT/monthly_fibonacci_full.jsonl",
