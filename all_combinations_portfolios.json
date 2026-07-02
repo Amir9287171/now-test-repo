@@ -1370,21 +1370,6 @@
     "score": 46.0315
   },
   {
-    "signature_path": "combo_monthly/Best_1h/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_full.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_1h/Best_1h_chunk_0_20260630T022650Z.tar.gz.enc",
-    "score": 73.6215
-  },
-  {
-    "signature_path": "combo_monthly/Best_1h/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_fibonacci_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_1h/Best_1h_chunk_0_20260630T022650Z.tar.gz.enc",
-    "score": 73.6215
-  },
-  {
-    "signature_path": "combo_monthly/Best_1h/BTCUSDT_ETHUSDT_SOLUSDT_PAXGUSDT/monthly_simple_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_1h/Best_1h_chunk_0_20260630T022650Z.tar.gz.enc",
-    "score": 73.6215
-  },
-  {
     "signature_path": "combo_monthly/Best_1h/PAXGUSDT/monthly_fibonacci_full.jsonl",
     "archive_path": "signature_archives/combo_monthly/Best_1h/Best_1h_chunk_0_20260630T022650Z.tar.gz.enc",
     "score": 75.4698
@@ -12898,21 +12883,6 @@
     "signature_path": "combo_10day/Ttt3/BTCUSDT_XRPUSDT/fixed_5d_simple_hybrid.jsonl",
     "archive_path": "signature_archives/combo_10day/Ttt3/Ttt3_chunk_16_20260630T064605Z.tar.gz.enc",
     "score": 50.1399
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT_XRPUSDT/monthly_fibonacci_full.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 67.038
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT_XRPUSDT/monthly_fibonacci_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 67.038
-  },
-  {
-    "signature_path": "combo_monthly/Best_30m/BTCUSDT_XRPUSDT/monthly_simple_hybrid.jsonl",
-    "archive_path": "signature_archives/combo_monthly/Best_30m/Best_30m_chunk_13_20260630T022741Z.tar.gz.enc",
-    "score": 67.038
   },
   {
     "signature_path": "combo_monthly/Best_5m/BTCUSDT_XRPUSDT/monthly_fibonacci_full.jsonl",
