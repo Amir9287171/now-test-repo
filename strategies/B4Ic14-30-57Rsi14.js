@@ -14,7 +14,7 @@ const ANALYSIS_CONFIG = {
   },
   ichimoku: {
     enabled: true,
-    tenkanPeriod: 13,
+    tenkanPeriod: 14,
     kijunPeriod: 30,
     senkouBPeriod: 57,
     useCloudFilter: true,
@@ -63,18 +63,25 @@ const stopLossStages = [
 
 const brokenLines = new Set();
 
-// اصلاح: به‌جای require('wickra') (که داخل new Function در دسترس نیست چون
-// require متغیر global نیست، بلکه module-scoped است)، از global.__wickra
-// استفاده می‌کنیم که خود backtest-core.js آن را ست کرده است.
+// محاسبه RSI با wickra — طبق مستندات رسمی (docs.wickra.org/Quickstart-Node):
+// الگوی صحیح: کلاس با حرف بزرگ (RSI) + new + متد .batch() روی آرایه closes.
+// - از global.__wickra استفاده می‌شود، نه require('wickra')، چون این کد داخل
+//   new Function اجرا می‌شود و require آنجا در دسترس نیست (module-scoped است).
+// - .batch() در دوره‌ی warm-up مقدار NaN برمی‌گرداند، نه null؛ به همین دلیل
+//   از Number.isFinite() برای تشخیص مقدار معتبر استفاده می‌کنیم.
+// - برای جلوگیری از آینده‌نگری، فقط close تا index - 1 پاس داده می‌شود.
 function calculateRSI(data, index, period = 14) {
   const closes = data.slice(0, index).map(d => d.close);
   if (closes.length < period + 1) return null;
+
+  const wickra = global.__wickra;
+  if (!wickra || typeof wickra.RSI !== 'function') return null;
+
   try {
-    const wickra = global.__wickra;
-    if (!wickra || typeof wickra.rsi !== 'function') return null;
-    const rsiArray = wickra.rsi(closes, period);
-    if (!rsiArray || rsiArray.length === 0) return null;
-    return rsiArray[rsiArray.length - 1];
+    const rsi = new wickra.RSI(period);
+    const values = rsi.batch(closes);
+    const last = values[values.length - 1];
+    return Number.isFinite(last) ? last : null;
   } catch (e) {
     return null;
   }
