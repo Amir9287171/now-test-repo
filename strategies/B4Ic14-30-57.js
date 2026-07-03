@@ -1,6 +1,6 @@
 /**
- * @filename 
- * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی، حد ضرر ۰.۴٪
+ * @filename B4Ic14-30-57.js
+ * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی (تشخیص دستی، بدون آینده‌نگری)
  */
 
 const stopLossInitial = 0.4;
@@ -23,6 +23,7 @@ const ANALYSIS_CONFIG = {
   }
 };
 
+// ─── حد ضرر پلکانی ۳۵ مرحله‌ای (مشترک در همه) ─────────────
 const stopLossStages = [
   { movePercent: 0.5, stopLossPercent: 0.4 },
   { movePercent: 1.0, stopLossPercent: 0.8 },
@@ -64,7 +65,10 @@ const stopLossStages = [
 const brokenLines = new Set();
 
 function customStrategy(data, index, breakPointsParam, ichimokuParam) {
-  // ۱. اعتبارسنجی ایچیموکو
+  // ─── گاردهای اولیه ──────────────────────────────────────
+  if (index < 61) return null; // حداقل برای ایچیموکو + یک کندل قبل
+
+  // ─── ۱. اعتبارسنجی ایچیموکو (برای کندل جاری) ──────────
   if (!ichimokuParam || ichimokuParam.kumoTop === null || ichimokuParam.kumoTop === undefined) {
     return null;
   }
@@ -72,56 +76,58 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam) {
     return null;
   }
 
-  // ۲. دریافت خطوط روند نزولی
+  // ─── ۲. دریافت خطوط روند نزولی ──────────────────────────
   const trendLines = getTrendLines();
   const downLines = trendLines.filter(line =>
     (line.type === 'primaryDown' || line.type === 'manualDown') && line.slope < 0
   );
   if (downLines.length === 0) return null;
 
-  // ۳. دریافت شکست‌های کندل جاری
-  const breaks = getBreakPointsAtCandle(index);
-  if (!breaks || breaks.length === 0) return null;
+  // ─── ۳. پارامترهای شکست ──────────────────────────────────
+  const MIN_DIST = 0.09;
+  const MAX_DIST = 0.15;
+  const TARGET = 0.12;
 
-  const upBreaks = breaks.filter(b => b.direction === 'up');
-  if (upBreaks.length === 0) return null;
+  const prevCandle = data[index - 1];
+  const entryPrice = data[index].open;
 
-  // ۴. انتخاب خط با نزدیک‌ترین فاصله به ۰.۱۲٪ بالای خط و شکسته نشده
   let selectedLine = null;
-  let bestDiff = Infinity;
+  let closestToTarget = Infinity;
 
-  for (const breakInfo of upBreaks) {
-    const line = downLines.find(l => l.id === breakInfo.lineId);
-    if (!line) continue;
+  // ─── ۴. حلقه روی خطوط نزولی ──────────────────────────────
+  for (const line of downLines) {
+    if (line.endIndex > index - 1) continue;
     if (brokenLines.has(line.id)) continue;
 
-    const lineValue = calculateTrendLineValue(line, index);
-    if (lineValue === null) continue;
+    const slope = (line.endPrice - line.startPrice) / (line.endIndex - line.startIndex);
+    const intercept = line.startPrice - slope * line.startIndex;
+    const lineValue = slope * (index - 1) + intercept;
 
-    const high = data[index].high;
-    const low = data[index].low;
-    if (high < lineValue * 1.0009 || low > lineValue * 1.0015) continue;
+    const distanceLow = ((prevCandle.low - lineValue) / lineValue) * 100;
+    const distanceHigh = ((prevCandle.high - lineValue) / lineValue) * 100;
 
-    const diffPercent = ((high - lineValue) / lineValue) * 100;
-    if (Math.abs(diffPercent - 0.12) < Math.abs(bestDiff - 0.12)) {
-      bestDiff = diffPercent;
+    const isBreak = (distanceLow <= MAX_DIST && distanceHigh >= MIN_DIST);
+    if (!isBreak) continue;
+
+    const diffFromTarget = Math.abs(distanceHigh - TARGET);
+    if (diffFromTarget < closestToTarget) {
+      closestToTarget = diffFromTarget;
       selectedLine = line;
     }
   }
 
   if (!selectedLine) return null;
-
-  // ثبت خط به عنوان شکسته‌شده
   brokenLines.add(selectedLine.id);
 
-  // ۵. صدور سیگنال خرید
-  const entryPrice = data[index].open;
-  const stopLoss = entryPrice * (1 - 0.004); // ۰.۴٪ پایین‌تر
+  // ─── ۵. صدور سیگنال ────────────────────────────────────
+  const stopLoss = entryPrice * (1 - 0.004);
+  const takeProfit = entryPrice * (1 + 0.02);
 
   return {
     signal: 'BUY',
     price: entryPrice,
     stopLoss: stopLoss,
+    takeProfit: takeProfit,
     trailingStop: true,
     useStagedStopLoss: true,
     stopLossStages: stopLossStages
