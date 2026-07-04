@@ -1,7 +1,7 @@
 /**
  * @filename B4Ic14-30-57.js
- * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی (تشخیص دستی، بدون آینده‌نگری) - کپی از Best.js
- * @version 3.0 - منطق Best.js با رعایت قوانین جدید
+ * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی (یکجا - BATCH)
+ * @version 4.0 - کاملاً یکجا (Batch Mode)
  */
 
 const stopLossInitial = 0.5;
@@ -15,7 +15,7 @@ const ANALYSIS_CONFIG = {
     pivotPeriod: 5,
     minTouchPoints: 3,
     minCandleDistance: 3,
-    precision: 0.001
+    precision: 0.002
   },
 
   ichimoku: {
@@ -50,33 +50,104 @@ const stopLossStages = [
   { movePercent: 8.0, stopLossPercent: 7.5 }
 ];
 
-// ─── تابع اصلی (دقیقا مثل Best.js) ──────────────────────────
+// ─── محاسبه یکجای خطوط روند ──────────────────────────────
+// این تابع رو بیرون customStrategy تعریف میکنیم تا فقط یک بار اجرا بشه
+function calculateAllTrendLines(marketData, options) {
+  try {
+    // سعی میکنیم از precomputeTrendLinesBatch موجود در سیستم استفاده کنیم
+    // اگه این تابع وجود نداره، خودمون با روش مشابه محاسبه میکنیم
+    if (typeof precomputeTrendLinesBatch === 'function') {
+      return precomputeTrendLinesBatch(marketData, options);
+    }
+    
+    // fallback: استفاده از getTrendLines() که سیستم میده
+    // اینجا فقط یکبار و با کل دیتاست صدا زده میشه
+    return getTrendLines();
+  } catch (e) {
+    console.error('❌ خطا در محاسبه یکجای خطوط روند:', e.message);
+    return [];
+  }
+}
+
+// ─── ذخیره خطوط یکجا ──────────────────────────────────────
+// این متغیر رو بیرون customStrategy تعریف میکنیم
+let batchTrendLines = null;
+let batchCursor = { pos: 0, activeLines: [] };
+
+// ─── تابع کمکی برای دریافت خطوط فعال در کندل جاری ──────
+function getActiveLinesAtCandle(candleIndex) {
+  if (!batchTrendLines || batchTrendLines.length === 0) {
+    return [];
+  }
+
+  // اگر cursor هنوز مقداردهی نشده، از اول شروع کن
+  if (!batchCursor) {
+    batchCursor = { pos: 0, activeLines: [] };
+  }
+
+  // خطوط جدیدی که activationCandle <= candleIndex هستن رو اضافه کن
+  while (
+    batchCursor.pos < batchTrendLines.length &&
+    batchTrendLines[batchCursor.pos].activationCandle <= candleIndex
+  ) {
+    batchCursor.activeLines.push(batchTrendLines[batchCursor.pos]);
+    batchCursor.pos++;
+  }
+
+  return batchCursor.activeLines;
+}
+
+// ─── تابع اصلی (یکجا) ─────────────────────────────────────
 function customStrategy(data, index, breakPointsParam, ichimokuParam, trendLinesParam, refineEntryPrice) {
   // ── گاردهای اولیه ──────────────────────────────────────
   if (index < 61) return null;
 
+  // ── مقداردهی اولیه خطوط (فقط یک بار) ──────────────────
+  if (batchTrendLines === null) {
+    try {
+      console.log('🔄 [BATCH] محاسبه یکجای خطوط روند روی کل دیتاست...');
+      // اول سعی میکنیم از تابع سیستمی استفاده کنیم
+      if (typeof precomputeTrendLinesBatch === 'function') {
+        batchTrendLines = precomputeTrendLinesBatch(data, ANALYSIS_CONFIG.trendLines);
+        console.log(`✅ [BATCH] ${batchTrendLines.length} خط روند یکجا محاسبه شد.`);
+      } else {
+        // اگه تابع وجود نداره، از trendLinesParam استفاده کن
+        const rawLines = trendLinesParam || getTrendLines();
+        if (rawLines.length > 0) {
+          batchTrendLines = rawLines;
+          console.log(`✅ [BATCH] ${batchTrendLines.length} خط روند از سیستم دریافت شد.`);
+        } else {
+          console.warn('⚠️ [BATCH] هیچ خط روندی پیدا نشد!');
+          batchTrendLines = [];
+        }
+      }
+    } catch (e) {
+      console.error('❌ [BATCH] خطا:', e.message);
+      batchTrendLines = [];
+    }
+  }
+
+  // ── دریافت خطوط فعال در کندل جاری ──────────────────────
+  const activeLines = getActiveLinesAtCandle(index);
+  if (activeLines.length === 0) return null;
+
+  // ── ایچیموکو ──────────────────────────────────────────────
   if (!ichimokuParam || ichimokuParam.kumoTop === null || ichimokuParam.kumoTop === undefined) {
     return null;
   }
   if (!ichimokuParam.tenkan || !ichimokuParam.kijun) return null;
+  if (!ichimokuParam.isPriceAboveCloud || !ichimokuParam.isTenkanAboveKijun) return null;
 
-  // ── دریافت خطوط نزولی (مثل Best.js) ──────────────────
-  const trendLines = trendLinesParam || getTrendLines();
-  
-  // سعی میکنیم مثل Best.js از primaryDown استفاده کنیم
-  let downTrendLines = [];
-  if (trendLines.primaryDown && Array.isArray(trendLines.primaryDown)) {
-    downTrendLines = trendLines.primaryDown;
-  } else {
-    // fallback: فیلتر کردن آرایه‌ی فلت
-    downTrendLines = trendLines.filter(line =>
-      (line.type === 'primaryDown' || line.type === 'manualDown') && line.slope < 0
-    );
-  }
-  
-  if (downTrendLines.length === 0) return null;
+  // ── فیلتر خطوط نزولی ──────────────────────────────────────
+  const downLines = activeLines.filter(line => {
+    const isDown = line.type === 'primaryDown' || line.type === 'manualDown';
+    const slope = line.slope || ((line.endPrice - line.startPrice) / (line.endIndex - line.startIndex));
+    return isDown && slope < 0;
+  });
 
-  // ── پارامترهای استراتژی (دقیقا مثل Best.js) ──────────
+  if (downLines.length === 0) return null;
+
+  // ── پارامترهای شکست ──────────────────────────────────────
   const MIN_DIST = 0.09;
   const MAX_DIST = 0.15;
   const TARGET = 0.12;
@@ -87,58 +158,28 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, trendLines
   let bestSignal = null;
   let closestToTarget = Infinity;
 
-  // ── حلقه روی خطوط نزولی (دقیقا مثل Best.js) ──────────
-  for (let i = 0; i < downTrendLines.length; i++) {
-    const line = downTrendLines[i];
-
-    // شرط ۱: خط باید به کندل قبلی رسیده باشد (جلوگیری از آینده‌نگری)
-    if (line.endIndex > index - 1) continue;
-
-    // شرط ۲: شیب منفی
-    if (line.startPrice <= line.endPrice) continue;
-
-    // محاسبه مقدار خط در کندل قبلی (دستی، مثل Best.js)
+  // ── حلقه روی خطوط نزولی ──────────────────────────────────
+  for (const line of downLines) {
+    // محاسبه مقدار خط در کندل قبلی
     const slope = (line.endPrice - line.startPrice) / (line.endIndex - line.startIndex);
     const intercept = line.startPrice - slope * line.startIndex;
     const lineValue = slope * (index - 1) + intercept;
 
-    // محاسبه فاصله‌ی High و Low کندل قبلی از خط (دقیقا مثل Best.js)
+    // محاسبه فاصله High و Low کندل قبلی از خط
     const distanceLow = ((prevCandle.low - lineValue) / lineValue) * 100;
     const distanceHigh = ((prevCandle.high - lineValue) / lineValue) * 100;
 
-    // شرط ۳: شکست در بازه‌ی ۰.۰۹% تا ۰.۱۵% (مثل Best.js)
+    // شرط شکست در بازه ۰.۰۹٪ تا ۰.۱۵٪
     const isBreak = (distanceLow <= MAX_DIST && distanceHigh >= MIN_DIST);
     if (!isBreak) continue;
 
-    // شرط ۴: ایچیموکو (مثل Best.js)
-    const isIchimokuValid = (
-      ichimokuParam.isPriceAboveCloud &&
-      ichimokuParam.isTenkanAboveKijun
-    );
-    if (!isIchimokuValid) continue;
-
-    // شرط ۵: جلوگیری از شکست تکراری (مثل Best.js)
-    let hasPreviousBreak = false;
-    for (let j = line.endIndex + 1; j < index; j++) {
-      const pastCandle = data[j];
-      const pastLineValue = slope * j + intercept;
-      const pastDistLow = ((pastCandle.low - pastLineValue) / pastLineValue) * 100;
-      const pastDistHigh = ((pastCandle.high - pastLineValue) / pastLineValue) * 100;
-      if (pastDistLow <= MAX_DIST && pastDistHigh >= MIN_DIST) {
-        hasPreviousBreak = true;
-        break;
-      }
-    }
-    if (hasPreviousBreak) continue;
-
-    // شرط ۶: انتخاب بهترین (نزدیکترین به ۰.۱۲%) – مثل Best.js
+    // انتخاب بهترین (نزدیک‌ترین به ۰.۱۲%)
     const diffFromTarget = Math.abs(distanceHigh - TARGET);
     if (diffFromTarget < closestToTarget) {
       closestToTarget = diffFromTarget;
 
-      // محاسبه‌ی stopLoss (مثل Best.js با ۰.۵%)
-      const stopLoss = entryPrice * (1 - 0.005); // ۰.۵% پایینتر
-      const takeProfit = entryPrice * (1 + 0.02); // ۲% بالاتر
+      const stopLoss = entryPrice * (1 - 0.005);
+      const takeProfit = entryPrice * (1 + 0.02);
 
       bestSignal = {
         signal: 'BUY',
