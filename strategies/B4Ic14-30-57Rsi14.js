@@ -1,17 +1,26 @@
 /**
  * @filename B4Ic14-30-57Rsi14.js
- * @description خرید + RSI(14) > 50 (تشخیص دستی شکست، بدون آینده‌نگری)
+ * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و RSI(14) > 50
+ * @version 2.0 (بروزرسانی بر اساس راهنمای نسخه ۱۵)
  */
 
 const stopLossInitial = 0.4;
 
+// ─── پیکربندی تحلیل (ANALYSIS_CONFIG) ────────────────────────
 const ANALYSIS_CONFIG = {
+  // پارامترهای اجباری ورود (بخش ۲.۰ و ۱۲)
+  entryType: "nextCandle",        // ورود در کندل بعد از شکست (استفاده از High/Low کندل جاری مجاز است)
+  breakTolerance: 0.001,          // ۰.۱٪ (در nextCandle استفاده نمی‌شود ولی اجباری است)
+
+  // تنظیمات خطوط روند (بخش ۲.۱)
   trendLines: {
     pivotPeriod: 5,
     minTouchPoints: 3,
     minCandleDistance: 3,
-    precision: 0.001
+    precision: 0.002               // ۰.۲٪ (مقدار پیشنهادی بین ۰.۰۰۱ تا ۰.۰۰۵)
   },
+
+  // تنظیمات ایچیموکو (بخش ۲.۲)
   ichimoku: {
     enabled: true,
     tenkanPeriod: 14,
@@ -20,9 +29,13 @@ const ANALYSIS_CONFIG = {
     useCloudFilter: true,
     useTKCross: true,
     useChikou: false
-  }
+  },
+
+  // بافر خودکار (اختیاری، بخش ۱۴)
+  enableSmartContinuation: false
 };
 
+// ─── حد ضرر پلکانی ۳۵ مرحله‌ای ─────────────────────────────
 const stopLossStages = [
   { movePercent: 0.5, stopLossPercent: 0.4 },
   { movePercent: 1.0, stopLossPercent: 0.8 },
@@ -63,34 +76,42 @@ const stopLossStages = [
 
 const brokenLines = new Set();
 
-// محاسبه RSI با wickra — طبق مستندات رسمی (docs.wickra.org/Quickstart-Node):
-// الگوی صحیح: کلاس با حرف بزرگ (RSI) + new + متد .batch() روی آرایه closes.
-// - از global.__wickra استفاده می‌شود، نه require('wickra')، چون این کد داخل
-//   new Function اجرا می‌شود و require آنجا در دسترس نیست (module-scoped است).
-// - .batch() در دوره‌ی warm-up مقدار NaN برمی‌گرداند، نه null؛ به همین دلیل
-//   از Number.isFinite() برای تشخیص مقدار معتبر استفاده می‌کنیم.
-// - برای جلوگیری از آینده‌نگری، فقط close تا index - 1 پاس داده می‌شود.
+// ─── محاسبه‌ی RSI با wickra (طبق بخش ۴.۳.۴ و ۴.۳.۲) ──────
 function calculateRSI(data, index, period = 14) {
+  // ⚠️ قانون طلایی: داده‌ها را فقط تا کندل قبلی (index-1) می‌دهیم
   const closes = data.slice(0, index).map(d => d.close);
   if (closes.length < period + 1) return null;
 
+  // ✅ استفاده از global.__wickra به جای require (بخش ۴.۳.۳)
   const wickra = global.__wickra;
   if (!wickra || typeof wickra.RSI !== 'function') return null;
 
   try {
+    // ✅ الگوی صحیح: new ClassName(...).batch(...) (بخش ۴.۳.۲)
     const rsi = new wickra.RSI(period);
     const values = rsi.batch(closes);
     const last = values[values.length - 1];
+    // ✅ بررسی با Number.isFinite برای جلوگیری از NaN در warm-up
     return Number.isFinite(last) ? last : null;
   } catch (e) {
     return null;
   }
 }
 
-function customStrategy(data, index, breakPointsParam, ichimokuParam) {
-  if (index < 61) return null;
+// ─── تابع اصلی استراتژی (بروزرسانی شده با ۶ پارامتر) ────────
+// پارامترهای ۵ و ۶ (trendLinesParam و refineEntryPrice) اختیاری هستند (بخش ۳.۲)
+function customStrategy(
+  data,
+  index,
+  breakPointsParam,
+  ichimokuParam,
+  trendLinesParam,    // اختیاری - همان خروجی getTrendLines()
+  refineEntryPrice    // اختیاری - فقط برای openBreak کاربرد دارد (بخش ۱۵.۵)
+) {
+  // ─── گاردهای اولیه ──────────────────────────────────────
+  if (index < 61) return null; // حداقل برای ایچیموکو و warm-up RSI
 
-  // ─── ایچیموکو ──────────────────────────────────────────
+  // ─── ۱. اعتبارسنجی ایچیموکو (بخش ۷.۱) ────────────────────
   if (!ichimokuParam || ichimokuParam.kumoTop === null || ichimokuParam.kumoTop === undefined) {
     return null;
   }
@@ -98,41 +119,48 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam) {
     return null;
   }
 
-  // ─── خطوط نزولی ──────────────────────────────────────────
-  const trendLines = getTrendLines();
+  // ─── ۲. دریافت شکست‌های کندل جاری از سیستم (بخش ۷.۲) ──
+  // در حالت nextCandle، breakPointsParam[index] شامل شکست‌های تشخیص‌داده‌شده روی کندل index-1 است
+  const breaks = getBreakPointsAtCandle(index);
+  if (!breaks || breaks.length === 0) return null;
+
+  // فقط شکست‌های رو به بالا (خرید) را نگه می‌داریم
+  const upBreaks = breaks.filter(b => b.direction === 'up');
+  if (upBreaks.length === 0) return null;
+
+  // ─── ۳. دریافت خطوط روند نزولی ──────────────────────────
+  // استفاده از trendLinesParam (ارسال شده توسط موتور) یا fallback به getTrendLines()
+  const trendLines = trendLinesParam || getTrendLines();
   const downLines = trendLines.filter(line =>
     (line.type === 'primaryDown' || line.type === 'manualDown') && line.slope < 0
   );
   if (downLines.length === 0) return null;
 
-  // ─── تشخیص شکست ──────────────────────────────────────────
-  const MIN_DIST = 0.09;
-  const MAX_DIST = 0.15;
+  // ─── ۴. انتخاب بهترین شکست (نزدیک‌ترین به ۰.۱۲٪) ──────
+  let selectedLine = null;
+  let bestDiff = Infinity;
   const TARGET = 0.12;
 
-  const prevCandle = data[index - 1];
-  const entryPrice = data[index].open;
-
-  let selectedLine = null;
-  let closestToTarget = Infinity;
-
-  for (const line of downLines) {
-    if (line.endIndex > index - 1) continue;
+  for (const breakInfo of upBreaks) {
+    // 🔴 توجه: breakInfo دارای lineId است، در حالی که خود خط دارای id است (بخش ۳.۲)
+    const line = downLines.find(l => l.id === breakInfo.lineId);
+    if (!line) continue;
     if (brokenLines.has(line.id)) continue;
 
-    const slope = (line.endPrice - line.startPrice) / (line.endIndex - line.startIndex);
-    const intercept = line.startPrice - slope * line.startIndex;
-    const lineValue = slope * (index - 1) + intercept;
+    // محاسبه مقدار خط در کندل جاری
+    const lineValue = calculateTrendLineValue(line, index);
+    if (lineValue === null) continue;
 
-    const distanceLow = ((prevCandle.low - lineValue) / lineValue) * 100;
-    const distanceHigh = ((prevCandle.high - lineValue) / lineValue) * 100;
+    // ✅ در حالت nextCandle، استفاده از High کندل جاری برای سیگنال‌دهی مجاز است (بخش ۴.۱ و ۱۲.۲)
+    const high = data[index].high;
+    const diffPercent = ((high - lineValue) / lineValue) * 100;
 
-    const isBreak = (distanceLow <= MAX_DIST && distanceHigh >= MIN_DIST);
-    if (!isBreak) continue;
+    // فیلتر بازه‌ی ۰.۰۹% تا ۰.۱۵%
+    if (diffPercent < 0.09 || diffPercent > 0.15) continue;
 
-    const diffFromTarget = Math.abs(distanceHigh - TARGET);
-    if (diffFromTarget < closestToTarget) {
-      closestToTarget = diffFromTarget;
+    // انتخاب نزدیک‌ترین به ۰.۱۲%
+    if (Math.abs(diffPercent - TARGET) < Math.abs(bestDiff - TARGET)) {
+      bestDiff = diffPercent;
       selectedLine = line;
     }
   }
@@ -140,10 +168,12 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam) {
   if (!selectedLine) return null;
   brokenLines.add(selectedLine.id);
 
-  // ─── RSI ──────────────────────────────────────────────────
+  // ─── ۵. شرط RSI (طبق بخش ۴.۳) ──────────────────────────
   const rsiValue = calculateRSI(data, index, 14);
   if (rsiValue === null || rsiValue <= 50) return null;
 
+  // ─── ۶. صدور سیگنال (بخش ۵.۱) ────────────────────────────
+  const entryPrice = data[index].open; // ✅ قانون طلایی: قیمت ورود از open
   const stopLoss = entryPrice * (1 - 0.004);
   const takeProfit = entryPrice * (1 + 0.02);
 
