@@ -1,26 +1,23 @@
 /**
- * @filename 
- * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی، حد ضرر ۰.۴٪
- * @version 2.0 (بروزرسانی بر اساس راهنمای نسخه ۱۵)
+ * @filename B4Ic14-30-57.js
+ * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی (تشخیص دستی، بدون آینده‌نگری) - کپی از Best.js
+ * @version 3.0 - منطق Best.js با رعایت قوانین جدید
  */
 
-const stopLossInitial = 0.4;
+const stopLossInitial = 0.5;
 
-// ─── پیکربندی تحلیل (ANALYSIS_CONFIG) ────────────────────────
+// ─── پیکربندی تحلیل ──────────────────────────────────────────
 const ANALYSIS_CONFIG = {
-  // پارامترهای اجباری ورود (بخش ۲.۰ و ۱۲)
-  entryType: "nextCandle",        // ورود در کندل بعد از شکست
-  breakTolerance: 0.001,          // ۰.۱٪ (در nextCandle استفاده نمی‌شود ولی اجباری است)
+  entryType: "nextCandle",        // اجازه استفاده از High/Low کندل جاری
+  breakTolerance: 0.001,          // اجباری
 
-  // تنظیمات خطوط روند (بخش ۲.۱)
   trendLines: {
     pivotPeriod: 5,
     minTouchPoints: 3,
     minCandleDistance: 3,
-    precision: 0.002               // ۰.۲٪ (مقدار پیشنهادی بین ۰.۰۰۱ تا ۰.۰۰۵)
+    precision: 0.001
   },
 
-  // تنظیمات ایچیموکو (بخش ۲.۲)
   ichimoku: {
     enabled: true,
     tenkanPeriod: 14,
@@ -31,129 +28,129 @@ const ANALYSIS_CONFIG = {
     useChikou: false
   },
 
-  // بافر خودکار (اختیاری، بخش ۱۴)
   enableSmartContinuation: false
 };
 
-// ─── حد ضرر پلکانی ۳۵ مرحله‌ای ─────────────────────────────
+// ─── حد ضرر پلکانی ۱۵ مرحله‌ای (مثل Best.js) ─────────────────
 const stopLossStages = [
-  { movePercent: 0.5, stopLossPercent: 0.4 },
-  { movePercent: 1.0, stopLossPercent: 0.8 },
-  { movePercent: 1.5, stopLossPercent: 1.2 },
-  { movePercent: 2.0, stopLossPercent: 1.6 },
-  { movePercent: 2.5, stopLossPercent: 2.0 },
-  { movePercent: 3.0, stopLossPercent: 2.4 },
-  { movePercent: 3.5, stopLossPercent: 2.8 },
-  { movePercent: 4.0, stopLossPercent: 3.2 },
-  { movePercent: 4.5, stopLossPercent: 3.6 },
-  { movePercent: 5.0, stopLossPercent: 4.0 },
-  { movePercent: 6.0, stopLossPercent: 4.8 },
-  { movePercent: 7.0, stopLossPercent: 5.6 },
-  { movePercent: 8.0, stopLossPercent: 6.4 },
-  { movePercent: 9.0, stopLossPercent: 7.2 },
-  { movePercent: 10.0, stopLossPercent: 8.0 },
-  { movePercent: 12.0, stopLossPercent: 10.0 },
-  { movePercent: 14.0, stopLossPercent: 12.0 },
-  { movePercent: 16.0, stopLossPercent: 14.0 },
-  { movePercent: 18.0, stopLossPercent: 16.0 },
-  { movePercent: 20.0, stopLossPercent: 18.0 },
-  { movePercent: 22.0, stopLossPercent: 20.0 },
-  { movePercent: 24.0, stopLossPercent: 22.0 },
-  { movePercent: 26.0, stopLossPercent: 24.0 },
-  { movePercent: 28.0, stopLossPercent: 26.0 },
-  { movePercent: 30.0, stopLossPercent: 28.0 },
-  { movePercent: 32.0, stopLossPercent: 30.0 },
-  { movePercent: 34.0, stopLossPercent: 32.0 },
-  { movePercent: 36.0, stopLossPercent: 34.0 },
-  { movePercent: 38.0, stopLossPercent: 36.0 },
-  { movePercent: 40.0, stopLossPercent: 38.0 },
-  { movePercent: 42.0, stopLossPercent: 40.0 },
-  { movePercent: 44.0, stopLossPercent: 42.0 },
-  { movePercent: 46.0, stopLossPercent: 44.0 },
-  { movePercent: 48.0, stopLossPercent: 46.0 },
-  { movePercent: 50.0, stopLossPercent: 48.0 }
+  { movePercent: 0.4, stopLossPercent: 0.4 },
+  { movePercent: 0.8, stopLossPercent: 0.7 },
+  { movePercent: 1.1, stopLossPercent: 0.9 },
+  { movePercent: 1.3, stopLossPercent: 1.1 },
+  { movePercent: 1.5, stopLossPercent: 1.3 },
+  { movePercent: 1.7, stopLossPercent: 1.5 },
+  { movePercent: 2.0, stopLossPercent: 1.7 },
+  { movePercent: 2.3, stopLossPercent: 2.0 },
+  { movePercent: 2.5, stopLossPercent: 2.3 },
+  { movePercent: 3.0, stopLossPercent: 2.8 },
+  { movePercent: 4.0, stopLossPercent: 3.5 },
+  { movePercent: 5.0, stopLossPercent: 4.5 },
+  { movePercent: 6.0, stopLossPercent: 5.5 },
+  { movePercent: 7.0, stopLossPercent: 6.5 },
+  { movePercent: 8.0, stopLossPercent: 7.5 }
 ];
 
-const brokenLines = new Set();
+// ─── تابع اصلی (دقیقا مثل Best.js) ──────────────────────────
+function customStrategy(data, index, breakPointsParam, ichimokuParam, trendLinesParam, refineEntryPrice) {
+  // ── گاردهای اولیه ──────────────────────────────────────
+  if (index < 61) return null;
 
-// ─── تابع اصلی استراتژی (بروزرسانی شده با ۶ پارامتر) ────────
-function customStrategy(
-  data,
-  index,
-  breakPointsParam,
-  ichimokuParam,
-  trendLinesParam,    // اختیاری - همان خروجی getTrendLines()
-  refineEntryPrice    // اختیاری - فقط برای openBreak کاربرد دارد
-) {
-  // ─── گاردهای اولیه ──────────────────────────────────────
-  if (index < 61) return null; // حداقل برای ایچیموکو و warm-up
-
-  // ─── ۱. اعتبارسنجی ایچیموکو (بخش ۷.۱) ────────────────────
   if (!ichimokuParam || ichimokuParam.kumoTop === null || ichimokuParam.kumoTop === undefined) {
     return null;
   }
-  if (!ichimokuParam.isPriceAboveCloud || !ichimokuParam.isTenkanAboveKijun) {
-    return null;
-  }
+  if (!ichimokuParam.tenkan || !ichimokuParam.kijun) return null;
 
-  // ─── ۲. دریافت شکست‌های کندل جاری از سیستم (بخش ۷.۲) ──
-  const breaks = getBreakPointsAtCandle(index);
-  if (!breaks || breaks.length === 0) return null;
-
-  // فقط شکست‌های رو به بالا (خرید) را نگه می‌داریم
-  const upBreaks = breaks.filter(b => b.direction === 'up');
-  if (upBreaks.length === 0) return null;
-
-  // ─── ۳. دریافت خطوط روند نزولی ──────────────────────────
+  // ── دریافت خطوط نزولی (مثل Best.js) ──────────────────
   const trendLines = trendLinesParam || getTrendLines();
-  const downLines = trendLines.filter(line =>
-    (line.type === 'primaryDown' || line.type === 'manualDown') && line.slope < 0
-  );
-  if (downLines.length === 0) return null;
+  
+  // سعی میکنیم مثل Best.js از primaryDown استفاده کنیم
+  let downTrendLines = [];
+  if (trendLines.primaryDown && Array.isArray(trendLines.primaryDown)) {
+    downTrendLines = trendLines.primaryDown;
+  } else {
+    // fallback: فیلتر کردن آرایه‌ی فلت
+    downTrendLines = trendLines.filter(line =>
+      (line.type === 'primaryDown' || line.type === 'manualDown') && line.slope < 0
+    );
+  }
+  
+  if (downTrendLines.length === 0) return null;
 
-  // ─── ۴. انتخاب بهترین شکست (نزدیک‌ترین به ۰.۱۲٪) ──────
-  let selectedLine = null;
-  let bestDiff = Infinity;
+  // ── پارامترهای استراتژی (دقیقا مثل Best.js) ──────────
+  const MIN_DIST = 0.09;
+  const MAX_DIST = 0.15;
   const TARGET = 0.12;
 
-  for (const breakInfo of upBreaks) {
-    // 🔴 توجه: breakInfo دارای lineId است، در حالی که خود خط دارای id است
-    const line = downLines.find(l => l.id === breakInfo.lineId);
-    if (!line) continue;
-    if (brokenLines.has(line.id)) continue;
+  const prevCandle = data[index - 1];
+  const entryPrice = data[index].open;
 
-    const lineValue = calculateTrendLineValue(line, index);
-    if (lineValue === null) continue;
+  let bestSignal = null;
+  let closestToTarget = Infinity;
 
-    // ✅ در حالت nextCandle، استفاده از High کندل جاری مجاز است
-    const high = data[index].high;
-    const diffPercent = ((high - lineValue) / lineValue) * 100;
+  // ── حلقه روی خطوط نزولی (دقیقا مثل Best.js) ──────────
+  for (let i = 0; i < downTrendLines.length; i++) {
+    const line = downTrendLines[i];
 
-    // فیلتر بازه‌ی ۰.۰۹% تا ۰.۱۵%
-    if (diffPercent < 0.09 || diffPercent > 0.15) continue;
+    // شرط ۱: خط باید به کندل قبلی رسیده باشد (جلوگیری از آینده‌نگری)
+    if (line.endIndex > index - 1) continue;
 
-    // انتخاب نزدیک‌ترین به ۰.۱۲%
-    if (Math.abs(diffPercent - TARGET) < Math.abs(bestDiff - TARGET)) {
-      bestDiff = diffPercent;
-      selectedLine = line;
+    // شرط ۲: شیب منفی
+    if (line.startPrice <= line.endPrice) continue;
+
+    // محاسبه مقدار خط در کندل قبلی (دستی، مثل Best.js)
+    const slope = (line.endPrice - line.startPrice) / (line.endIndex - line.startIndex);
+    const intercept = line.startPrice - slope * line.startIndex;
+    const lineValue = slope * (index - 1) + intercept;
+
+    // محاسبه فاصله‌ی High و Low کندل قبلی از خط (دقیقا مثل Best.js)
+    const distanceLow = ((prevCandle.low - lineValue) / lineValue) * 100;
+    const distanceHigh = ((prevCandle.high - lineValue) / lineValue) * 100;
+
+    // شرط ۳: شکست در بازه‌ی ۰.۰۹% تا ۰.۱۵% (مثل Best.js)
+    const isBreak = (distanceLow <= MAX_DIST && distanceHigh >= MIN_DIST);
+    if (!isBreak) continue;
+
+    // شرط ۴: ایچیموکو (مثل Best.js)
+    const isIchimokuValid = (
+      ichimokuParam.isPriceAboveCloud &&
+      ichimokuParam.isTenkanAboveKijun
+    );
+    if (!isIchimokuValid) continue;
+
+    // شرط ۵: جلوگیری از شکست تکراری (مثل Best.js)
+    let hasPreviousBreak = false;
+    for (let j = line.endIndex + 1; j < index; j++) {
+      const pastCandle = data[j];
+      const pastLineValue = slope * j + intercept;
+      const pastDistLow = ((pastCandle.low - pastLineValue) / pastLineValue) * 100;
+      const pastDistHigh = ((pastCandle.high - pastLineValue) / pastLineValue) * 100;
+      if (pastDistLow <= MAX_DIST && pastDistHigh >= MIN_DIST) {
+        hasPreviousBreak = true;
+        break;
+      }
+    }
+    if (hasPreviousBreak) continue;
+
+    // شرط ۶: انتخاب بهترین (نزدیکترین به ۰.۱۲%) – مثل Best.js
+    const diffFromTarget = Math.abs(distanceHigh - TARGET);
+    if (diffFromTarget < closestToTarget) {
+      closestToTarget = diffFromTarget;
+
+      // محاسبه‌ی stopLoss (مثل Best.js با ۰.۵%)
+      const stopLoss = entryPrice * (1 - 0.005); // ۰.۵% پایینتر
+      const takeProfit = entryPrice * (1 + 0.02); // ۲% بالاتر
+
+      bestSignal = {
+        signal: 'BUY',
+        price: entryPrice,
+        stopLoss: stopLoss,
+        takeProfit: takeProfit,
+        trailingStop: true,
+        useStagedStopLoss: true,
+        stopLossStages: stopLossStages
+      };
     }
   }
 
-  if (!selectedLine) return null;
-  brokenLines.add(selectedLine.id);
-
-  // ─── ۵. صدور سیگنال (بخش ۵.۱) ────────────────────────────
-  const entryPrice = data[index].open; // ✅ قانون طلایی: قیمت ورود از open
-  const stopLoss = entryPrice * (1 - 0.004);
-  const takeProfit = entryPrice * (1 + 0.02);
-
-  return {
-    signal: 'BUY',
-    price: entryPrice,
-    stopLoss: stopLoss,
-    takeProfit: takeProfit,
-    trailingStop: true,
-    useStagedStopLoss: true,
-    stopLossStages: stopLossStages
-  };
-  }
+  return bestSignal;
+}
