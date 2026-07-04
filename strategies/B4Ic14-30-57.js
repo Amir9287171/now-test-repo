@@ -1,6 +1,6 @@
 /**
- * @filename B4Ic14-30-57Rsi14.js
- * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و RSI(14) > 50
+ * @filename 
+ * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی، حد ضرر ۰.۴٪
  * @version 2.0 (بروزرسانی بر اساس راهنمای نسخه ۱۵)
  */
 
@@ -9,7 +9,7 @@ const stopLossInitial = 0.4;
 // ─── پیکربندی تحلیل (ANALYSIS_CONFIG) ────────────────────────
 const ANALYSIS_CONFIG = {
   // پارامترهای اجباری ورود (بخش ۲.۰ و ۱۲)
-  entryType: "nextCandle",        // ورود در کندل بعد از شکست (استفاده از High/Low کندل جاری مجاز است)
+  entryType: "nextCandle",        // ورود در کندل بعد از شکست
   breakTolerance: 0.001,          // ۰.۱٪ (در nextCandle استفاده نمی‌شود ولی اجباری است)
 
   // تنظیمات خطوط روند (بخش ۲.۱)
@@ -76,40 +76,17 @@ const stopLossStages = [
 
 const brokenLines = new Set();
 
-// ─── محاسبه‌ی RSI با wickra (طبق بخش ۴.۳.۴ و ۴.۳.۲) ──────
-function calculateRSI(data, index, period = 14) {
-  // ⚠️ قانون طلایی: داده‌ها را فقط تا کندل قبلی (index-1) می‌دهیم
-  const closes = data.slice(0, index).map(d => d.close);
-  if (closes.length < period + 1) return null;
-
-  // ✅ استفاده از global.__wickra به جای require (بخش ۴.۳.۳)
-  const wickra = global.__wickra;
-  if (!wickra || typeof wickra.RSI !== 'function') return null;
-
-  try {
-    // ✅ الگوی صحیح: new ClassName(...).batch(...) (بخش ۴.۳.۲)
-    const rsi = new wickra.RSI(period);
-    const values = rsi.batch(closes);
-    const last = values[values.length - 1];
-    // ✅ بررسی با Number.isFinite برای جلوگیری از NaN در warm-up
-    return Number.isFinite(last) ? last : null;
-  } catch (e) {
-    return null;
-  }
-}
-
 // ─── تابع اصلی استراتژی (بروزرسانی شده با ۶ پارامتر) ────────
-// پارامترهای ۵ و ۶ (trendLinesParam و refineEntryPrice) اختیاری هستند (بخش ۳.۲)
 function customStrategy(
   data,
   index,
   breakPointsParam,
   ichimokuParam,
   trendLinesParam,    // اختیاری - همان خروجی getTrendLines()
-  refineEntryPrice    // اختیاری - فقط برای openBreak کاربرد دارد (بخش ۱۵.۵)
+  refineEntryPrice    // اختیاری - فقط برای openBreak کاربرد دارد
 ) {
   // ─── گاردهای اولیه ──────────────────────────────────────
-  if (index < 61) return null; // حداقل برای ایچیموکو و warm-up RSI
+  if (index < 61) return null; // حداقل برای ایچیموکو و warm-up
 
   // ─── ۱. اعتبارسنجی ایچیموکو (بخش ۷.۱) ────────────────────
   if (!ichimokuParam || ichimokuParam.kumoTop === null || ichimokuParam.kumoTop === undefined) {
@@ -120,7 +97,6 @@ function customStrategy(
   }
 
   // ─── ۲. دریافت شکست‌های کندل جاری از سیستم (بخش ۷.۲) ──
-  // در حالت nextCandle، breakPointsParam[index] شامل شکست‌های تشخیص‌داده‌شده روی کندل index-1 است
   const breaks = getBreakPointsAtCandle(index);
   if (!breaks || breaks.length === 0) return null;
 
@@ -129,7 +105,6 @@ function customStrategy(
   if (upBreaks.length === 0) return null;
 
   // ─── ۳. دریافت خطوط روند نزولی ──────────────────────────
-  // استفاده از trendLinesParam (ارسال شده توسط موتور) یا fallback به getTrendLines()
   const trendLines = trendLinesParam || getTrendLines();
   const downLines = trendLines.filter(line =>
     (line.type === 'primaryDown' || line.type === 'manualDown') && line.slope < 0
@@ -142,16 +117,15 @@ function customStrategy(
   const TARGET = 0.12;
 
   for (const breakInfo of upBreaks) {
-    // 🔴 توجه: breakInfo دارای lineId است، در حالی که خود خط دارای id است (بخش ۳.۲)
+    // 🔴 توجه: breakInfo دارای lineId است، در حالی که خود خط دارای id است
     const line = downLines.find(l => l.id === breakInfo.lineId);
     if (!line) continue;
     if (brokenLines.has(line.id)) continue;
 
-    // محاسبه مقدار خط در کندل جاری
     const lineValue = calculateTrendLineValue(line, index);
     if (lineValue === null) continue;
 
-    // ✅ در حالت nextCandle، استفاده از High کندل جاری برای سیگنال‌دهی مجاز است (بخش ۴.۱ و ۱۲.۲)
+    // ✅ در حالت nextCandle، استفاده از High کندل جاری مجاز است
     const high = data[index].high;
     const diffPercent = ((high - lineValue) / lineValue) * 100;
 
@@ -168,11 +142,7 @@ function customStrategy(
   if (!selectedLine) return null;
   brokenLines.add(selectedLine.id);
 
-  // ─── ۵. شرط RSI (طبق بخش ۴.۳) ──────────────────────────
-  const rsiValue = calculateRSI(data, index, 14);
-  if (rsiValue === null || rsiValue <= 50) return null;
-
-  // ─── ۶. صدور سیگنال (بخش ۵.۱) ────────────────────────────
+  // ─── ۵. صدور سیگنال (بخش ۵.۱) ────────────────────────────
   const entryPrice = data[index].open; // ✅ قانون طلایی: قیمت ورود از open
   const stopLoss = entryPrice * (1 - 0.004);
   const takeProfit = entryPrice * (1 + 0.02);
@@ -186,4 +156,4 @@ function customStrategy(
     useStagedStopLoss: true,
     stopLossStages: stopLossStages
   };
-}
+  }
