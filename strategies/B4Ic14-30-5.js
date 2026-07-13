@@ -13,17 +13,17 @@
  * (نه یک‌بار) اجرا می‌شد؛ همان علت کند بودن و رفتار «افزایشی».
  */
 
-const stopLossInitial = 0.5;
+const stopLossInitial = 0.4;
 
 const ANALYSIS_CONFIG = {
   entryType: "nextCandle",
-  breakTolerance: 0.02,
+  breakTolerance: 0.001,
 
   trendLines: {
     pivotPeriod: 5,
     minTouchPoints: 3,
     minCandleDistance: 3,
-    precision: 0.02
+    precision: 0.001
   },
 
   ichimoku: {
@@ -71,7 +71,12 @@ function customStrategy(data, index, breakPointsParam, ichimokuParam, trendLines
   const brokenLines = globalThis.__b4ic_state.brokenLines;
 
   // ── خطوط فعال در کندل جاری: مستقیماً از موتور (batch، از قبل فیلترشده) ──
-  const activeLines = trendLinesParam || [];
+  // نکته: فراخوانی getTrendLines() این‌جا هم fallback واقعی است (اگر بنا به
+  // هر دلیلی trendLinesParam خالی بود) و هم علامتی است که run-backtest.js با
+  // regex آن را تشخیص می‌دهد و trendLineSettings را از ANALYSIS_CONFIG به
+  // موتور پاس می‌دهد؛ بدون این خط، trendLineSettings هیچ‌وقت ست نمی‌شود و
+  // processedTrendLines همیشه خالی می‌ماند (صفر معامله، بدون هیچ خطایی).
+  const activeLines = trendLinesParam || getTrendLines();
   if (activeLines.length === 0) return null;
 
   // ── ایچیموکو ────────────────────────────────────────────
