@@ -1,7 +1,16 @@
-/**
+/*
  * @filename B4Ic14-30-57.js
- * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی (Batch + سیستمی، فقط ۰.۱۲%)
- * @version 7.0 - Batch Mode + تشخیص شکست سیستمی
+ * @description خرید با تایید ایچیموکو (۱۴,۳۰,۵۷) و شکست خط روند نزولی (فقط ۰.۱۲%)
+ * @version 8.0 - حذف batch محلی و باگ‌های ناشی از آن؛ استفاده مستقیم از trendLinesParam
+ *
+ * تغییر نسبت به v7.0:
+ * موتور (backtest-core2.js) وقتی USE_BATCH_TRENDLINES=true باشد، خودش یک‌بار
+ * برای کل دیتاست precomputeTrendLinesBatch را صدا می‌زند و به ازای هر کندل فقط
+ * خطوط فعال همان کندل را (با cursor سریع) در trendLinesParam پاس می‌دهد. پس
+ * دیگر نیازی نیست customStrategy خودش batch/cursor محلی بسازد — آن نسخه چون
+ * داخل بدنه‌ی strategyFn تزریق و هر کندل از نو اجرا می‌شد، batchTrendLines هر
+ * بار null می‌شد و precomputeTrendLinesBatch روی کل دیتاست به ازای هر کندل
+ * (نه یک‌بار) اجرا می‌شد؛ همان علت کند بودن و رفتار «افزایشی».
  */
 
 const stopLossInitial = 0.5;
@@ -48,50 +57,21 @@ const stopLossStages = [
   { movePercent: 8.0, stopLossPercent: 7.5 }
 ];
 
-const brokenLines = new Set();
+// نکته: چون بدنه‌ی این فایل به ازای هر کندل از نو اجرا می‌شود (تزریق داخل
+// strategyFn)، هر state ای که باید بین کندل‌ها دوام بیاورد (مثل brokenLines)
+// را باید روی globalThis نگه داشت، نه با let/const ساده در سطح فایل.
 
-// ─── متغیرهای Batch ───────────────────────────────────────
-let batchTrendLines = null;
-let batchCursor = { pos: 0, activeLines: [] };
-
-function getActiveLinesAtCandle(candleIndex) {
-  if (!batchTrendLines || batchTrendLines.length === 0) return [];
-
-  while (
-    batchCursor.pos < batchTrendLines.length &&
-    batchTrendLines[batchCursor.pos].activationCandle <= candleIndex
-  ) {
-    batchCursor.activeLines.push(batchTrendLines[batchCursor.pos]);
-    batchCursor.pos++;
-  }
-
-  return batchCursor.activeLines;
-}
-
-// ─── تابع اصلی ────────────────────────────────────────────
 function customStrategy(data, index, breakPointsParam, ichimokuParam, trendLinesParam, refineEntryPrice) {
   if (index < 61) return null;
 
-  // ── محاسبه یکجای خطوط روند (فقط یک بار) ──────────────
-  if (batchTrendLines === null) {
-    try {
-      console.log('🔄 [BATCH] محاسبه یکجای خطوط روند روی کل دیتاست...');
-      if (typeof precomputeTrendLinesBatch === 'function') {
-        batchTrendLines = precomputeTrendLinesBatch(data, ANALYSIS_CONFIG.trendLines);
-        console.log(`✅ [BATCH] ${batchTrendLines.length} خط روند یکجا محاسبه شد.`);
-      } else {
-        const rawLines = trendLinesParam || getTrendLines();
-        batchTrendLines = Array.isArray(rawLines) ? rawLines : [];
-        console.log(`✅ [BATCH] ${batchTrendLines.length} خط روند از سیستم دریافت شد.`);
-      }
-    } catch (e) {
-      console.error('❌ [BATCH] خطا:', e.message);
-      batchTrendLines = [];
-    }
+  // ریست brokenLines فقط وقتی دیتاست عوض شده (فایل جدید)
+  if (!globalThis.__b4ic_state || globalThis.__b4ic_state.dataRef !== data) {
+    globalThis.__b4ic_state = { dataRef: data, brokenLines: new Set() };
   }
+  const brokenLines = globalThis.__b4ic_state.brokenLines;
 
-  // ── خطوط فعال در کندل جاری ────────────────────────────
-  const activeLines = getActiveLinesAtCandle(index);
+  // ── خطوط فعال در کندل جاری: مستقیماً از موتور (batch، از قبل فیلترشده) ──
+  const activeLines = trendLinesParam || [];
   if (activeLines.length === 0) return null;
 
   // ── ایچیموکو ────────────────────────────────────────────
