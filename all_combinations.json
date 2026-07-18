@@ -1,209 +1,6 @@
 [
   {
     "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_15m",
-    "coin": "BTCUSDT+XRPUSDT+PAXGUSDT",
-    "interval": "fixed_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
-    "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR0005_1h",
     "coin": "BTCUSDT+SOLUSDT+PAXGUSDT",
     "interval": "CorePPI_post_30d",
@@ -3502,209 +3299,6 @@
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "fixed_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "fixed_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "fixed_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "fixed_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_30m",
     "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "fixed_15d",
     "model": "simple_hybrid"
@@ -7002,391 +6596,188 @@
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "ETHUSDT+SOLUSDT",
-    "interval": "FOMC_post_5d",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "interval": "CorePPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CorePPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CorePPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "fixed_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "fixed_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "fixed_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "fixed_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "PPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "fixed_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "fixed_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "fixed_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "fixed_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT3-pR04_5m",
     "coin": "BTCUSDT+XRPUSDT+SOLUSDT",
     "interval": "PPI_post_10d",
     "model": "simple_hybrid"
@@ -10497,382 +9888,172 @@
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
     "coin": "ETHUSDT+SOLUSDT",
     "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
-    "interval": "CorePPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "CorePPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "FOMC_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+SOLUSDT",
+    "coin": "ETHUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "fixed_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "fixed_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "fixed_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "fixed_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
+    "coin": "XRPUSDT+SOLUSDT",
     "interval": "CoreCPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "fixed_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "fixed_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "fixed_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "fixed_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_15m",
     "coin": "XRPUSDT+SOLUSDT",
     "interval": "PPI_post_5d",
     "model": "simple_hybrid"
@@ -14003,383 +13184,187 @@
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
     "coin": "XRPUSDT+SOLUSDT",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "fixed_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "fixed_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "fixed_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "fixed_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CoreCPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CoreCPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CoreCPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CoreCPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "PPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "PPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "PPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "PPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CorePPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CorePPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CorePPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "FOMC_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "FOMC_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
+    "coin": "XRPUSDT+PAXGUSDT",
     "interval": "FOMC_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+SOLUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "fixed_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "fixed_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "fixed_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "fixed_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
-    "coin": "XRPUSDT+PAXGUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_1h",
     "coin": "XRPUSDT+PAXGUSDT",
     "interval": "CPI_y_y_post_5d",
     "model": "simple_hybrid"
@@ -17502,349 +16487,160 @@
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
+    "coin": "BTCUSDT+ETHUSDT",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_y_y_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_y_y_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_y_y_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "PAXGUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_y_y_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "fixed_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "fixed_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "fixed_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "fixed_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "CPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "CPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "CPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "BTCUSDT+XRPUSDT",
     "interval": "CPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "fixed_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "fixed_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "fixed_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "fixed_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "CPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "CPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "CPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "CPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
     "coin": "BTCUSDT+XRPUSDT",
     "interval": "CoreCPI_post_5d",
     "model": "simple_hybrid"
@@ -20654,545 +19450,349 @@
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
     "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
     "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
-    "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
     "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CoreCPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "PPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "PPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "PPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "PPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CorePPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CorePPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
     "interval": "CorePPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "fixed_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "fixed_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "fixed_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "fixed_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_5d",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
+    "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_10d",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
+    "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "CoreCPI_post_15d",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_30m",
+    "coin": "BTCUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
+    "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CoreCPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "PPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "PPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "PPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "PPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CorePPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CorePPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CorePPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "FOMC_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "FOMC_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "FOMC_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CPI_y_y_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CPI_y_y_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CPI_y_y_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
+    "coin": "PAXGUSDT",
     "interval": "CPI_y_y_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "fixed_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "fixed_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "fixed_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "fixed_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CoreCPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CoreCPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CoreCPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CoreCPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "PPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "PPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "PPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "PPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CorePPI_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_pre_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_5d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_10d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_15d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "FOMC_post_30d",
     "model": "simple_hybrid"
   },
   {
     "module": "combo_10day",
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
+    "coin": "BTCUSDT+ETHUSDT",
     "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
+    "coin": "BTCUSDT+ETHUSDT",
+    "interval": "CPI_y_y_post_10d",
     "model": "simple_hybrid"
   },
   {
@@ -24497,153 +23097,6 @@
     "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
     "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
     "interval": "CorePPI_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_pre_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "FOMC_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_5d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_10d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_15d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_10day",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT+XRPUSDT+SOLUSDT+PAXGUSDT",
-    "interval": "CPI_y_y_post_30d",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "ETHUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "XRPUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "SOLUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "PAXGUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+ETHUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+XRPUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+SOLUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "BTCUSDT+PAXGUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "ETHUSDT+XRPUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "ETHUSDT+SOLUSDT",
-    "interval": "monthly",
-    "model": "simple_hybrid"
-  },
-  {
-    "module": "combo_monthly",
-    "strat": "S4Ic14-30-57_TLpP5-mT4-pR001_5m",
-    "coin": "ETHUSDT+PAXGUSDT",
-    "interval": "monthly",
     "model": "simple_hybrid"
   }
 ]
