@@ -91,8 +91,13 @@
   "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h_chunk_31_20260730T194718Z.tar.gz.enc",
   "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h_chunk_32_20260730T194730Z.tar.gz.enc",
   "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h_chunk_33_20260730T194515Z.tar.gz.enc",
+  "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h_chunk_0_20260802T225636Z.tar.gz.enc",
+  "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h_chunk_1_20260802T225059Z.tar.gz.enc",
   "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h_chunk_33_20260730T194515Z.tar.gz.enc",
   "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h_chunk_34_20260730T181807Z.tar.gz.enc",
+  "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h_chunk_1_20260802T225059Z.tar.gz.enc",
+  "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h_chunk_2_20260802T225524Z.tar.gz.enc",
+  "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h_chunk_3_20260802T200249Z.tar.gz.enc",
   "signature_archives/combo_monthly/B4DvgBull_PP12Rsi10Lb2Tol12_RegularOnly_15m/B4DvgBull_PP12Rsi10Lb2Tol12_RegularOnly_15m_chunk_2_20260729T184730Z.tar.gz.enc",
   "signature_archives/combo_monthly/B4DvgBull_PP12Rsi10Lb2Tol12_RegularOnly_5m/B4DvgBull_PP12Rsi10Lb2Tol12_RegularOnly_5m_chunk_4_20260729T193205Z.tar.gz.enc",
   "signature_archives/combo_monthly/B4Ic14-30-57+KijPb_LadFib_BufOff_1h/B4Ic14-30-57_KijPb_LadFib_BufOff_1h_chunk_0_20260730T151118Z.tar.gz.enc",
@@ -121,5 +126,7 @@
   "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadFib_BufOff_15m/B4Touch_TLpP5-mT3-pR001_LadFib_BufOff_15m_chunk_25_20260730T194231Z.tar.gz.enc",
   "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadFib_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadFib_BufOff_1h_chunk_28_20260730T195330Z.tar.gz.enc",
   "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_15m/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_15m_chunk_30_20260730T195124Z.tar.gz.enc",
-  "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h_chunk_33_20260730T194515Z.tar.gz.enc"
+  "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadFib_BufOn_1h_chunk_33_20260730T194515Z.tar.gz.enc",
+  "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h_chunk_1_20260802T225059Z.tar.gz.enc",
+  "signature_archives/combo_monthly/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOn_1h_chunk_3_20260802T200249Z.tar.gz.enc"
 ]
