@@ -1,4 +1,4 @@
-name: Delete backtest_results folder
+name: Cleanup now-test-repo
 
 on:
   workflow_dispatch:
@@ -7,33 +7,72 @@ permissions:
   contents: write
 
 jobs:
-  delete:
+  cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 1
 
-      - name: Delete backtest_results folder
+      - name: Delete folders (with error handling)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # حذف پوشه
-          git rm -r backtest_results/
+          # حذف پوشه‌ها (فقط اگر وجود داشته باشند)
+          FOLDERS="backtest_results signature_archives pattern_archives batch_outputs reports golden_outputs portfolios_outputs"
           
-          # Commit
-          git commit -m "delete backtest_results folder (workflow)"
+          for folder in $FOLDERS; do
+            if [ -d "$folder" ]; then
+              echo "🗑️ حذف پوشه: $folder"
+              git rm -r "$folder" || echo "⚠️ خطا در حذف $folder"
+            else
+              echo "⏭️ پوشه $folder وجود ندارد"
+            fi
+          done
           
-          # Push
-          git push origin main
+          # حذف فایل‌ها (فقط اگر وجود داشته باشند)
+          FILES="all_combinations.json all_combinations_golden.json all_combinations_portfolios.json completed_strategies.json completed_golden.json completed_portfolios.json processed_archives.json processed_pattern_archives.json signature_archive_index.json pattern_archive_index.json golden_scores.csv.enc reports.tar.gz.enc"
+          
+          for file in $FILES; do
+            if [ -f "$file" ]; then
+              echo "🗑️ حذف فایل: $file"
+              git rm "$file" || echo "⚠️ خطا در حذف $file"
+            else
+              echo "⏭️ فایل $file وجود ندارد"
+            fi
+          done
 
-      - name: Cleanup empty folders
+      - name: Commit changes (if any)
         run: |
-          # حذف پوشه‌های خالی باقی‌مانده
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # فقط اگر تغییری وجود داشت commit کن
+          if git diff --cached --quiet; then
+            echo "ℹ️ هیچ تغییری برای commit وجود ندارد"
+          else
+            git commit -m "cleanup now-test-repo"
+          fi
+
+      - name: Push changes
+        run: |
+          # اگر تغییری وجود داشت، push کن
+          if git diff --cached --quiet; then
+            echo "ℹ️ هیچ تغییری برای push وجود ندارد"
+          else
+            git push origin main
+          fi
+
+      - name: Remove empty directories
+        run: |
           find . -type d -empty -delete 2>/dev/null || true
           git add -A
-          git commit -m "cleanup empty folders" || true
-          git push origin main || true
+          if git diff --cached --quiet; then
+            echo "ℹ️ پوشه خالی برای حذف وجود ندارد"
+          else
+            git commit -m "remove empty dirs" || true
+            git push origin main || true
+          fi
