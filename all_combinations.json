@@ -1,1 +1,1202 @@
-[]
+[
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4DvgBull_Default_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4DvgBull_LadFib_BufOff_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4DvgBull_LadFib_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "london_ny_overlap",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4Ic14-30-57+Chk_LadLine_BufOn_30m",
+    "coin": "ETHUSDT",
+    "session": "newyork",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  }
+]
