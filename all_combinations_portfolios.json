@@ -125208,5 +125208,680 @@
     "signature_path": "combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/XRPUSDT/FOMC_pre_5d_simple_hybrid.jsonl",
     "archive_path": "signature_archives/combo_10day/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h/B4Touch_TLpP5-mT3-pR001_LadLine_BufOff_1h_run36110766043.tar.gz.enc",
     "score": 50.8746
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/fixed_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 58.3512
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/fixed_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 57.8201
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/fixed_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 57.3425
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/fixed_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 59.2185
+  },
+  {
+    "signature_path": "combo_monthly/B4DvgBull_Default_30m/ETHUSDT/monthly_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 58.0187
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_y_y_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CoreCPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/fixed_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 56.751
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/fixed_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 57.1535
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/fixed_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 58.1915
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/fixed_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 55.3127
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CoreCPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/fixed_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.3512
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/fixed_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 57.8201
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/fixed_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 57.3425
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/fixed_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2185
+  },
+  {
+    "signature_path": "combo_monthly/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/monthly_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.0187
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_y_y_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CoreCPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/fixed_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 55.1951
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/fixed_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.4307
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/fixed_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3649
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/fixed_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2078
+  },
+  {
+    "signature_path": "combo_monthly/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/monthly_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.6141
+  },
+  {
+    "signature_path": "combo_monthly/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/monthly_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.635
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1004
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1521
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CorePPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/FOMC_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/PPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_y_y_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CoreCPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CorePPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/FOMC_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/PPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CorePPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/PPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CoreCPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CorePPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/PPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CorePPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/FOMC_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/PPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_y_y_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CoreCPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CorePPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/FOMC_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/PPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2919
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0782
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.7505
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1004
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1521
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2919
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_y_y_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CoreCPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CorePPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/FOMC_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/PPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CoreCPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CorePPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/PPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_y_y_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CoreCPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CorePPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/FOMC_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/PPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0782
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.7505
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1521
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1004
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1521
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2919
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CPI_y_y_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CoreCPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/CorePPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/PPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CoreCPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.5107
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/CorePPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 57.941
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/PPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 59.7944
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CPI_y_y_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.0447
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CoreCPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.3005
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/CorePPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 56.047
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/PPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 60.4623
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0782
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.7505
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1004
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.1521
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2919
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 58.5583
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CPI_y_y_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0782
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CoreCPI_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.0321
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_Default_30m/ETHUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_Default_30m/B4DvgBull_Default_30m_run37032039787.tar.gz.enc",
+    "score": 56.4536
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOff_30m/ETHUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOff_30m/B4DvgBull_LadFib_BufOff_30m_run37032039787.tar.gz.enc",
+    "score": 56.3469
+  },
+  {
+    "signature_path": "combo_10day/B4DvgBull_LadFib_BufOn_30m/ETHUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4DvgBull_LadFib_BufOn_30m/B4DvgBull_LadFib_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 56.4536
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/CorePPI_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.7505
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/PPI_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.2741
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.7322
+  },
+  {
+    "signature_path": "combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/ETHUSDT/FOMC_pre_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Ic14-30-57+Chk_LadLine_BufOn_30m/B4Ic14-30-57_Chk_LadLine_BufOn_30m_run37032039787.tar.gz.enc",
+    "score": 59.8569
   }
 ]
