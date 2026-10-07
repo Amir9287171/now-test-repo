@@ -1,0 +1,12 @@
+{
+  "coin": "ATOMUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR001_DvgBear_LadFib_BufOff.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR001_DvgBear_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-07T23:22:10Z",
+  "run_id": "37700436703",
+  "chunks": 5,
+  "files": 268
+}
