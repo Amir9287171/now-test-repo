@@ -1,0 +1,13 @@
+{
+  "coin": "XLMUSDT",
+  "strategy": "B4Ic14-30-57_TLpP5-mT3-pR001_BrT012_DvgBull_LadFib_BufOff.js",
+  "key": "B4Ic14-30-57_TLpP5-mT3-pR001_BrT012_DvgBull_LadFib_BufOff",
+  "tfs": [
+    "5m",
+    "30m"
+  ],
+  "uploaded_at": "2026-10-07T12:40:41Z",
+  "run_id": "37618346234",
+  "chunks": 5,
+  "files": 301
+}
