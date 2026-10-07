@@ -1,0 +1,12 @@
+{
+  "coin": "PEPEUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadFib_BufOff.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-07T21:37:19Z",
+  "run_id": "37686651101",
+  "chunks": 2,
+  "files": 123
+}
