@@ -1,0 +1,13 @@
+{
+  "coin": "LINKUSDT",
+  "strategy": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOff.js",
+  "key": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOff",
+  "tfs": [
+    "30m",
+    "1h"
+  ],
+  "uploaded_at": "2026-10-07T12:02:05Z",
+  "run_id": "37615120560",
+  "chunks": 5,
+  "files": 278
+}
