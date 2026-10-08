@@ -1,0 +1,13 @@
+{
+  "coin": "WIFUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR001_DvgBear_LadLine_BufOff.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR001_DvgBear_LadLine_BufOff",
+  "tfs": [
+    "15m",
+    "30m"
+  ],
+  "uploaded_at": "2026-10-08T03:23:34Z",
+  "run_id": "37721550114",
+  "chunks": 2,
+  "files": 93
+}
