@@ -1,0 +1,12 @@
+{
+  "coin": "WIFUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-08T17:01:47Z",
+  "run_id": "37811387684",
+  "chunks": 2,
+  "files": 93
+}
