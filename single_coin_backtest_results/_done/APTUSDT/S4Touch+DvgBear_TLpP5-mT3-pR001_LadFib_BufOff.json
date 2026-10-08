@@ -1,0 +1,12 @@
+{
+  "coin": "APTUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T09:51:58Z",
+  "run_id": "37758594422",
+  "chunks": 3,
+  "files": 143
+}
