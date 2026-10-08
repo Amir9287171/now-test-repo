@@ -1,0 +1,12 @@
+{
+  "coin": "ATOMUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-08T16:08:23Z",
+  "run_id": "37803486387",
+  "chunks": 5,
+  "files": 268
+}
