@@ -1,0 +1,12 @@
+{
+  "coin": "SHIBUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T11:25:58Z",
+  "run_id": "37768961627",
+  "chunks": 3,
+  "files": 195
+}
