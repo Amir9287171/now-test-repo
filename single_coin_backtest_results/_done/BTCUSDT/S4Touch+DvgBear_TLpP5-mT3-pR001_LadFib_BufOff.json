@@ -1,0 +1,12 @@
+{
+  "coin": "BTCUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T12:19:11Z",
+  "run_id": "37774853024",
+  "chunks": 5,
+  "files": 315
+}
