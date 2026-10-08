@@ -1,0 +1,12 @@
+{
+  "coin": "AVAXUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T23:15:03Z",
+  "run_id": "37857440908",
+  "chunks": 4,
+  "files": 217
+}
