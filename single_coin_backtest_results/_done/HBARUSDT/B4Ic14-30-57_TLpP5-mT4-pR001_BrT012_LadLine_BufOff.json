@@ -1,0 +1,12 @@
+{
+  "coin": "HBARUSDT",
+  "strategy": "B4Ic14-30-57_TLpP5-mT4-pR001_BrT012_LadLine_BufOff.js",
+  "key": "B4Ic14-30-57_TLpP5-mT4-pR001_BrT012_LadLine_BufOff",
+  "tfs": [
+    "15m"
+  ],
+  "uploaded_at": "2026-10-08T18:41:18Z",
+  "run_id": "37824895373",
+  "chunks": 4,
+  "files": 253
+}
