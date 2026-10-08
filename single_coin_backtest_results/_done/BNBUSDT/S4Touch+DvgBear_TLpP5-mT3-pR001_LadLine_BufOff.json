@@ -1,0 +1,12 @@
+{
+  "coin": "BNBUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-08T17:37:01Z",
+  "run_id": "37815561430",
+  "chunks": 5,
+  "files": 315
+}
