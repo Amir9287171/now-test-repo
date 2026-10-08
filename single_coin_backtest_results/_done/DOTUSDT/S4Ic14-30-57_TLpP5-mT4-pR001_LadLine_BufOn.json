@@ -1,0 +1,12 @@
+{
+  "coin": "DOTUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT4-pR001_LadLine_BufOn.js",
+  "key": "S4Ic14-30-57_TLpP5-mT4-pR001_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T05:49:45Z",
+  "run_id": "37733601910",
+  "chunks": 4,
+  "files": 221
+}
