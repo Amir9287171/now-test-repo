@@ -1,0 +1,12 @@
+{
+  "coin": "APTUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT4-pR001_LadLine_BufOn.js",
+  "key": "S4Ic14-30-57_TLpP5-mT4-pR001_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T04:59:14Z",
+  "run_id": "37729328673",
+  "chunks": 3,
+  "files": 143
+}
