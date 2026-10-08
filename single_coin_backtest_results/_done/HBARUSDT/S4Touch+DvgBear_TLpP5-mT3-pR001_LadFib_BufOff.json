@@ -1,0 +1,12 @@
+{
+  "coin": "HBARUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T08:17:18Z",
+  "run_id": "37747508501",
+  "chunks": 4,
+  "files": 253
+}
