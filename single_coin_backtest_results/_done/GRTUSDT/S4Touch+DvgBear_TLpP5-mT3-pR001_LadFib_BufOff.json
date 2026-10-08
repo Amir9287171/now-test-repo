@@ -1,0 +1,12 @@
+{
+  "coin": "GRTUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadFib_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-08T10:40:42Z",
+  "run_id": "37764102664",
+  "chunks": 4,
+  "files": 209
+}
