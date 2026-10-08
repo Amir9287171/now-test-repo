@@ -1,0 +1,12 @@
+{
+  "coin": "SOLUSDT",
+  "strategy": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff.js",
+  "key": "S4Touch+DvgBear_TLpP5-mT3-pR001_LadLine_BufOff",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-08T15:03:34Z",
+  "run_id": "37795880075",
+  "chunks": 4,
+  "files": 221
+}
