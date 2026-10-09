@@ -1,0 +1,12 @@
+{
+  "coin": "XLMUSDT",
+  "strategy": "S4DvgBear_PP12Rsi10Lb2Tol12_HiddenOnly.js",
+  "key": "S4DvgBear_PP12Rsi10Lb2Tol12_HiddenOnly",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-09T14:20:49Z",
+  "run_id": "37941921721",
+  "chunks": 5,
+  "files": 301
+}

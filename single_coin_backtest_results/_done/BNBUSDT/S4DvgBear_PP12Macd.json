@@ -1,0 +1,12 @@
+{
+  "coin": "BNBUSDT",
+  "strategy": "S4DvgBear_PP12Macd.js",
+  "key": "S4DvgBear_PP12Macd",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T14:20:49Z",
+  "run_id": "37941921721",
+  "chunks": 5,
+  "files": 315
+}
