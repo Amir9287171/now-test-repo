@@ -1,0 +1,12 @@
+{
+  "coin": "XRPUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOff.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T15:06:05Z",
+  "run_id": "37947734612",
+  "chunks": 5,
+  "files": 303
+}
