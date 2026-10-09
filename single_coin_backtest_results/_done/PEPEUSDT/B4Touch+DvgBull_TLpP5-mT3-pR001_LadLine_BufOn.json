@@ -1,0 +1,12 @@
+{
+  "coin": "PEPEUSDT",
+  "strategy": "B4Touch+DvgBull_TLpP5-mT3-pR001_LadLine_BufOn.js",
+  "key": "B4Touch+DvgBull_TLpP5-mT3-pR001_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T13:15:51Z",
+  "run_id": "37934243663",
+  "chunks": 2,
+  "files": 123
+}
