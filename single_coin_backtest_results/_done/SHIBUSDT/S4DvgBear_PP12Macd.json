@@ -1,0 +1,12 @@
+{
+  "coin": "SHIBUSDT",
+  "strategy": "S4DvgBear_PP12Macd.js",
+  "key": "S4DvgBear_PP12Macd",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T14:00:49Z",
+  "run_id": "37939298535",
+  "chunks": 3,
+  "files": 195
+}
