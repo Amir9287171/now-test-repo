@@ -1,0 +1,12 @@
+{
+  "coin": "XLMUSDT",
+  "strategy": "B4Touch+DvgBull_TLpP5-mT3-pR001_LadLine_BufOn.js",
+  "key": "B4Touch+DvgBull_TLpP5-mT3-pR001_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T12:52:36Z",
+  "run_id": "37930594719",
+  "chunks": 5,
+  "files": 301
+}
