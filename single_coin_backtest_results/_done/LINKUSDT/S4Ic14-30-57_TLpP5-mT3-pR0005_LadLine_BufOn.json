@@ -1,0 +1,12 @@
+{
+  "coin": "LINKUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T00:05:37Z",
+  "run_id": "37862347943",
+  "chunks": 5,
+  "files": 278
+}
