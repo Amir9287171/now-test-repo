@@ -1,0 +1,12 @@
+{
+  "coin": "GRTUSDT",
+  "strategy": "B4Ic14-30-57_TLpP5-mT3-pR001_BrT012_DvgBull_LadFib_BufOn.js",
+  "key": "B4Ic14-30-57_TLpP5-mT3-pR001_BrT012_DvgBull_LadFib_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T08:07:46Z",
+  "run_id": "37901888290",
+  "chunks": 4,
+  "files": 209
+}
