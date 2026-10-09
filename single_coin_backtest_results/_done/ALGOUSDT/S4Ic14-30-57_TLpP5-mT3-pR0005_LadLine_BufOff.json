@@ -1,0 +1,12 @@
+{
+  "coin": "ALGOUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOff.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOff",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T15:25:40Z",
+  "run_id": "37950162232",
+  "chunks": 4,
+  "files": 262
+}
