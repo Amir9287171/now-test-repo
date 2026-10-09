@@ -1,0 +1,12 @@
+{
+  "coin": "WIFUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T01:56:47Z",
+  "run_id": "37871629474",
+  "chunks": 2,
+  "files": 93
+}
