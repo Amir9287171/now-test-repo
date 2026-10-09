@@ -1,0 +1,12 @@
+{
+  "coin": "AVAXUSDT",
+  "strategy": "S4DvgBear_PP12Rsi10Lb2Tol12_HiddenOnly.js",
+  "key": "S4DvgBear_PP12Rsi10Lb2Tol12_HiddenOnly",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-09T14:47:00Z",
+  "run_id": "37945007945",
+  "chunks": 4,
+  "files": 217
+}
