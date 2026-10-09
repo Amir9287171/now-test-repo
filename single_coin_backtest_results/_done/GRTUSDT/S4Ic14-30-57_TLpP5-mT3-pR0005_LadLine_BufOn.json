@@ -1,0 +1,12 @@
+{
+  "coin": "GRTUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR0005_LadLine_BufOn",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T00:47:48Z",
+  "run_id": "37865943616",
+  "chunks": 4,
+  "files": 209
+}
