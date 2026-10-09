@@ -1,0 +1,12 @@
+{
+  "coin": "BNBUSDT",
+  "strategy": "B4Ic14-30-57_TLpP5-mT4-pR001_BrT012_LadLine_BufOn.js",
+  "key": "B4Ic14-30-57_TLpP5-mT4-pR001_BrT012_LadLine_BufOn",
+  "tfs": [
+    "15m"
+  ],
+  "uploaded_at": "2026-10-09T12:22:20Z",
+  "run_id": "37927633143",
+  "chunks": 5,
+  "files": 315
+}
