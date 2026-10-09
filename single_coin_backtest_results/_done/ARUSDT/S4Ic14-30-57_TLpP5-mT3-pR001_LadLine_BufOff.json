@@ -1,0 +1,12 @@
+{
+  "coin": "ARUSDT",
+  "strategy": "S4Ic14-30-57_TLpP5-mT3-pR001_LadLine_BufOff.js",
+  "key": "S4Ic14-30-57_TLpP5-mT3-pR001_LadLine_BufOff",
+  "tfs": [
+    "30m"
+  ],
+  "uploaded_at": "2026-10-09T16:27:16Z",
+  "run_id": "37957793241",
+  "chunks": 3,
+  "files": 194
+}
