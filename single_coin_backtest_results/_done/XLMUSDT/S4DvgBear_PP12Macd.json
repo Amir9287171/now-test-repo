@@ -1,0 +1,12 @@
+{
+  "coin": "XLMUSDT",
+  "strategy": "S4DvgBear_PP12Macd.js",
+  "key": "S4DvgBear_PP12Macd",
+  "tfs": [
+    "1h"
+  ],
+  "uploaded_at": "2026-10-09T13:37:58Z",
+  "run_id": "37936572470",
+  "chunks": 5,
+  "files": 301
+}
