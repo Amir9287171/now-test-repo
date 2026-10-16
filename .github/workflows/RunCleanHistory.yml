@@ -1,0 +1,19 @@
+name: Run Clean History
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-clean:
+    uses: ./.github/workflows/clean-history.yml
+    with:
+      user_name: "github-actions[bot]"
+      user_email: "github-actions[bot]@users.noreply.github.com"
+      owner: Amir9287171
+      repo: now-test-repo
+      branch: main
+      commit_message: "Initial commit (history cleaned)"
+      exclude_files: ""
+      exclude_folders: ""
+    secrets:
+      token: ${{ secrets.PAT_GITHUB }}
