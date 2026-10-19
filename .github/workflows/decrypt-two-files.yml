@@ -1,0 +1,200 @@
+name: Decrypt All Enc Files in Folder
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_password:
+        description: 'رمز رمزگشایی (RESULTS_PASSWORD)'
+        required: true
+        type: string
+      folder_path:
+        description: 'مسیر پوشه در مخزن سوم (مثلاً analysis_results/combo_10day/Ttt3/BTCUSDT)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  decrypt-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout third repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.CROSS_REPO_TOKEN }}
+          repository: ${{ secrets.THIRD_REPO }}
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup Python and install dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install pandas pyarrow
+
+      - name: Find all .enc files in folder
+        id: find_files
+        run: |
+          FOLDER="${{ github.event.inputs.folder_path }}"
+          if [ ! -d "$FOLDER" ]; then
+            echo "❌ پوشه $FOLDER وجود ندارد!"
+            exit 1
+          fi
+          find "$FOLDER" -maxdepth 1 -name "*.enc" -type f | sort > /tmp/all_enc_files.txt
+          COUNT=$(cat /tmp/all_enc_files.txt | wc -l)
+          echo "file_count=$COUNT" >> $GITHUB_OUTPUT
+          echo "📂 تعداد فایل‌های .enc در $FOLDER : $COUNT"
+          if [ "$COUNT" -eq 0 ]; then
+            echo "❌ هیچ فایل .enc در این پوشه یافت نشد."
+            exit 1
+          fi
+          cat /tmp/all_enc_files.txt
+
+      - name: Decrypt each file and display content
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          echo "::add-mask::$USER_PASS"
+          mkdir -p /tmp/decrypted
+
+          # [رفع خطای سینتکس] نوشتن کد پایتون در یک فایل مجزا
+          cat > /tmp/process_file.py << 'EOF'
+          import pandas as pd
+          import sys
+
+          file_path = sys.argv[1]
+          try:
+              df = pd.read_parquet(file_path)
+              print(f'   ✅ تعداد رکوردها: {len(df)}')
+              print(f'   📋 ستون‌ها: {list(df.columns)}')
+              print('   📝 ۵ ردیف اول:')
+              print(df.head(5).to_string())
+          except Exception as e:
+              print(f'   ❌ خطا در خواندن Parquet: {e}')
+              sys.exit(1)
+          EOF
+
+          TOTAL=$(cat /tmp/all_enc_files.txt | wc -l)
+          echo "=============================================="
+          echo "   🔓 شروع رمزگشایی $TOTAL فایل"
+          echo "=============================================="
+
+          SUCCESS=0
+          FAIL=0
+          EMPTY=0
+          FAILED_FILES=""
+          EMPTY_FILES=""
+
+          while IFS= read -r ENC_FILE; do
+            if [ -z "$ENC_FILE" ]; then continue; fi
+
+            BASE_NAME=$(basename "$ENC_FILE" .enc)
+            TMP_OUT="/tmp/decrypted/${BASE_NAME}.dec"
+
+            echo "----------------------------------------"
+            echo "📄 پردازش: $ENC_FILE"
+
+            # رمزگشایی با Node.js
+            node -e "
+              const crypto=require('crypto'),fs=require('fs');
+              const pass=process.env.USER_PASS;
+              if (!pass) { console.error('❌ رمز وارد نشده'); process.exit(1); }
+              const data=fs.readFileSync('$ENC_FILE');
+              const key=crypto.scryptSync(pass,'salt',32);
+              const iv=data.slice(0,16),enc=data.slice(16);
+              const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+              const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+              fs.writeFileSync('$TMP_OUT',dec);
+              console.log('   ✅ رمزگشایی موفق');
+            " 2>/tmp/decrypt_error.log
+
+            if [ $? -ne 0 ]; then
+              echo "   ❌ خطا در رمزگشایی $BASE_NAME"
+              cat /tmp/decrypt_error.log
+              FAIL=$((FAIL+1))
+              FAILED_FILES="$FAILED_FILES\n- $BASE_NAME (خطا)"
+              continue
+            fi
+
+            if [ ! -s "$TMP_OUT" ]; then
+              echo "   ❌ فایل خالی است"
+              EMPTY=$((EMPTY+1))
+              EMPTY_FILES="$EMPTY_FILES\n- $BASE_NAME (خالی)"
+              rm -f "$TMP_OUT"
+              continue
+            fi
+
+            # تشخیص نوع فایل بر اساس محتوا
+            if head -c 4 "$TMP_OUT" | grep -q "PAR1"; then
+              echo "   📊 نوع: Parquet"
+              # اجرای کد پایتون بدون نقل‌قول‌های پیچیده
+              python3 /tmp/process_file.py "$TMP_OUT"
+              if [ $? -eq 0 ]; then
+                SUCCESS=$((SUCCESS+1))
+              else
+                FAIL=$((FAIL+1))
+                FAILED_FILES="$FAILED_FILES\n- $BASE_NAME (Parquet خراب)"
+              fi
+            else
+              echo "   📊 نوع: CSV"
+              LINE_COUNT=$(wc -l < "$TMP_OUT")
+              echo "   📝 تعداد خطوط: $LINE_COUNT"
+              if [ "$LINE_COUNT" -le 1 ]; then
+                echo "   ⚠️ فقط header دارد (بدون داده)"
+                EMPTY=$((EMPTY+1))
+                EMPTY_FILES="$EMPTY_FILES\n- $BASE_NAME (فقط header)"
+              else
+                echo "   📋 محتوا:"
+                echo "   ======================================="
+                cat "$TMP_OUT" | sed 's/^/     /'
+                echo "   ======================================="
+                SUCCESS=$((SUCCESS+1))
+              fi
+            fi
+            rm -f "$TMP_OUT"
+          done < /tmp/all_enc_files.txt
+
+          echo "=============================================="
+          echo "   📊 گزارش نهایی"
+          echo "=============================================="
+          echo "📂 کل فایل‌ها: $TOTAL"
+          echo "✅ رمزگشایی موفق: $SUCCESS"
+          echo "❌ خطا: $FAIL"
+          echo "⚠️ خالی: $EMPTY"
+
+          if [ -n "$FAILED_FILES" ]; then
+            echo ""
+            echo "📋 لیست فایل‌های ناموفق:"
+            echo -e "$FAILED_FILES"
+          fi
+          if [ -n "$EMPTY_FILES" ]; then
+            echo ""
+            echo "📋 لیست فایل‌های خالی:"
+            echo -e "$EMPTY_FILES"
+          fi
+
+          echo "TOTAL=$TOTAL" > /tmp/report.txt
+          echo "SUCCESS=$SUCCESS" >> /tmp/report.txt
+          echo "FAIL=$FAIL" >> /tmp/report.txt
+          echo "EMPTY=$EMPTY" >> /tmp/report.txt
+
+      - name: Wait 5 minutes and cleanup
+        run: |
+          echo "⏳ منتظر ۵ دقیقه می‌مانیم تا فایل‌های موقت پاک شوند..."
+          sleep 300
+          rm -rf /tmp/decrypted
+          echo "🧹 پاکسازی کامل شد."
+
+      - name: Save report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: decrypt-all-report
+          path: /tmp/report.txt

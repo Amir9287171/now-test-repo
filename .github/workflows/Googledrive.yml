@@ -1,0 +1,48 @@
+name: Upload to Telegram
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Create test file
+        run: |
+          echo "Hello from GitHub Actions" > test.txt
+
+      - name: Upload file to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          # آپلود فایل به تلگرام
+          RESPONSE=$(curl -s -X POST \
+            -F "chat_id=$TELEGRAM_CHAT_ID" \
+            -F "document=@test.txt" \
+            -F "caption=Uploaded from GitHub Actions" \
+            "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument")
+          
+          echo "📤 پاسخ تلگرام:"
+          echo "$RESPONSE" | jq '.'
+          
+          # استخراج file_id برای استفاده بعدی
+          FILE_ID=$(echo "$RESPONSE" | jq -r '.result.document.file_id')
+          echo "✅ file_id: $FILE_ID"
+          echo "FILE_ID=$FILE_ID" >> $GITHUB_ENV
+
+      - name: Download file from Telegram (تست بازگردانی)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          # دریافت لینک دانلود فایل
+          FILE_PATH=$(curl -s "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getFile?file_id=$FILE_ID" | jq -r '.result.file_path')
+          
+          # دانلود فایل
+          curl -o downloaded.txt "https://api.telegram.org/file/bot$TELEGRAM_BOT_TOKEN/$FILE_PATH"
+          
+          echo "📥 فایل دانلود شد:"
+          cat downloaded.txt
