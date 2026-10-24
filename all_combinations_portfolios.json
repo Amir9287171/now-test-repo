@@ -172313,5 +172313,630 @@
     "signature_path": "combo_10day/S4Ic14-30-57+Chk_LadLine_BufOn_1h/XRPUSDT/FOMC_pre_5d_simple_hybrid_london.jsonl",
     "archive_path": "signature_archives/combo_10day/S4Ic14-30-57+Chk_LadLine_BufOn_1h/S4Ic14-30-57_Chk_LadLine_BufOn_1h_run39789897268.tar.gz.enc",
     "score": 51.0706
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/BTCUSDT/fixed_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/B4Don20_Ema50-200_LadFib_BufOn_1h_run39809045111.tar.gz.enc",
+    "score": 51.0155
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_post_10d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_y_y_post_10d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.9161
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CoreCPI_post_10d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CorePPI_post_10d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/PPI_post_10d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/BTCUSDT/FOMC_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/B4Don20_Ema50-200_LadFib_BufOn_1h_run39809045111.tar.gz.enc",
+    "score": 51.995
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_post_15d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_y_y_post_15d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.9161
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CoreCPI_post_15d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CorePPI_post_15d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/PPI_post_15d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/BTCUSDT/FOMC_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/B4Don20_Ema50-200_LadFib_BufOn_1h_run39809045111.tar.gz.enc",
+    "score": 51.995
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_post_30d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_y_y_post_30d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.9161
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CoreCPI_post_30d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CorePPI_post_30d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/PPI_post_30d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/BTCUSDT/FOMC_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/B4Don20_Ema50-200_LadFib_BufOn_1h_run39809045111.tar.gz.enc",
+    "score": 51.995
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_post_5d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CPI_y_y_post_5d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.9161
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CoreCPI_post_5d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.0956
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/CorePPI_post_5d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/BTCUSDT/PPI_post_5d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8252
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/BTCUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/B4Don20_Ema50-200_LadFib_BufOn_1h_run39809045111.tar.gz.enc",
+    "score": 51.995
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/BTCUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_1h/B4Don20_Ema50-200_LadFib_BufOn_1h_run39809045111.tar.gz.enc",
+    "score": 51.3613
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_y_y_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.4081
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CoreCPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CorePPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/FOMC_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.8698
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/PPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_30m/ETHUSDT/monthly_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 54.9172
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_y_y_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.4081
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CoreCPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CorePPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/FOMC_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.8698
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/PPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_y_y_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.4081
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CoreCPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CorePPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/FOMC_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.8698
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/PPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CPI_y_y_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.4081
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CoreCPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8975
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/CorePPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 52.8698
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/PPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.7286
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/ETHUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_15m/B4Don20_Ema50-200_LadFib_BufOn_15m_run39809045111.tar.gz.enc",
+    "score": 51.8659
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/fixed_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 68.0302
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/fixed_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 68.0243
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/fixed_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 67.4194
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/fixed_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 65.5316
+  },
+  {
+    "signature_path": "combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/monthly_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 64.8447
+  },
+  {
+    "signature_path": "combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/monthly_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 75.4193
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_post_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CoreCPI_post_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CorePPI_post_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 57.1193
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/PPI_post_10d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 78.1962
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_10d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 80.3726
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_post_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CoreCPI_post_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CorePPI_post_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 57.1193
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/PPI_post_15d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 78.1962
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CorePPI_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 75.4318
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_15d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 80.3726
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_post_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CoreCPI_post_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CorePPI_post_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 57.1193
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/PPI_post_30d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 78.1962
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CorePPI_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 75.4318
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_30d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 80.3726
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_post_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CoreCPI_post_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 54.2601
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CorePPI_post_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 57.1193
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/PPI_post_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 55.3455
+  },
+  {
+    "signature_path": "combo_10day/B4Bb20-2+Rsi14-30+Adx14-20_LadFib_BufOn_5m/SOLUSDT/fixed_15d_simple_hybrid_asia_tokyo.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Bb20-2+Rsi14-30+Adx14-20_LadFib_BufOn_5m/B4Bb20-2_Rsi14-30_Adx14-20_LadFib_BufOn_5m_run39809045111.tar.gz.enc",
+    "score": 50.2321
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/CPI_y_y_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 78.1962
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_post_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 80.3726
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_pre_5d_simple_hybrid_london.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 57.1193
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/PAXGUSDT/FOMC_pre_5d_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_4h/B4Don20_Ema50-200_LadFib_BufOn_4h_run39809045111.tar.gz.enc",
+    "score": 77.4245
+  },
+  {
+    "signature_path": "combo_monthly/B4Bb20-2+Rsi14-30+Adx14-20_LadFib_BufOn_5m/XRPUSDT/monthly_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Bb20-2+Rsi14-30+Adx14-20_LadFib_BufOn_5m/B4Bb20-2_Rsi14-30_Adx14-20_LadFib_BufOn_5m_run39809045111.tar.gz.enc",
+    "score": 50.2609
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/fixed_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.7517
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/fixed_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 58.11
+  },
+  {
+    "signature_path": "combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/monthly_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 57.8883
+  },
+  {
+    "signature_path": "combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/monthly_simple_hybrid_newyork.jsonl",
+    "archive_path": "signature_archives/combo_monthly/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 51.8631
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_y_y_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 57.144
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CoreCPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CorePPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/FOMC_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.1151
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/PPI_post_10d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_y_y_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 57.144
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CoreCPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CorePPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/FOMC_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.1151
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/PPI_post_15d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_y_y_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 57.144
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CoreCPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CorePPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/FOMC_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.1151
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/PPI_post_30d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CPI_y_y_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 57.144
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CoreCPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 56.612
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/CorePPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/FOMC_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.1151
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/PPI_post_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 59.054
+  },
+  {
+    "signature_path": "combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/XRPUSDT/FOMC_pre_5d_simple_hybrid_london_ny_overlap.jsonl",
+    "archive_path": "signature_archives/combo_10day/B4Don20+Ema50-200_LadFib_BufOn_30m/B4Don20_Ema50-200_LadFib_BufOn_30m_run39809045111.tar.gz.enc",
+    "score": 57.8436
   }
 ]
