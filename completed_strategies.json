@@ -227,5 +227,11 @@
   "B4Don20+Ema50-200_LadFib_BufOn_15m",
   "B4Don20+Ema50-200_LadFib_BufOn_1h",
   "B4Don20+Ema50-200_LadFib_BufOn_30m",
-  "B4Don20+Ema50-200_LadFib_BufOn_4h"
+  "B4Don20+Ema50-200_LadFib_BufOn_4h",
+  "S4Ic14-30-57_TLpP5-mT3-pR001_LadFib_BufOff_1h",
+  "S4Ic14-30-57_TLpP5-mT3-pR001_LadLine_BufOff_1h",
+  "S4NYFib0618_LadFib_BufOn_15m",
+  "S4NYFib0618_LadFib_BufOn_1h",
+  "S4Pdl+Ema50-200_LadFib_BufOn_5m",
+  "S4Thr14-15+Ema50-200_LadFib_BufOn_1h"
 ]
