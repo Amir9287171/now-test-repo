@@ -1,0 +1,182 @@
+name: Decrypt, Extract, and Print 40 Lines
+
+on:
+  workflow_dispatch:
+    inputs:
+      user_password:
+        description: 'رمز رمزگشایی (RESULTS_PASSWORD)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  decrypt-extract-print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout third repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.CROSS_REPO_TOKEN }}
+          repository: ${{ secrets.THIRD_REPO }}
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup Python and pandas
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install pandas pyarrow
+
+      - name: Decrypt and extract golden_scores.parquet
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          echo "::add-mask::$USER_PASS"
+          ENC_FILE="golden_scores.parquet.enc"
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "⚠️ golden_scores.parquet.enc وجود ندارد — رد می‌شود."
+            exit 0
+          fi
+          echo "📄 پردازش: $ENC_FILE"
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.USER_PASS;
+            const data=fs.readFileSync('$ENC_FILE');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('golden_scores.tar.gz',dec);
+          "
+          if [ ! -s golden_scores.tar.gz ]; then
+            echo "❌ رمزگشایی ناموفق یا فایل خالی"
+            exit 0
+          fi
+          tar -xzf golden_scores.tar.gz
+          rm -f golden_scores.tar.gz golden_scores.parquet.enc
+          echo "✅ golden_scores.parquet استخراج شد."
+
+      - name: Decrypt and extract portfolios_scores.parquet
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          ENC_FILE="analysis_results/portfolios_scores.parquet.enc"
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "⚠️ portfolios_scores.parquet.enc وجود ندارد — رد می‌شود."
+            exit 0
+          fi
+          echo "📄 پردازش: $ENC_FILE"
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.USER_PASS;
+            const data=fs.readFileSync('$ENC_FILE');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('portfolios_scores.tar.gz',dec);
+          "
+          if [ ! -s portfolios_scores.tar.gz ]; then
+            echo "❌ رمزگشایی ناموفق یا فایل خالی"
+            exit 0
+          fi
+          tar -xzf portfolios_scores.tar.gz
+          rm -f portfolios_scores.tar.gz analysis_results/portfolios_scores.parquet.enc
+          echo "✅ portfolios_scores.parquet استخراج شد."
+
+      - name: Decrypt and extract reports
+        env:
+          USER_PASS: ${{ github.event.inputs.user_password }}
+        run: |
+          ENC_FILE="reports.tar.gz.enc"
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "⚠️ reports.tar.gz.enc وجود ندارد — رد می‌شود."
+            exit 0
+          fi
+          echo "📄 پردازش: $ENC_FILE"
+          node -e "
+            const crypto=require('crypto'),fs=require('fs');
+            const pass=process.env.USER_PASS;
+            const data=fs.readFileSync('$ENC_FILE');
+            const key=crypto.scryptSync(pass,'salt',32);
+            const iv=data.slice(0,16),enc=data.slice(16);
+            const decipher=crypto.createDecipheriv('aes-256-cbc',key,iv);
+            const dec=Buffer.concat([decipher.update(enc),decipher.final()]);
+            fs.writeFileSync('reports.tar.gz',dec);
+          "
+          if [ ! -s reports.tar.gz ]; then
+            echo "❌ رمزگشایی ناموفق یا فایل خالی"
+            exit 0
+          fi
+          tar -xzf reports.tar.gz
+          rm -f reports.tar.gz reports.tar.gz.enc
+          echo "✅ reports استخراج شد."
+
+      - name: Print 40 lines of golden_scores.parquet
+        if: hashFiles('golden_scores.parquet') != ''
+        run: |
+          echo "=============================================="
+          echo "📊 golden_scores.parquet — ۴۰ خط اول"
+          echo "=============================================="
+          python3 -c "
+          import pandas as pd
+          df = pd.read_parquet('golden_scores.parquet')
+          print(df.head(40).to_string())
+          "
+
+      - name: Print 40 lines of portfolios_scores.parquet
+        if: hashFiles('analysis_results/portfolios_scores.parquet') != ''
+        run: |
+          echo "=============================================="
+          echo "📊 portfolios_scores.parquet — ۴۰ خط اول"
+          echo "=============================================="
+          python3 -c "
+          import pandas as pd
+          df = pd.read_parquet('analysis_results/portfolios_scores.parquet')
+          print(df.head(40).to_string())
+          "
+
+      - name: Print reports JSON content
+        if: hashFiles('reports/*.json') != ''
+        run: |
+          echo "=============================================="
+          echo "📄 reports — محتوای فایل‌های JSON"
+          echo "=============================================="
+          find reports -name "*.json" -type f | while read -r f; do
+            echo "----------------------------------------------"
+            echo "📄 $f"
+            echo "----------------------------------------------"
+            cat "$f" | head -100
+            echo ""
+          done
+
+      - name: Commit and push extracted files
+        run: |
+          cd $GITHUB_WORKSPACE
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || {
+            git commit -m "Decrypt and extract files (run ${{ github.run_id }})"
+            git pull --rebase origin main || true
+            git push origin main
+            echo "✅ تغییرات push شد."
+          }
+
+      - name: Final summary
+        run: |
+          echo "=============================================="
+          echo "📋 گزارش نهایی"
+          echo "=============================================="
+          [ -f golden_scores.parquet ] && echo "✅ golden_scores.parquet — استخراج و چاپ شد"
+          [ -f analysis_results/portfolios_scores.parquet ] && echo "✅ portfolios_scores.parquet — استخراج و چاپ شد"
+          [ -d reports ] && echo "✅ reports — استخراج و چاپ شد"
+          echo "=============================================="
