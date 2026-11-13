@@ -1,0 +1,59 @@
+name: Show Full File Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      strategy:
+        description: 'نام استراتژی'
+        required: true
+        default: 'Test'
+      password:
+        description: 'پسورد رمزگشایی'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone third repository
+        env:
+          GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
+        run: |
+          THIRD_REPO="Amir9287171/now-test-repo"
+          git clone https://x-access-token:${GH_TOKEN}@github.com/${THIRD_REPO}.git /tmp/third_repo
+
+      - name: Decrypt and show full file
+        env:
+          PASSWORD: ${{ github.event.inputs.password }}
+          STRAT: ${{ github.event.inputs.strategy }}
+        run: |
+          cd /tmp/third_repo
+          ENC_FILE="aggregated/${STRAT}/${STRAT}_trades.enc"
+
+          if [ ! -f "$ENC_FILE" ]; then
+            echo "❌ فایل پیدا نشد!"
+            exit 1
+          fi
+
+          node -e "
+            const crypto = require('crypto');
+            const fs = require('fs');
+            const pass = process.env.PASSWORD;
+            if (!pass) { console.error('❌ پسورد وارد نشده!'); process.exit(1); }
+            const data = fs.readFileSync('$ENC_FILE');
+            const key = crypto.scryptSync(pass, 'salt', 32);
+            const iv = data.slice(0, 16);
+            const enc = data.slice(16);
+            const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
+            const dec = Buffer.concat([decipher.update(enc), decipher.final()]);
+            fs.writeFileSync('/tmp/all_trades.json', dec);
+          "
+
+          echo "=============================================="
+          echo "📄 محتوای کامل فایل all_trades.json"
+          echo "=============================================="
+          cat /tmp/all_trades.json
