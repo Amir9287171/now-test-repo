@@ -1,1 +1,1202 @@
-[]
+[
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR0005_BrT012_LadFib_BufOn_1h",
+    "coin": "BTCUSDT",
+    "session": "london",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+ETHUSDT+SOLUSDT",
+    "session": null,
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "B4Ic14-30-57_TLpP5-mT3-pR04_BrT012_LadFib_BufOn_24h",
+    "coin": "BTCUSDT+SOLUSDT+XRPUSDT",
+    "session": null,
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "fixed_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "fixed_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "fixed_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "fixed_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CoreCPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CoreCPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CoreCPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CoreCPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "PPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "PPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "PPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "PPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CorePPI_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CorePPI_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CorePPI_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CorePPI_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "FOMC_pre_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "FOMC_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "FOMC_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "FOMC_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "FOMC_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_y_y_post_5d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_y_y_post_10d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_y_y_post_15d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_10day",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "CPI_y_y_post_30d",
+    "model": "simple_hybrid"
+  },
+  {
+    "module": "combo_monthly",
+    "strat": "S4MacdZ+EmaRel50-200_LadFib_BufOn_1h",
+    "coin": "SOLUSDT",
+    "session": "asia_tokyo",
+    "interval": "monthly",
+    "model": "simple_hybrid"
+  }
+]
